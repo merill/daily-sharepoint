@@ -1,24 +1,124 @@
 {
-  "version": 3,
-  "generatedAt": "2026-11-07T02:24:26.625Z",
-  "generator": {
-    "model": "deterministic-backfill",
-    "reasoningEffort": "none"
+  "days": {
+    "2026-11-07": {
+      "headline": "SharePoint site skills guide now details creation, permissions, and lifecycle controls",
+      "overview": "The period brought one documentation update for Copilot in SharePoint. The revised guidance explains how site owners manage site skills from Settings > Site skills, including their storage, ownership, permissions, and lifecycle operations.",
+      "adminImpact": "Site owners can use the documented management page and controls to administer site skills. No action is required.",
+      "keyChanges": [
+        {
+          "title": "Site skills management guidance expanded",
+          "detail": "The Copilot in SharePoint article now documents creating and managing site skills from Settings > Site skills, including uploading, editing, enabling, disabling, copying, restoring, downloading, and deleting them. It also clarifies storage, ownership, and permissions.",
+          "product": "Agents and Copilot",
+          "sourceId": "doc-2026-11-07-copilot-in-sharepoint-skills-01"
+        }
+      ],
+      "generatedBy": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "xhigh",
+      "generatedAt": "2026-11-07T14:57:58.087Z",
+      "usage": {
+        "inputTokens": 860,
+        "outputTokens": 429,
+        "costUsd": 0.000687
+      }
+    }
   },
-  "days": {},
-  "weeks": {},
-  "months": {},
-  "usageByDay": {},
+  "weeks": {
+    "2026-11-02": {
+      "headline": "Unified Copilot Search and group-permission governance reporting headline SharePoint administration",
+      "overview": "Two Message Center announcements carry the period: SharePoint Online and OneDrive for the web are moving to a unified Copilot Search experience, with preview rollout beginning in mid-October 2026 and general rollout in mid-January 2027; SharePoint’s Data access governance report for group permissions is scheduled to roll out worldwide from late November to early December. A separate Agents and Copilot article now documents the full site-skills management workflow.",
+      "adminImpact": "Copilot Search requires minimal organizational action, and users can opt out during preview. Administrators can use the forthcoming report in the admin center to find sites accessible to particular groups and assess access levels, supporting permission reviews and checks for unintended content exposure. Site owners can administer skills from Settings > Site skills using the documented controls; the article states that no action is required.",
+      "keyChanges": [
+        {
+          "title": "Copilot Search unifies SharePoint Online and OneDrive web search",
+          "detail": "The updated experience adds natural-language prompts, AI summaries, and filters. The announced schedule places preview rollout from mid-October 2026 and general rollout from mid-January 2027; users can opt out during preview and organizational action is minimal.",
+          "product": "SharePoint Online and OneDrive for the web",
+          "sourceId": "MC1540513"
+        },
+        {
+          "title": "Data access governance report adds group-permission visibility",
+          "detail": "The new report in the SharePoint admin center will help administrators identify sites accessible to specific groups and assess their access levels. Worldwide rollout is scheduled from late November to early December 2026, supporting permission management and efforts to prevent unintended content exposure.",
+          "product": "SharePoint",
+          "sourceId": "MC1540348"
+        },
+        {
+          "title": "Site skills management is documented under Settings > Site skills",
+          "detail": "The updated article explains how to create and manage site skills, including uploading, editing, enabling, disabling, copying, restoring, downloading, and deleting them. It also clarifies storage, ownership, and permissions, giving site owners a documented management path.",
+          "product": "Agents and Copilot",
+          "sourceId": "doc-2026-11-07-copilot-in-sharepoint-skills-01"
+        }
+      ],
+      "generatedBy": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "xhigh",
+      "generatedAt": "2026-11-07T14:57:58.087Z",
+      "usage": {
+        "inputTokens": 1119,
+        "outputTokens": 2458,
+        "costUsd": 0.003173
+      }
+    }
+  },
+  "months": {
+    "2026-11": {
+      "headline": "Unified Copilot Search and group-permission reporting lead November SharePoint changes",
+      "overview": "November brings two consequential SharePoint announcements: a unified Copilot Search experience for SharePoint Online and OneDrive for the web, and a Data access governance report for group permissions. A separate Agents and Copilot article documents the full site-skills management workflow, including its controls, storage, ownership, and permissions.",
+      "adminImpact": "Copilot Search is scheduled for preview from mid-October 2026 and general rollout from mid-January 2027; organizations need minimal action, and users can opt out during preview. The governance report, rolling out worldwide from late November to early December 2026, will support reviews of which sites specific groups can access and at what access levels. Site owners can manage skills under Settings > Site skills, with no action required based on the supplied guidance.",
+      "keyChanges": [
+        {
+          "title": "Unified Copilot Search moves SharePoint and OneDrive toward one search experience",
+          "detail": "Microsoft announced an updated web search experience combining SharePoint Online and OneDrive with natural-language prompts, AI summaries, and filters. Preview rollout began in mid-October 2026, with general rollout scheduled for mid-January 2027; users can opt out during preview.",
+          "product": "SharePoint",
+          "sourceId": "MC1540513"
+        },
+        {
+          "title": "Group-permission governance report is coming to the SharePoint admin center",
+          "detail": "The new Data access governance report will help administrators identify sites accessible to specific groups and assess those groups’ access levels, supporting permission reviews and checks for unintended content exposure. Worldwide rollout is scheduled from late November to early December 2026.",
+          "product": "SharePoint",
+          "sourceId": "MC1540348"
+        },
+        {
+          "title": "Site-skills guidance now covers the complete management workflow",
+          "detail": "The updated Copilot In SharePoint Skills article documents managing site skills from Settings > Site skills, including uploading, editing, enabling, disabling, copying, restoring, downloading, and deleting them. It also clarifies storage, ownership, and permissions; site owners can use these documented controls without a required administrative action.",
+          "product": "Agents and Copilot",
+          "sourceId": "doc-2026-11-07-copilot-in-sharepoint-skills-01"
+        }
+      ],
+      "generatedBy": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "xhigh",
+      "generatedAt": "2026-11-07T14:57:58.087Z",
+      "usage": {
+        "inputTokens": 1313,
+        "outputTokens": 981,
+        "costUsd": 0.00144
+      }
+    }
+  },
+  "version": 3,
+  "generatedAt": "2026-11-07T14:57:58.087Z",
+  "generator": {
+    "model": "gpt-5.6-luna",
+    "reasoningEffort": "xhigh"
+  },
+  "usageByDay": {
+    "2026-11-07": {
+      "inputTokens": 3292,
+      "outputTokens": 3868,
+      "requests": 3,
+      "costUsd": 0.0053
+    }
+  },
   "lastRun": {
-    "inputTokens": 0,
-    "outputTokens": 0,
-    "requests": 0,
-    "costUsd": 0
+    "inputTokens": 3292,
+    "outputTokens": 3868,
+    "requests": 3,
+    "costUsd": 0.0053
   },
   "totalUsage": {
-    "inputTokens": 0,
-    "outputTokens": 0,
-    "requests": 0,
-    "costUsd": 0
+    "inputTokens": 3292,
+    "outputTokens": 3868,
+    "requests": 3,
+    "costUsd": 0.0053
   }
 }

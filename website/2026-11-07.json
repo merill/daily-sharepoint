@@ -1,17 +1,61 @@
 {
   "newFiles": [],
-  "modifiedFiles": [],
+  "modifiedFiles": [
+    {
+      "filename": "SharePoint/SharePointOnline/copilot-in-sharepoint-skills.md",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 10,
+      "changes": 50,
+      "patch": "diff --git a/SharePoint/SharePointOnline/copilot-in-sharepoint-skills.md b/SharePoint/SharePointOnline/copilot-in-sharepoint-skills.md\nindex 9953a16..7efa477 100644\n--- a/SharePoint/SharePointOnline/copilot-in-sharepoint-skills.md\n+++ b/SharePoint/SharePointOnline/copilot-in-sharepoint-skills.md\n@@ -7,7 +7,7 @@ uhfHeaderId: MSDocsHeader-SharePoint\n feedback_system: Standard\n feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/06735c62-321c-ec11-b6e7-0022481f8472\n recommendations: true\n-ms.date: 2026-09-28T00:00:00.0000000Z\n+ms.date: 2026-11-06T00:00:00.0000000Z\n ms.update-cycle: 180-days\n ms.author: akashravi\n author: joekomban\n@@ -83,7 +83,7 @@ Portability doesn't grant access. A personal skill can act only on sites and con\n \r\n Personal and site skills use the same built-in capabilities of Copilot in SharePoint and can chain those building blocks into a sequence of steps. Depending on what Copilot in SharePoint supports on a site, both skill types can understand and summarize content, organize files and folders, and interact with SharePoint content such as lists. Their main differences are ownership, storage, and availability.\r\n \r\n-Note\r\n+Important\r\n \r\n Skills can't connect to external systems or execute custom code. A skill can only perform actions the user already has permission to do and doesn't expand access or introduce new capabilities beyond what Copilot in SharePoint provides.\r\n \r\n@@ -93,11 +93,13 @@ Skills can't connect to external systems or execute custom code. A skill can onl\n \r\n Personal skills are stored in the skill owner's OneDrive and are available to the owner across supported Copilot in SharePoint experiences.\r\n \r\n+Learn how to create personal skills.\r\n+\r\n ### Site skill storage\r\n \r\n-Site skills are stored as Markdown (.md) files in the site's **Agent Assets** library, under `/Agent Assets/Skills/<skill-name>/SKILL.md`. The site admin owns and manages them, while authorized site members can create or use them according to their SharePoint permissions.\r\n+Site skills are Markdown (.md) files stored in the site's **Agent Assets** library under `/Agent Assets/Skills/<skill-name>/SKILL.md`. The site admin owns and manages these skills. Authorized site members can create or use them based on their SharePoint permissions.\r\n \r\n-You can create and manage site skills through chat. You can also review the underlying .md file directly if needed. If you edit the .md file directly, keep the format intact so Copilot in SharePoint can continue to interpret the skill correctly.\r\n+Create site skills through Copilot chat or from the **Site skills** page by selecting **Settings** &gt; **Site skills**. Site owners can use the **Site skills** page to upload, review, edit, enable, disable, copy, replace, restore, download, and delete site skills. If you edit the .md skill file directly, keep the format intact so Copilot in SharePoint can continue to interpret the skill correctly.\r\n \r\n ## Governance and permissions\r\n \r\n@@ -107,18 +109,21 @@ Neither personal nor site skills expand user permissions. A skill can act only o\n \r\n ### Personal skill governance\r\n \r\n-Personal skills are owned by the user and stored in the user's OneDrive. They are subject to applicable OneDrive retention, sensitivity, auditing, and lifecycle policies.\r\n+Users own personal skills, which are stored in their OneDrive. They are subject to applicable OneDrive retention, sensitivity, auditing, and lifecycle policies.\r\n \r\n ### Site skill governance\r\n \r\n-The site admin owns and manages site skills. The **Agent Assets** library is created and managed by the product and can't be deleted. You can, however, apply standard SharePoint file governance to site skill files (for example, permissions, retention, sensitivity labels, and auditing) the same way you would for other content stored in SharePoint.\r\n+The site admin owns and manages site skills. The product creates and manages the **Agent Assets** library, which can't be deleted. However, you can apply standard SharePoint file governance to site skill files, such as permissions, retention, sensitivity labels, and auditing, the same way you would for other content stored in SharePoint.\r\n \r\n By default, any user with **Edit** permissions on the site can create a site skill, and any user with **View** permissions can use it. If you need a different model, you can break permission inheritance on the **Agent Assets** library and apply more restrictive permissions.\r\n \r\n ## Prerequisites\r\n \r\n 1. Access to a SharePoint site where Copilot in SharePoint is available.\r\n-2. Permissions to the site: **Edit** to create skills, **View** to run skills.\r\n+2. Permissions to the site:\r\n+\r\n+    - **Edit** to create skills\r\n+    - **View** to run skills\r\n \r\n Note\r\n \r\n@@ -126,7 +131,7 @@ You don't need to activate or configure Agent Assets before creating a site skil\n \r\n ## Create a personal or site skill\r\n \r\n-1. Open the Copilot in SharePoint chat panel from a site page or a document library. Make sure the page isn't in edit mode.\r\n+1. Open the Copilot in SharePoint chat panel from a site page or a document library. Ensure the page isn't in edit mode.\r\n 2. Ask Copilot to create a skill. Copilot uses the built-in **Create skill** capability to guide you through the process.\r\n 3. Describe the reusable workflow, including the steps, inputs, and expected outputs.\r\n 4. Specify whether the skill should be personal or site-specific. If you don't specify a type, Copilot can help you choose based on the workflow and where you want to use it.\r\n@@ -135,12 +140,27 @@ You don't need to activate or configure Agent Assets before creating a site skil\n \r\n     **Personal skill example:** \"Create a personal skill that reviews documents using my preferred structure, checks headings and terminology, and recommends consistent formatting.\"\r\n \r\n-    **Site skill example:** \"Create a site skill to review legal contracts to verify whether contract documents mention a lawyer ID in the **xxx-xxx** format (where **x** is an alphanumeric character). If a contract is not valid, add the document name to the **Invalid Contracts** list. Create the list with relevant columns if it doesn't exist.\"\r\n+    **Site skill example:** \"Create a site skill to review legal contracts to verify whether contract documents mention a lawyer ID in the **xxx-xxx** format (where **x** is an alphanumeric character). If a contract isn't valid, add the document name to the **Invalid Contracts** list. Create the list with relevant columns if it doesn't exist.\"\r\n 5. Review the draft skill definition that Copilot returns. If needed, ask Copilot to refine the steps, inputs, or outputs.\r\n \r\n     ![Screenshot of the draft skill definition returned by the agent for review.](sharepointonline/media/ai-in-sharepoint-skills/skill-draft-review.png)\r\n 6. Confirm that you want to save the skill.\r\n \r\n+## Manage site skills\r\n+\r\n+To manage the skills associated with a site, select **Settings** &gt; **Site skills**.\r\n+\r\n+The page lists each skill's name, source, status, last modified date, and creator. Use **Filters** or **Search by name or creator** to find a skill.\r\n+\r\n+- To create or upload a site skill, select **Create or upload**, and then select **Create with Copilot** or **Upload**. Use **Refresh** if a skill created with Copilot doesn't appear in the list immediately. New and uploaded skills are enabled by default.\r\n+- To manage one or more skills from the list, select the skills, and then select **Enable** or **Disable**, **Copy to sites**, or **Delete**.\r\n+- To review a skill in the **Skill detail** page, select its name or select **Open**. On the **Overview** tab, you can review its instructions and details. From this page, you can try the skill in Copilot, edit it manually or with Copilot, replace its package, copy it to other sites, download it, or delete it.\r\n+- To review or restore an earlier version, open the skill and select the **Versions** tab. Restoring an earlier version creates a new current version and doesn't overwrite the existing version history.\r\n+\r\n+Note\r\n+\r\n+Some actions, including edit, replace, download, and version restore, are available only in the **Skill detail** page.\r\n+\r\n ## Run a skill\r\n \r\n 1. In the document library, select one or more files that you want the skill to work on. This step is optional but recommended for testing.\r\n@@ -158,4 +178,14 @@ Copilot in SharePoint includes built-in skills that are available by default. Th\n \r\n Built-in skills aren't personal or site skills, and they aren't stored in OneDrive or the **Agent Assets** library. Users can't edit them directly, but they can extend their functionality by creating their own skills. The built-in **Create skill** capability guides users through creating personal and site skills.\r\n \r\n-To view the built-in skills currently available, enter `/skills` in the Copilot in SharePoint chat and review the skills listed under **Built-in skills**.\n\\ No newline at end of file\n+To view the built-in skills currently available, enter `/skills` in the Copilot in SharePoint chat and review the skills listed under **Built-in skills**.\r\n+\r\n+## Related information\r\n+\r\n+[Get started with Copilot in SharePoint](/en-us/sharepoint/copilot-in-sharepoint-get-started)\r\n+\r\n+[Create autofill columns](/en-us/sharepoint/copilot-in-sharepoint-create-autofill-columns)\r\n+\r\n+[Create a document library with AI](/en-us/sharepoint/copilot-in-sharepoint-create-document-library)\r\n+\r\n+[Automate workflows with Copilot in SharePoint](copilot-in-sharepoint-automate-workflows)\n\\ No newline at end of file\n",
+      "baseCommitSha": "da2d8bf7a9abe3395179ca7bf16ae68605601bbd",
+      "commitSha": "737a4878e1ebc33d870760d1e29db5d26d2f91e8",
+      "commitMessage": "Mirror Learn: 1 changed",
+      "commitAuthor": "github-actions[bot]",
+      "commitDate": "2026-11-07 02:27:26 +0000",
+      "githubUrl": "https://github.com/merill/sharepoint-docs-mirror/blob/main/SharePoint/SharePointOnline/copilot-in-sharepoint-skills.md",
+      "publicDocsUrl": "https://learn.microsoft.com/en-us/sharepoint/copilot-in-sharepoint-skills",
+      "eventId": "sharepoint-docs:737a4878e1ebc33d870760d1e29db5d26d2f91e8:modified:SharePoint/SharePointOnline/copilot-in-sharepoint-skills.md",
+      "firstSeenAt": "2026-11-07T14:57:51.012Z",
+      "englishSummary": {
+        "category": "Doc update",
+        "headline": "Documentation adds Site skills management guidance",
+        "summary": "The article now explains how to create and manage site skills from Settings > Site skills, including uploading, editing, enabling, disabling, copying, restoring, downloading, and deleting skills. It also clarifies storage, ownership, and permissions.",
+        "adminImpact": "Site owners can use the documented management page and controls to administer site skills. No action is required.",
+        "actionRequired": false,
+        "generatedBy": "openai",
+        "model": "gpt-5.6-luna"
+      }
+    }
+  ],
   "deletedFiles": [],
   "messageCenterItems": [],
   "summary": {
-    "totalCommits": 0,
-    "totalFiles": 0,
-    "authors": []
+    "totalCommits": 1,
+    "totalFiles": 1,
+    "authors": [
+      "github-actions[bot]"
+    ]
   },
   "englishSummary": {
-    "overview": "No substantive SharePoint Online and OneDrive documentation changes were detected for this report.",
-    "groups": [],
-    "highlights": [],
+    "overview": "Today's report includes 0 new, 1 updated, and 0 removed SharePoint Online and OneDrive documentation files across 1 documentation area.",
+    "groups": [
+      {
+        "category": "Doc update",
+        "title": "SharePoint Online",
+        "summary": "The article now explains how to create and manage site skills from Settings > Site skills, including uploading, editing, enabling, disabling, copying, restoring, downloading, and deleting skills. It also clarifies storage, ownership, and permissions.",
+        "sourceFiles": [
+          "SharePoint/SharePointOnline/copilot-in-sharepoint-skills.md"
+        ]
+      }
+    ],
+    "highlights": [
+      {
+        "category": "Doc update",
+        "headline": "SharePoint Online",
+        "detail": "The article now explains how to create and manage site skills from Settings > Site skills, including uploading, editing, enabling, disabling, copying, restoring, downloading, and deleting skills. It also clarifies storage, ownership, and permissions."
+      }
+    ],
     "generatedBy": "fallback"
   }
 }
