@@ -1,0 +1,13 @@
+# Daily SharePoint News
+
+A readable record of what changed across SharePoint Online and OneDrive admin documentation.
+
+- [Latest day](https://daily.sharepoint.admin.news/)
+- [Current week](https://daily.sharepoint.admin.news/week/)
+- [Products](https://daily.sharepoint.admin.news/products/)
+- [Topics](https://daily.sharepoint.admin.news/topics/)
+- [Message Center](https://daily.sharepoint.admin.news/message-center/)
+- [Search the archive](https://daily.sharepoint.admin.news/search/)
+- [Compare a Learn page](https://mx.merill.net/)
+- [About](https://daily.sharepoint.admin.news/about/)
+- [RSS](https://daily.sharepoint.admin.news/rss.xml)
