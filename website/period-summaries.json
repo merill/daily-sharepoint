@@ -21,6 +21,28 @@
         "outputTokens": 429,
         "costUsd": 0.000687
       }
+    },
+    "2026-11-09": {
+      "headline": "Sensitivity-labeled PDFs gain web annotation in OneDrive and SharePoint in January 2027",
+      "overview": "OneDrive for Business and SharePoint on the web are scheduled to let users with editing rights annotate sensitivity-label protected PDFs without removing their labels. Saved files will retain both annotations and protections, with worldwide rollout planned for late January 2027.",
+      "adminImpact": "No admin action is required. Administrators should note that the capability applies only to OneDrive for Business and SharePoint and is intended for users with editing rights.",
+      "keyChanges": [
+        {
+          "title": "Editing rights will include annotation of protected PDFs",
+          "detail": "Users with editing rights will be able to annotate sensitivity-label protected PDFs on the web without removing the labels. Annotations and protections will be preserved when the file is saved; worldwide rollout is planned for late January 2027.",
+          "product": "OneDrive for Business and SharePoint",
+          "sourceId": "MC1545696"
+        }
+      ],
+      "generatedBy": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "xhigh",
+      "generatedAt": "2026-11-09T23:29:02.855Z",
+      "usage": {
+        "inputTokens": 879,
+        "outputTokens": 568,
+        "costUsd": 0.000857
+      }
     }
   },
   "weeks": {
@@ -57,29 +79,57 @@
         "outputTokens": 2458,
         "costUsd": 0.003173
       }
+    },
+    "2026-11-09": {
+      "headline": "OneDrive and SharePoint will let editors annotate protected PDFs without removing labels",
+      "overview": "Microsoft announced a worldwide rollout planned for late January 2027 that will let users with editing rights annotate sensitivity-label-protected PDFs on the web. Annotations and protections will remain intact when the file is saved. The capability applies to OneDrive for Business and SharePoint.",
+      "adminImpact": "No administrator action is required. Administrators should note the late-January 2027 rollout and its scope: web-based annotation is limited to users with editing rights on OneDrive for Business and SharePoint files.",
+      "keyChanges": [
+        {
+          "title": "Web annotation for sensitivity-label-protected PDFs",
+          "detail": "Users with editing rights will be able to annotate sensitivity-label-protected PDFs in OneDrive for Business and SharePoint without removing the labels; both annotations and protections are preserved when the file is saved. Worldwide rollout is planned for late January 2027, with no admin action required.",
+          "product": "OneDrive for Business and SharePoint",
+          "sourceId": "MC1545696"
+        }
+      ],
+      "generatedBy": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "xhigh",
+      "generatedAt": "2026-11-09T23:29:02.855Z",
+      "usage": {
+        "inputTokens": 850,
+        "outputTokens": 545,
+        "costUsd": 0.000824
+      }
     }
   },
   "months": {
     "2026-11": {
-      "headline": "Unified Copilot Search and group-permission reporting lead November SharePoint changes",
-      "overview": "November brings two consequential SharePoint announcements: a unified Copilot Search experience for SharePoint Online and OneDrive for the web, and a Data access governance report for group permissions. A separate Agents and Copilot article documents the full site-skills management workflow, including its controls, storage, ownership, and permissions.",
-      "adminImpact": "Copilot Search is scheduled for preview from mid-October 2026 and general rollout from mid-January 2027; organizations need minimal action, and users can opt out during preview. The governance report, rolling out worldwide from late November to early December 2026, will support reviews of which sites specific groups can access and at what access levels. Site owners can manage skills under Settings > Site skills, with no action required based on the supplied guidance.",
+      "headline": "Unified Copilot Search and group-permission reporting lead SharePoint’s November roadmap",
+      "overview": "Microsoft announced a unified Copilot Search experience for SharePoint Online and OneDrive on the web, with natural-language prompts, AI summaries, and filters. A SharePoint Data access governance report for group permissions is rolling out from late November to early December 2026, while protected-PDF annotation is planned for late January 2027. Separately, Microsoft expanded the documented management workflow for SharePoint site skills.",
+      "adminImpact": "Copilot Search requires minimal organizational action, and users can opt out during preview; general rollout is planned for mid-January 2027. Administrators can use the permissions report to review sites accessible to particular groups and assess access levels. No administrator action is required for protected-PDF annotation or the site-skills documentation update; site owners can manage skills from Settings > Site skills.",
       "keyChanges": [
         {
-          "title": "Unified Copilot Search moves SharePoint and OneDrive toward one search experience",
-          "detail": "Microsoft announced an updated web search experience combining SharePoint Online and OneDrive with natural-language prompts, AI summaries, and filters. Preview rollout began in mid-October 2026, with general rollout scheduled for mid-January 2027; users can opt out during preview.",
+          "title": "Unified Copilot Search is rolling across SharePoint and OneDrive for the web",
+          "detail": "The new search experience combines natural-language prompts, AI-generated summaries, and filters. Preview rollout began in mid-October 2026, with general rollout planned for mid-January 2027. Users can opt out during preview, and Microsoft says minimal organizational action is required.",
           "product": "SharePoint",
           "sourceId": "MC1540513"
         },
         {
-          "title": "Group-permission governance report is coming to the SharePoint admin center",
-          "detail": "The new Data access governance report will help administrators identify sites accessible to specific groups and assess those groups’ access levels, supporting permission reviews and checks for unintended content exposure. Worldwide rollout is scheduled from late November to early December 2026.",
+          "title": "SharePoint is adding a group-permission Data access governance report",
+          "detail": "The admin center report will identify sites accessible to specific groups and show access levels, helping administrators review permissions and detect unintended content exposure. Worldwide rollout is scheduled from late November to early December 2026.",
           "product": "SharePoint",
           "sourceId": "MC1540348"
         },
         {
-          "title": "Site-skills guidance now covers the complete management workflow",
-          "detail": "The updated Copilot In SharePoint Skills article documents managing site skills from Settings > Site skills, including uploading, editing, enabling, disabling, copying, restoring, downloading, and deleting them. It also clarifies storage, ownership, and permissions; site owners can use these documented controls without a required administrative action.",
+          "title": "Editors will be able to annotate sensitivity-label-protected PDFs on the web",
+          "detail": "Starting in late January 2027, users with editing rights will be able to annotate protected PDFs in OneDrive for Business and SharePoint without removing their sensitivity labels. Annotations and protections will remain intact when the file is saved; no administrator action is required.",
+          "product": "SharePoint",
+          "sourceId": "MC1545696"
+        },
+        {
+          "title": "Site-skills documentation now covers the full management workflow",
+          "detail": "The updated article directs site owners to Settings > Site skills and explains how to upload, edit, enable, disable, copy, restore, download, and delete skills. It also clarifies storage, ownership, and permissions; no action is required.",
           "product": "Agents and Copilot",
           "sourceId": "doc-2026-11-07-copilot-in-sharepoint-skills-01"
         }
@@ -87,16 +137,16 @@
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-07T14:57:58.087Z",
+      "generatedAt": "2026-11-09T23:29:02.855Z",
       "usage": {
-        "inputTokens": 1313,
-        "outputTokens": 981,
-        "costUsd": 0.00144
+        "inputTokens": 1567,
+        "outputTokens": 2257,
+        "costUsd": 0.003022
       }
     }
   },
   "version": 3,
-  "generatedAt": "2026-11-07T14:57:58.087Z",
+  "generatedAt": "2026-11-09T23:29:02.855Z",
   "generator": {
     "model": "gpt-5.6-luna",
     "reasoningEffort": "xhigh"
@@ -107,18 +157,24 @@
       "outputTokens": 3868,
       "requests": 3,
       "costUsd": 0.0053
+    },
+    "2026-11-09": {
+      "inputTokens": 3296,
+      "outputTokens": 3370,
+      "requests": 3,
+      "costUsd": 0.004703
     }
   },
   "lastRun": {
-    "inputTokens": 3292,
-    "outputTokens": 3868,
+    "inputTokens": 3296,
+    "outputTokens": 3370,
     "requests": 3,
-    "costUsd": 0.0053
+    "costUsd": 0.004703
   },
   "totalUsage": {
-    "inputTokens": 3292,
-    "outputTokens": 3868,
-    "requests": 3,
-    "costUsd": 0.0053
+    "inputTokens": 6588,
+    "outputTokens": 7238,
+    "requests": 6,
+    "costUsd": 0.010003
   }
 }
