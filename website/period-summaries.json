@@ -45,25 +45,31 @@
       }
     },
     "2026-11-10": {
-      "headline": "Global navigation setup guidance now covers favorites, Teams, and rollout delays",
-      "overview": "The SharePoint app bar and global navigation guidance now describes personalized Favorites and Recents, plus quick access to Discover, Publish, Build, and OneDrive. It also clarifies requirements, permissions, Teams integration, and the possibility of a 24-hour rollout delay.",
-      "adminImpact": "Administrators configuring the app bar or global navigation should review the updated requirements, Teams integration guidance, and user access expectations before deployment.",
+      "headline": "Teams events will share OneDrive videos directly without screen sharing",
+      "overview": "The period’s main product update is a planned Microsoft Teams events capability that lets organizers and producers share OneDrive videos through “Manage what attendees see.” A separate SharePoint app-bar guidance update adds detail on navigation features, requirements, Teams integration, and rollout timing.",
+      "adminImpact": "No action is required for the OneDrive video-sharing rollout, which begins in mid-November 2026. Administrators configuring global navigation should review the updated guidance for permissions, Teams integration, user access expectations, and the possible 24-hour rollout delay.",
       "keyChanges": [
         {
-          "title": "Updated global navigation setup guidance",
-          "detail": "The page now documents personalized Favorites and Recents; quick access to Discover, Publish, Build, and OneDrive; global navigation requirements and permissions; Teams integration; and a possible 24-hour rollout delay.",
-          "product": "Sites and intranet",
+          "title": "OneDrive video sharing in Teams events",
+          "detail": "Microsoft Teams will let event organizers and producers share videos directly from OneDrive using “Manage what attendees see,” avoiding screen sharing or embedding videos in PowerPoint and supporting smoother, higher-quality playback. Rollout begins in mid-November 2026, with no action required.",
+          "product": "OneDrive and Microsoft Teams events",
+          "sourceId": "MC1506734"
+        },
+        {
+          "title": "Global navigation guidance adds feature and rollout detail",
+          "detail": "The SharePoint app-bar setup page now describes personalized favorites and recents, quick access to Discover, Publish, Build, and OneDrive, and clarifies global-navigation requirements, permissions, Teams integration, and the possible 24-hour rollout delay.",
+          "product": "SharePoint app bar and global navigation",
           "sourceId": "doc-2026-11-10-set-up-global-navigation-in-the-sharepoint-app-bar-sharepoint-in-microsoft-365-01"
         }
       ],
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-10T10:06:37.013Z",
+      "generatedAt": "2026-11-10T20:55:31.702Z",
       "usage": {
-        "inputTokens": 941,
-        "outputTokens": 723,
-        "costUsd": 0.001056
+        "inputTokens": 1068,
+        "outputTokens": 1278,
+        "costUsd": 0.001747
       }
     }
   },
@@ -103,73 +109,79 @@
       }
     },
     "2026-11-09": {
-      "headline": "SharePoint plans protected PDF annotation and pay-as-you-go storage overages",
-      "overview": "Microsoft announced two planned SharePoint changes: web annotation for sensitivity-label-protected PDFs and an opt-in pay-as-you-go meter for storage beyond the included quota. A separate global-navigation article now provides more precise app-bar guidance on features, permissions, Teams integration, and rollout timing.",
-      "adminImpact": "No admin action is required for protected PDF annotation. Administrators considering the storage meter should account for its opt-in model, Azure billing-permission requirement, and integration with Microsoft 365 Archive. Review the global-navigation guidance when configuring the app bar, particularly for permissions, Teams integration, and the possible 24-hour rollout delay.",
+      "headline": "SharePoint storage overages are slated for opt-in pay-as-you-go billing in January 2027",
+      "overview": "The most consequential change is an opt-in, consumption-based meter for SharePoint storage beyond included quotas, planned globally for January 2027. Microsoft also announced web annotation for sensitivity-label protected PDFs and direct OneDrive video sharing in Teams events, while updated global-navigation guidance adds configuration and rollout details.",
+      "adminImpact": "Admins evaluating additional SharePoint storage should account for the opt-in model, Microsoft 365 Archive integration, and required Azure billing permissions. No admin action is required for the announced PDF annotation or Teams event video-sharing rollouts. Administrators configuring the SharePoint app bar should review the updated global-navigation requirements, permissions, Teams integration guidance, and possible 24-hour rollout delay.",
       "keyChanges": [
         {
-          "title": "Protected PDFs will support browser annotation",
-          "detail": "OneDrive for Business and SharePoint on the web will let users with editing rights annotate sensitivity-label-protected PDFs without removing the labels. Annotations and protections remain when the file is saved. Worldwide rollout is planned for late January 2027, with no admin action required.",
-          "product": "SharePoint",
-          "sourceId": "MC1545696"
-        },
-        {
-          "title": "Extra SharePoint storage will gain pay-as-you-go billing",
-          "detail": "An opt-in consumption-based meter will charge for SharePoint storage used beyond the included quota. The model is planned for global rollout in January 2027, integrates with Microsoft 365 Archive, and requires Azure billing permissions.",
+          "title": "Pay-as-you-go billing arrives for SharePoint storage overages",
+          "detail": "Microsoft is introducing an opt-in consumption-based meter globally in January 2027 for storage used beyond the included SharePoint quota. The model integrates with Microsoft 365 Archive and requires Azure billing permissions.",
           "product": "SharePoint",
           "sourceId": "MC1330893"
         },
         {
-          "title": "Global-navigation guidance now covers app-bar access and rollout details",
-          "detail": "The updated setup guidance describes personalized favorites and recents, plus quick access to Discover, Publish, Build, and OneDrive. It also spells out global-navigation requirements, permissions, Teams integration, and a possible 24-hour rollout delay.",
-          "product": "Sites and intranet",
+          "title": "Sensitivity-labeled PDFs can be annotated in OneDrive and SharePoint",
+          "detail": "Worldwide rollout is planned for late January 2027. Users with editing rights will be able to annotate sensitivity-label protected PDFs on the web without removing the labels; annotations and protections remain when saved. The capability applies only to OneDrive for Business and SharePoint, with no admin action required.",
+          "product": "OneDrive and SharePoint",
+          "sourceId": "MC1545696"
+        },
+        {
+          "title": "OneDrive videos can be shared directly in Teams events",
+          "detail": "Rollout begins in mid-November 2026. Event organizers and producers can use “Manage what attendees see” to share videos directly from OneDrive during Teams events, without screen sharing or embedding videos in PowerPoint. No admin action is required.",
+          "product": "OneDrive in Teams events",
+          "sourceId": "MC1506734"
+        },
+        {
+          "title": "Global-navigation guidance adds app-bar setup and rollout details",
+          "detail": "The updated guidance covers personalized favorites and recents, quick access to Discover, Publish, Build, and OneDrive, plus global-navigation requirements, permissions, Teams integration, and a possible 24-hour rollout delay. Administrators configuring the app bar should use these details to set access expectations.",
+          "product": "SharePoint app bar and global navigation",
           "sourceId": "doc-2026-11-10-set-up-global-navigation-in-the-sharepoint-app-bar-sharepoint-in-microsoft-365-01"
         }
       ],
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-10T10:06:37.013Z",
+      "generatedAt": "2026-11-10T20:55:31.702Z",
       "usage": {
-        "inputTokens": 1139,
-        "outputTokens": 1123,
-        "costUsd": 0.001575
+        "inputTokens": 1257,
+        "outputTokens": 2086,
+        "costUsd": 0.002755
       }
     }
   },
   "months": {
     "2026-11": {
-      "headline": "Unified Copilot Search and group-permission reporting set SharePoint’s next priorities",
-      "overview": "November’s most consequential changes are planned rollouts: SharePoint Online and OneDrive for the web are moving to unified Copilot Search with natural-language prompts, AI summaries, and filters, while a new admin-center report will expose sites accessible to specific groups. Microsoft also announced opt-in billing for SharePoint storage overages and web annotation for sensitivity-label-protected PDFs. Documentation updates added operational detail: global-navigation guidance now covers permissions, Teams integration, and a possible 24-hour delay, while the site-skills article documents management from Settings > Site skills, including enabling, copying, restoring, downloading, and deleting skills.",
-      "adminImpact": "Track the Copilot Search preview and general-rollout timeline; users can opt out during preview and Microsoft says organizational action is minimal. Use the Data access governance report for group-permission reviews when it arrives. The storage meter is opt-in and requires Azure billing permissions, while protected-PDF annotation requires no administrator action. Administrators configuring global navigation should review permissions and Teams integration and allow for the possible 24-hour rollout delay; site owners can manage skills from Settings > Site skills.",
+      "headline": "SharePoint storage overages gain opt-in pay-as-you-go billing in January",
+      "overview": "The clearest administrator change is a planned, opt-in consumption-based meter for SharePoint storage above included quotas, rolling out globally in January 2027 and requiring Azure billing permissions. Microsoft also scheduled unified Copilot Search for SharePoint Online and OneDrive on the web, plus a group-permission access report for late November to early December. A smaller documentation update adds concrete global-navigation setup, permissions, Teams integration, and rollout-delay guidance.",
+      "adminImpact": "Admins evaluating additional SharePoint storage should account for the opt-in model, Microsoft 365 Archive integration, and required Azure billing permissions. Copilot Search requires minimal organizational action, with user opt-out available during preview. The forthcoming governance report can support reviews of which sites specific groups can access and at what level. Protected-PDF annotation requires no admin action; administrators configuring the SharePoint app bar should review the updated global-navigation requirements and possible 24-hour rollout delay.",
       "keyChanges": [
         {
-          "title": "Unified Copilot Search brings AI-driven web search to SharePoint and OneDrive",
-          "detail": "SharePoint Online and OneDrive for the web are updating to a unified Copilot Search experience with natural-language prompts, AI summaries, and filters. Preview rollout began in mid-October 2026, general rollout is planned for mid-January 2027, and users can opt out during preview.",
-          "product": "SharePoint",
-          "sourceId": "MC1540513"
-        },
-        {
-          "title": "Data access governance report targets group-permission exposure",
-          "detail": "A new report in the SharePoint admin center will help administrators identify sites accessible to specific groups and assess their access levels. Worldwide rollout is planned from late November through early December 2026, supporting permission management and checks for unintended content exposure.",
-          "product": "SharePoint",
-          "sourceId": "MC1540348"
-        },
-        {
-          "title": "Opt-in meter introduces pay-as-you-go billing for SharePoint storage overages",
-          "detail": "Microsoft is introducing a consumption-based model for storage beyond the included SharePoint quota, allowing organizations to pay for extra storage used. The feature rolls out globally in January 2027, integrates with Microsoft 365 Archive, and requires Azure billing permissions.",
+          "title": "Opt-in pay-as-you-go meter planned for SharePoint storage overages",
+          "detail": "Microsoft plans to roll out a global, opt-in consumption-based meter in January 2027 for SharePoint storage used beyond included quotas. The model integrates with Microsoft 365 Archive and requires Azure billing permissions.",
           "product": "SharePoint",
           "sourceId": "MC1330893"
         },
         {
-          "title": "Web annotation preserves labels on sensitivity-protected PDFs",
-          "detail": "Users with editing rights will be able to annotate sensitivity-label-protected PDFs in OneDrive for Business and SharePoint on the web without removing the labels. Annotations and protections remain intact when files are saved; worldwide rollout is planned for late January 2027 and requires no administrator action.",
+          "title": "Unified Copilot Search is scheduled for SharePoint and OneDrive web",
+          "detail": "SharePoint Online and OneDrive on the web are moving to a unified Copilot Search experience with natural-language prompts, AI summaries, and filters. Preview rollout began in mid-October 2026, with general rollout planned for mid-January 2027; users can opt out during preview and organizations need minimal action.",
+          "product": "SharePoint",
+          "sourceId": "MC1540513"
+        },
+        {
+          "title": "Group-permission governance reporting is coming to the admin center",
+          "detail": "The Data access governance report for group permissions is rolling out worldwide from late November to early December 2026. It will help administrators identify sites accessible to specific groups and assess access levels, supporting permission reviews and checks for unintended content exposure.",
+          "product": "SharePoint",
+          "sourceId": "MC1540348"
+        },
+        {
+          "title": "Protected PDFs can be annotated without removing sensitivity labels",
+          "detail": "Users with editing rights will be able to annotate sensitivity-label protected PDFs on the web while preserving both annotations and protections when saving. The capability applies to OneDrive for Business and SharePoint and is scheduled for worldwide rollout in late January 2027.",
           "product": "SharePoint",
           "sourceId": "MC1545696"
         },
         {
-          "title": "Global-navigation guidance clarifies app-bar configuration and rollout timing",
-          "detail": "The updated guidance now describes personalized favorites and recents, quick access to Discover, Publish, Build, and OneDrive, plus global-navigation requirements, permissions, Teams integration, and a possible 24-hour rollout delay. It gives administrators more precise configuration and user-access expectations.",
+          "title": "Global-navigation guidance adds precise setup and rollout details",
+          "detail": "The updated SharePoint app-bar guidance now documents personalized favorites and recents, access to Discover, Publish, Build, and OneDrive, along with global-navigation requirements, permissions, Teams integration, and a possible 24-hour rollout delay.",
           "product": "Sites and intranet",
           "sourceId": "doc-2026-11-10-set-up-global-navigation-in-the-sharepoint-app-bar-sharepoint-in-microsoft-365-01"
         }
@@ -177,16 +189,16 @@
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-10T10:06:37.013Z",
+      "generatedAt": "2026-11-10T20:55:31.702Z",
       "usage": {
-        "inputTokens": 1881,
-        "outputTokens": 5292,
-        "costUsd": 0.006727
+        "inputTokens": 2017,
+        "outputTokens": 3228,
+        "costUsd": 0.004277
       }
     }
   },
   "version": 3,
-  "generatedAt": "2026-11-10T10:06:37.013Z",
+  "generatedAt": "2026-11-10T20:55:31.702Z",
   "generator": {
     "model": "gpt-5.6-luna",
     "reasoningEffort": "xhigh"
@@ -205,22 +217,22 @@
       "costUsd": 0.004703
     },
     "2026-11-10": {
-      "inputTokens": 3961,
-      "outputTokens": 7138,
-      "requests": 3,
-      "costUsd": 0.009358
+      "inputTokens": 8303,
+      "outputTokens": 13730,
+      "requests": 6,
+      "costUsd": 0.018137
     }
   },
   "lastRun": {
-    "inputTokens": 3961,
-    "outputTokens": 7138,
+    "inputTokens": 4342,
+    "outputTokens": 6592,
     "requests": 3,
-    "costUsd": 0.009358
+    "costUsd": 0.008779
   },
   "totalUsage": {
-    "inputTokens": 10549,
-    "outputTokens": 14376,
-    "requests": 9,
-    "costUsd": 0.019361
+    "inputTokens": 14891,
+    "outputTokens": 20968,
+    "requests": 12,
+    "costUsd": 0.02814
   }
 }
