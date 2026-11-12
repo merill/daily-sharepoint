@@ -99,6 +99,28 @@
         "outputTokens": 1233,
         "costUsd": 0.0017
       }
+    },
+    "2026-11-12": {
+      "headline": "App Intelligence guidance now details owner-notification preview and audit-data coverage",
+      "overview": "SharePoint had one documentation update: the App Intelligence access-review article now explains its use of application permissions and activity, an owner-notification preview and confirmation workflow, audit-data coverage, and reporting delays.",
+      "adminImpact": "Before sending owner notifications, administrators should review the recipients and message content. They should also account for the documented audit-data coverage and reporting delays when interpreting access-review results.",
+      "keyChanges": [
+        {
+          "title": "App Intelligence access-review guidance expands workflow and reporting details",
+          "detail": "The updated SharePoint article describes App Intelligence as using application permissions and activity, adds an owner-notification preview and confirmation workflow, and documents audit-data coverage and reporting delays. Administrators should review recipients and message content before sending notifications and consider the stated data coverage when interpreting results.",
+          "product": "SharePoint",
+          "sourceId": "doc-2026-11-12-review-application-access-with-app-intelligence-sharepoint-in-microsoft-365-01"
+        }
+      ],
+      "generatedBy": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "xhigh",
+      "generatedAt": "2026-11-12T21:30:30.382Z",
+      "usage": {
+        "inputTokens": 963,
+        "outputTokens": 732,
+        "costUsd": 0.001071
+      }
     }
   },
   "weeks": {
@@ -137,37 +159,37 @@
       }
     },
     "2026-11-09": {
-      "headline": "OneDrive event video sharing, protected PDF annotation, and SharePoint overage billing near rollout",
-      "overview": "Three forthcoming service changes lead the period: Teams event organizers and producers will soon share OneDrive videos through “Manage what attendees see,” beginning mid-November 2026; users with editing rights will be able to annotate sensitivity-label-protected PDFs on the web in late January 2027; and an opt-in pay-as-you-go meter for SharePoint storage beyond the included quota is due globally in January 2027. Admin guidance also adds an App Intelligence access-review workflow and clarifies version-trimming procedures.",
-      "adminImpact": "No action is required for the OneDrive video-sharing or protected-PDF annotation rollouts. The storage meter requires Azure billing permissions and is opt-in. Before trimming versions, review What-if guidance and backup implications because deleted versions bypass the recycle bin and cannot be recovered unless previously backed up. The App Intelligence article requires no action; availability, roles, licensing, and assessment data depend on the tenant and release. Administrators configuring global navigation should also review permissions, Teams integration, user access expectations, and the possible 24-hour rollout delay.",
+      "headline": "Pay-as-you-go SharePoint storage and protected PDF annotation roll out January 2027",
+      "overview": "The period brings two significant planned rollouts: an opt-in, consumption-based meter for SharePoint storage overages in January 2027 and late-January support for annotating sensitivity-label protected PDFs on the web. App Intelligence guidance adds a workflow for investigating non-Microsoft application access, while Trim Versions guidance clarifies the 30-day minimum and administrator queuing. Global navigation guidance was also refined with details on favorites, recents, permissions, Teams integration, and a possible 24-hour rollout delay.",
+      "adminImpact": "The storage option requires Azure billing permissions and is opt-in. No administrator action is required for protected-PDF annotation or direct OneDrive video sharing in Teams events. Administrators using App Intelligence should review owner-notification recipients and message content and account for audit-data coverage and reporting delays. Before trimming versions, use What-if analysis and confirm backups because deleted versions bypass the recycle bin and cannot be recovered unless previously backed up.",
       "keyChanges": [
         {
-          "title": "Teams events will soon share OneDrive videos",
-          "detail": "Event organizers and producers will be able to share videos directly from OneDrive through “Manage what attendees see,” avoiding screen sharing or PowerPoint embedding and supporting higher-quality playback. Rollout begins in mid-November 2026, with no action required.",
-          "product": "SharePoint",
-          "sourceId": "MC1506734"
-        },
-        {
-          "title": "Protected PDFs will support web annotation",
-          "detail": "Users with editing rights will be able to annotate sensitivity-label-protected PDFs in OneDrive for Business and SharePoint on the web without removing the labels. Annotations and protections remain when the file is saved. Worldwide rollout is scheduled for late January 2027, with no admin action required.",
-          "product": "SharePoint and OneDrive for Business",
-          "sourceId": "MC1545696"
-        },
-        {
-          "title": "SharePoint storage overages get an opt-in pay-as-you-go meter",
-          "detail": "The new billing model will charge for extra SharePoint storage used beyond the included quota and will integrate with Microsoft 365 Archive. It is scheduled for global rollout in January 2027 and requires Azure billing permissions.",
+          "title": "Pay-as-you-go billing is coming for SharePoint storage overages",
+          "detail": "An opt-in consumption-based meter will let administrators pay only for storage used beyond the included quota. It rolls out globally in January 2027, integrates with Microsoft 365 Archive, and requires Azure billing permissions.",
           "product": "SharePoint",
           "sourceId": "MC1330893"
         },
         {
-          "title": "App Intelligence guidance adds non-Microsoft application access review",
-          "detail": "A new article explains how administrators can prioritize and investigate non-Microsoft application access using permissions, site reach, behavior evidence, and privileged access. Availability, required roles, licensing, and assessment data depend on the tenant and release.",
-          "product": "SharePoint",
-          "sourceId": "doc-2026-11-11-review-application-access-with-app-intelligence-sharepoint-in-microsoft-365-01"
+          "title": "Sensitivity-labeled PDFs will support web annotation without label removal",
+          "detail": "OneDrive and SharePoint on the web will let users with editing rights annotate sensitivity-label protected PDFs while preserving the label and annotations when the file is saved. Worldwide rollout is planned for late January 2027, applies only to OneDrive for Business and SharePoint, and requires no administrator action.",
+          "product": "OneDrive and SharePoint",
+          "sourceId": "MC1545696"
         },
         {
-          "title": "Trim Versions guidance names SharePoint Administrators and a 30-day minimum",
-          "detail": "The revised article identifies SharePoint Administrators as able to queue trim jobs, simplifies What-if and manual-expiration guidance, highlights the 30-day minimum, and removes earlier text about versions created before January 1, 2023. Deleted versions bypass the recycle bin and cannot be recovered unless previously backed up.",
+          "title": "Teams events gain direct OneDrive video sharing",
+          "detail": "Event organizers and producers will be able to share videos directly from OneDrive through \"Manage what attendees see,\" enabling playback without screen sharing or embedding the video in PowerPoint. Rollout starts in mid-November 2026 and requires no administrator action.",
+          "product": "Microsoft Teams and OneDrive",
+          "sourceId": "MC1506734"
+        },
+        {
+          "title": "App Intelligence guidance adds a non-Microsoft application access workflow",
+          "detail": "The new and revised SharePoint guidance covers application permissions and activity, site reach, behavior evidence, privileged access, and an owner-notification preview and confirmation workflow. It also documents audit-data coverage and reporting delays.",
+          "product": "SharePoint",
+          "sourceId": "doc-2026-11-12-review-application-access-with-app-intelligence-sharepoint-in-microsoft-365-01"
+        },
+        {
+          "title": "Trim Versions guidance emphasizes the 30-day minimum",
+          "detail": "The revised article identifies SharePoint Administrators as able to queue trim jobs, simplifies What-if and manual-expiration guidance, and removes the previous wording about versions created before January 1, 2023. It highlights the 30-day minimum and notes that deleted versions bypass the recycle bin and cannot be recovered unless previously backed up.",
           "product": "Content and versions",
           "sourceId": "doc-2026-11-11-trim-versions-02"
         }
@@ -175,64 +197,64 @@
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-11T09:38:21.833Z",
+      "generatedAt": "2026-11-12T21:30:30.382Z",
       "usage": {
-        "inputTokens": 1552,
-        "outputTokens": 4313,
-        "costUsd": 0.005486
+        "inputTokens": 1687,
+        "outputTokens": 3772,
+        "costUsd": 0.004864
       }
     }
   },
   "months": {
     "2026-11": {
-      "headline": "Copilot Search and group-permission reporting set SharePoint’s November rollout agenda",
-      "overview": "November’s strongest signals are scheduled capability rollouts rather than immediate tenant-wide changes: unified Copilot Search is moving across SharePoint Online and OneDrive for the web, while SharePoint’s group-permission access report is due worldwide from late November into early December. An opt-in storage-overage meter follows in January 2027; other material updates cover protected-PDF annotation and revised version-trimming guidance.",
-      "adminImpact": "No broad deployment action is identified for Copilot Search, and users can opt out during preview. Once available, the access report can support group-permission reviews. Organizations opting into storage metering will need Azure billing permissions. Before trimming versions, use What-if analysis and confirm backups because deleted versions bypass the recycle bin and cannot be recovered unless previously backed up; protected-PDF annotation requires no admin action.",
+      "headline": "Copilot Search, access reporting and storage metering reshape SharePoint administration",
+      "overview": "November brought a unified Copilot Search experience for SharePoint Online and OneDrive on the web, with preview rollout underway and general rollout planned for mid-January 2027. SharePoint also announced a group-permission access report for late November to early December and an opt-in storage-overage meter for January 2027. New App Intelligence guidance and revised Trim Versions instructions add more precise governance and cleanup workflows.",
+      "adminImpact": "Copilot Search requires minimal organizational action, and users can opt out during preview. Administrators can use the forthcoming access report to review group-based exposure, arrange Azure billing permissions if they plan to adopt the storage meter, and review App Intelligence notification recipients and audit-data limitations. Before trimming versions, use What-if analysis and confirm backups because deleted versions bypass the recycle bin and cannot be recovered unless backed up.",
       "keyChanges": [
         {
-          "title": "Unified Copilot Search brings AI-assisted search to SharePoint and OneDrive web",
-          "detail": "SharePoint Online and OneDrive for the web are moving to a unified Copilot Search experience with natural-language prompts, AI summaries, and filters. Preview rollout began in mid-October 2026, with general rollout scheduled for mid-January 2027; users can opt out during preview and organizations require minimal action.",
-          "product": "SharePoint Online and OneDrive for the web — Copilot Search",
+          "title": "Unified Copilot Search moves SharePoint and OneDrive web toward general rollout",
+          "detail": "SharePoint Online and OneDrive on the web are updating to a unified Copilot Search experience with natural-language prompts, AI summaries, and filters. Preview rollout started in mid-October 2026, with general rollout planned for mid-January 2027; users can opt out during preview and minimal organizational action is required.",
+          "product": "SharePoint",
           "sourceId": "MC1540513"
         },
         {
-          "title": "Group-permission governance report gives admins site-access visibility",
-          "detail": "The new SharePoint admin center report is scheduled to roll out worldwide from late November to early December 2026. It identifies sites accessible to selected groups and helps assess access levels, supporting reviews of permissions and possible unintended content exposure.",
-          "product": "SharePoint — Data access governance report for group permissions",
+          "title": "Group-permission reporting adds visibility into site access",
+          "detail": "A new Data access governance report in the SharePoint admin center will identify sites accessible to specified groups and show their access levels. Worldwide rollout is scheduled from late November through early December 2026, supporting permission reviews and checks for unintended content exposure.",
+          "product": "SharePoint",
           "sourceId": "MC1540348"
         },
         {
-          "title": "SharePoint storage overages get an opt-in pay-as-you-go meter",
-          "detail": "A consumption-based meter will let organizations pay for SharePoint storage used beyond the included quota. The feature is opt-in, planned for global rollout in January 2027, integrates with Microsoft 365 Archive, and requires Azure billing permissions.",
-          "product": "SharePoint — Pay-as-you-go storage overage billing",
+          "title": "Pay-as-you-go metering covers SharePoint storage beyond included quotas",
+          "detail": "An opt-in consumption-based meter is scheduled to roll out globally in January 2027 for SharePoint storage used beyond the included quota. The option integrates with Microsoft 365 Archive and requires Azure billing permissions.",
+          "product": "SharePoint",
           "sourceId": "MC1330893"
         },
         {
-          "title": "Sensitivity-label-protected PDFs gain web annotation",
-          "detail": "In late January 2027, users with editing rights will be able to annotate sensitivity-label-protected PDFs in OneDrive for Business and SharePoint on the web without removing the label. Annotations and protections are preserved when the file is saved, with no admin action required.",
-          "product": "OneDrive for Business and SharePoint — protected PDF annotation",
-          "sourceId": "MC1545696"
+          "title": "App Intelligence guidance adds owner notifications and audit-data limits",
+          "detail": "The updated workflow explains how App Intelligence uses application permissions and activity, adds an owner-notification preview and confirmation process, and documents audit-data coverage and reporting delays. Administrators should review notification recipients and message content before sending and account for those data limitations when interpreting results.",
+          "product": "SharePoint",
+          "sourceId": "doc-2026-11-12-review-application-access-with-app-intelligence-sharepoint-in-microsoft-365-01"
         },
         {
-          "title": "Trim Versions guidance clarifies the 30-day minimum and queueing rights",
-          "detail": "The revised guidance identifies SharePoint Administrators as able to queue trim jobs, highlights the 30-day minimum, and removes earlier wording about versions created before January 1, 2023. It also reinforces What-if analysis and the need for backups because deleted versions bypass the recycle bin and cannot be recovered unless previously backed up.",
-          "product": "SharePoint — Trim Versions",
+          "title": "Trim Versions guidance clarifies administrator queuing and cleanup limits",
+          "detail": "The revised guidance identifies SharePoint Administrators as able to queue trim jobs, highlights a 30-day minimum, and simplifies What-if and manual expiration instructions. It also removes the previous text about versions created before January 1, 2023; deleted versions bypass the recycle bin and cannot be recovered unless previously backed up.",
+          "product": "Content and versions",
           "sourceId": "doc-2026-11-11-trim-versions-02"
         }
       ],
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-11T09:38:21.833Z",
+      "generatedAt": "2026-11-12T21:30:30.382Z",
       "usage": {
-        "inputTokens": 2386,
-        "outputTokens": 5340,
-        "costUsd": 0.006885
+        "inputTokens": 2495,
+        "outputTokens": 3241,
+        "costUsd": 0.004388
       }
     }
   },
   "version": 3,
-  "generatedAt": "2026-11-11T09:38:21.833Z",
+  "generatedAt": "2026-11-12T21:30:30.382Z",
   "generator": {
     "model": "gpt-5.6-luna",
     "reasoningEffort": "xhigh"
@@ -261,18 +283,24 @@
       "outputTokens": 10886,
       "requests": 3,
       "costUsd": 0.014071
+    },
+    "2026-11-12": {
+      "inputTokens": 5145,
+      "outputTokens": 7745,
+      "requests": 3,
+      "costUsd": 0.010323
     }
   },
   "lastRun": {
-    "inputTokens": 5039,
-    "outputTokens": 10886,
+    "inputTokens": 5145,
+    "outputTokens": 7745,
     "requests": 3,
-    "costUsd": 0.014071
+    "costUsd": 0.010323
   },
   "totalUsage": {
-    "inputTokens": 19930,
-    "outputTokens": 31854,
-    "requests": 15,
-    "costUsd": 0.042211
+    "inputTokens": 25075,
+    "outputTokens": 39599,
+    "requests": 18,
+    "costUsd": 0.052534
   }
 }
