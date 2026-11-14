@@ -149,6 +149,40 @@
         "outputTokens": 2213,
         "costUsd": 0.002883
       }
+    },
+    "2026-11-14": {
+      "headline": "Large-scale Teams events will add direct OneDrive video sharing via “Manage what attendees see”",
+      "overview": "The period’s main operational change is an upcoming Teams events capability that lets organizers and producers share OneDrive videos directly, avoiding screen sharing or PowerPoint embedding. Microsoft also says newly created Copilot Pages and Notebooks will be stored in OneDrive for Business, while updated OneDrive release notes document November builds and syncing behavior during Windows Game Mode.",
+      "adminImpact": "No mandatory configuration change or user action is stated. Administrators should inform event staff and update event guidance for direct OneDrive video sharing, account for OneDrive governance and compliance controls applying to newly created Copilot Pages and Notebooks, and use the updated sync notes for rollout tracking and user messaging.",
+      "keyChanges": [
+        {
+          "title": "Direct OneDrive video sharing is coming to large-scale Teams events",
+          "detail": "Organizers and producers will be able to use “Manage what attendees see” to share videos directly from OneDrive, providing playback without screen sharing or embedding in PowerPoint. Rollout starts in mid-November 2026; Microsoft recommends informing event staff and updating guidance, with no required action.",
+          "product": "SharePoint / Microsoft Teams events",
+          "sourceId": "MC1506734"
+        },
+        {
+          "title": "New Copilot Pages and Notebooks will be stored in OneDrive for Business",
+          "detail": "Starting in mid-October 2026, newly created Microsoft 365 Copilot Pages and Notebooks will use OneDrive for Business storage. Existing files remain unchanged, while governance, compliance, data protection, retention, and lifecycle-management features apply to the new files; no user action is required.",
+          "product": "SharePoint / OneDrive for Business",
+          "sourceId": "MC1449182"
+        },
+        {
+          "title": "OneDrive release notes record November builds and Game Mode sync pauses",
+          "detail": "The updated release notes add November 2026 OneDrive builds, state that syncing pauses during Windows Game Mode and resumes afterward, and list reliability and performance fixes for recent Windows and macOS releases. No configuration change is stated.",
+          "product": "OneDrive",
+          "sourceId": "doc-2026-11-14-sync-release-notes-01"
+        }
+      ],
+      "generatedBy": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "xhigh",
+      "generatedAt": "2026-11-14T09:08:18.772Z",
+      "usage": {
+        "inputTokens": 1261,
+        "outputTokens": 2269,
+        "costUsd": 0.002975
+      }
     }
   },
   "weeks": {
@@ -187,102 +221,102 @@
       }
     },
     "2026-11-09": {
-      "headline": "Agentic-user sharing policy guidance arrives before SharePoint’s temporary-URL retirement",
-      "overview": "Two administrator-level issues stand out: Microsoft has documented an off-by-default tenant policy to block external sharing by agentic users, while SharePoint temporary authentication URLs are scheduled for retirement on April 1, 2027, breaking dependent Power Apps and Power Automate functionality. The week also brought opt-in pay-as-you-go billing for storage overages in January 2027, sensitivity-label-protected PDF annotation in late January, and direct OneDrive video sharing in Teams events beginning mid-November. Remaining page edits were largely operational guidance rather than availability announcements.",
-      "adminImpact": "Prioritize identifying Power Apps and Power Automate functionality that uses temporary authentication URLs before April 1, 2027. Decide whether to enable and scope the agentic-user policy to all users or selected application blueprints through SharePoint Online PowerShell; it is off by default. If adopting storage-overage billing, arrange the required Azure billing permissions. The PDF and Teams-event updates require no admin action according to their notices.",
+      "headline": "SharePoint temporary authentication URLs retire April 1, 2027, breaking dependent Power Apps and Automate",
+      "overview": "An April 1, 2027 retirement will break Power Apps and Automate functionality that relies on SharePoint temporary authentication URLs. The period also brings documented controls for blocking agentic-user external sharing, an opt-in storage-overage meter, and OneDrive storage for newly created Copilot Pages and Notebooks. A January rollout adds protected-PDF annotation without removing sensitivity labels.",
+      "adminImpact": "Treat April 1, 2027, as a deadline for identifying Power Apps and Automate dependencies on temporary authentication URLs. The agentic-sharing policy can be configured through SharePoint Online PowerShell, while the opt-in storage meter requires Azure billing permissions. Newly created Copilot Pages and Notebooks will fall under OneDrive governance; the protected-PDF annotation rollout requires no admin action.",
       "keyChanges": [
         {
-          "title": "SharePoint temporary authentication URLs retire April 1, 2027",
-          "detail": "SharePoint temporary authentication URLs will be retired on April 1, 2027. Power Apps and Power Automate functionality that relies on them will break, making dependency identification and remediation a time-sensitive administration task.",
-          "product": "SharePoint",
+          "title": "Temporary authentication URLs retire April 1, 2027",
+          "detail": "Starting April 1, 2027, SharePoint temporary authentication URLs will be retired; the notice says Power Apps and Automate functionality that relies on them will break. Administrators should use the deadline to identify dependent scenarios.",
+          "product": "SharePoint / Power Platform",
           "sourceId": "MC1551122"
         },
         {
-          "title": "New guidance documents an off-by-default agentic-user sharing block",
-          "detail": "A tenant-level policy can block agentic users from sharing SharePoint and OneDrive content with external users. It is off by default and can be scoped to all agentic users or users associated with selected application blueprints through SharePoint Online PowerShell, including first- and third-party applications.",
-          "product": "Agents and Copilot",
+          "title": "Tenant policy can block agentic users from external sharing",
+          "detail": "New guidance documents a tenant-level policy for SharePoint and OneDrive that is off by default. Administrators can enable it for all agentic users or only users associated with selected application blueprints, using SharePoint Online PowerShell, to keep agent-handled content internal.",
+          "product": "SharePoint and OneDrive",
           "sourceId": "doc-2026-11-13-restrict-external-sharing-by-agentic-users-in-sharepoint-and-onedrive-sharepoint-in-microsoft-36-01"
         },
         {
-          "title": "Pay-as-you-go billing planned for SharePoint storage overages",
-          "detail": "An opt-in meter planned for global rollout in January 2027 will charge for SharePoint storage used beyond the included quota. It integrates with Microsoft 365 Archive and requires Azure billing permissions.",
-          "product": "SharePoint",
+          "title": "Pay-as-you-go billing arrives for SharePoint storage overages",
+          "detail": "An opt-in meter rolling out globally in January 2027 will charge only for SharePoint storage used beyond the included quota. It integrates with Microsoft 365 Archive and requires Azure billing permissions.",
+          "product": "SharePoint / Microsoft 365 Archive",
           "sourceId": "MC1330893"
         },
         {
-          "title": "Protected PDFs will support web annotation without losing labels",
-          "detail": "From late January 2027, users with editing rights will be able to annotate sensitivity-label-protected PDFs in OneDrive for Business and SharePoint on the web. Saving preserves both the annotations and the protections; the notice requires no admin action.",
-          "product": "SharePoint",
-          "sourceId": "MC1545696"
+          "title": "New Copilot Pages and Notebooks use OneDrive for Business storage",
+          "detail": "Starting mid-October 2026, newly created Microsoft 365 Copilot Pages and Notebooks are stored in OneDrive for Business, allowing existing governance, compliance, data protection, retention, and lifecycle controls to apply. Existing files remain unchanged, and no user action is required.",
+          "product": "OneDrive for Business and Microsoft 365 Copilot",
+          "sourceId": "MC1449182"
         },
         {
-          "title": "Teams events will support direct OneDrive video sharing",
-          "detail": "Beginning in mid-November 2026, event organizers and producers can use “Manage what attendees see” to share OneDrive videos directly during Teams events, avoiding screen sharing or PowerPoint embedding for playback. No admin action is required.",
-          "product": "SharePoint",
-          "sourceId": "MC1506734"
+          "title": "Protected PDFs gain web annotation without removing sensitivity labels",
+          "detail": "A worldwide rollout in late January 2027 will let users with editing rights annotate sensitivity-label-protected PDFs in OneDrive for Business and SharePoint on the web. Saving preserves both annotations and protections; no admin action is required.",
+          "product": "OneDrive and SharePoint",
+          "sourceId": "MC1545696"
         }
       ],
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-13T09:46:20.372Z",
+      "generatedAt": "2026-11-14T09:08:18.772Z",
       "usage": {
-        "inputTokens": 1973,
-        "outputTokens": 6343,
-        "costUsd": 0.008006
+        "inputTokens": 2490,
+        "outputTokens": 4776,
+        "costUsd": 0.006229
       }
     }
   },
   "months": {
     "2026-11": {
-      "headline": "Unified Copilot Search, agentic-sharing controls and authentication-URL retirement reshape SharePoint administration",
-      "overview": "November paired a broad user-facing rollout with two governance tracks: SharePoint Online and OneDrive for the web are moving to unified Copilot Search, while a newly documented policy can block external sharing by agentic users. Administrators also received an April 1, 2027 deadline for retiring SharePoint temporary authentication URLs, which will break dependent Power Apps and Power Automate functionality. A group-permission governance report and an opt-in storage-overage meter are also scheduled for rollout.",
-      "adminImpact": "Identify Power Apps and Power Automate functionality that relies on temporary authentication URLs before April 1, 2027. During the Copilot Search preview, users can opt out and organizations need minimal action. Decide whether to enable and scope the agentic-user sharing policy through SharePoint Online PowerShell. When available, use the group-permission report for access reviews; adopting the storage-overage meter requires Azure billing permissions.",
+      "headline": "SharePoint temporary authentication URLs retire April 1, 2027, breaking dependent automation",
+      "overview": "The period's main administrator issue is a hard dependency deadline: SharePoint temporary authentication URLs will be retired on April 1, 2027, breaking Power Apps and Automate functionality that relies on them. Unified Copilot Search is moving through preview across SharePoint Online and OneDrive for the web, while new guidance describes an off-by-default control for blocking agentic-user external sharing. A group-permission access report is rolling out from late November into early December, and an opt-in SharePoint storage-overage meter is planned for January 2027.",
+      "adminImpact": "Inventory Power Apps and Automate dependencies before April 1, 2027. Copilot Search requires minimal organizational action, and users can opt out during preview. The external-sharing policy is off by default and can be scoped through SharePoint Online PowerShell. Use the group-permission report to investigate site exposure after rollout; the storage meter is opt-in and requires Azure billing permissions.",
       "keyChanges": [
         {
-          "title": "Unified Copilot Search is coming to SharePoint and OneDrive for the web",
-          "detail": "Microsoft is updating SharePoint Online and OneDrive for the web to a unified Copilot Search experience with natural-language prompts, AI summaries, and filters. The notice sets preview rollout from mid-October 2026 and general rollout from mid-January 2027. Users can opt out during preview, with minimal organizational action required.",
-          "product": "SharePoint Online and OneDrive for the web",
-          "sourceId": "MC1540513"
-        },
-        {
-          "title": "SharePoint temporary authentication URLs retire April 1, 2027",
-          "detail": "SharePoint temporary authentication URLs will be retired on April 1, 2027. Power Apps and Power Automate functionality that relies on these URLs will break when the retirement takes effect, making dependency identification an urgent administrator task.",
-          "product": "SharePoint temporary authentication URLs",
+          "title": "Temporary authentication URLs retire April 1, 2027",
+          "detail": "SharePoint temporary authentication URLs will be retired starting April 1, 2027. Power Apps and Automate functionality that relies on them will break when the URLs are retired.",
+          "product": "SharePoint",
           "sourceId": "MC1551122"
         },
         {
-          "title": "A new policy guide covers agentic-user external sharing",
-          "detail": "A new SharePoint and OneDrive article documents a tenant-level policy that blocks agentic users from sharing content with external users. The policy is off by default and can target all agentic users or users associated with selected application blueprints through SharePoint Online PowerShell.",
-          "product": "Agents and Copilot",
+          "title": "Unified Copilot Search moves from preview toward general rollout",
+          "detail": "SharePoint Online and OneDrive on the web are updating to a unified Copilot Search experience with natural-language prompts, AI summaries, and filters. Preview rollout started in mid-October 2026, with general rollout scheduled for mid-January 2027. Users can opt out during preview, and the notice says minimal organizational action is required.",
+          "product": "SharePoint and OneDrive",
+          "sourceId": "MC1540513"
+        },
+        {
+          "title": "Tenant policy can block agentic users from external sharing",
+          "detail": "New SharePoint and OneDrive guidance describes a tenant-level policy that blocks agentic users from sharing content with external users. It is off by default and can target all agentic users or users associated with selected application blueprints through SharePoint Online PowerShell.",
+          "product": "SharePoint and OneDrive",
           "sourceId": "doc-2026-11-13-restrict-external-sharing-by-agentic-users-in-sharepoint-and-onedrive-sharepoint-in-microsoft-36-01"
         },
         {
-          "title": "Group-permission governance reporting is coming to the SharePoint admin center",
-          "detail": "SharePoint is introducing a Data access governance report that identifies sites accessible to specific groups and shows their access levels. Worldwide rollout is planned from late November through early December 2026, giving administrators a way to investigate permissions and potential unintended exposure.",
-          "product": "SharePoint Data access governance report",
+          "title": "Group-permission access report arrives in the SharePoint admin center",
+          "detail": "The Data access governance report for group permissions is rolling out worldwide from late November to early December 2026. It identifies sites accessible to specific groups and helps assess access levels, supporting checks for unintended content exposure.",
+          "product": "SharePoint",
           "sourceId": "MC1540348"
         },
         {
-          "title": "SharePoint storage overages gain an opt-in pay-as-you-go meter",
-          "detail": "Microsoft is introducing consumption-based billing for SharePoint storage used beyond the included quota. The opt-in capability is scheduled for global rollout in January 2027, integrates with Microsoft 365 Archive, and requires Azure billing permissions.",
-          "product": "SharePoint storage and Microsoft 365 Archive",
+          "title": "Opt-in meter adds pay-as-you-go billing for storage overages",
+          "detail": "A global January 2027 rollout will offer an opt-in pay-as-you-go meter for storage used beyond the included SharePoint quota. The meter integrates with Microsoft 365 Archive and requires Azure billing permissions.",
+          "product": "SharePoint",
           "sourceId": "MC1330893"
         }
       ],
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-13T09:46:20.372Z",
+      "generatedAt": "2026-11-14T09:08:18.772Z",
       "usage": {
-        "inputTokens": 2780,
-        "outputTokens": 4309,
-        "costUsd": 0.005727
+        "inputTokens": 3259,
+        "outputTokens": 8250,
+        "costUsd": 0.010552
       }
     }
   },
   "version": 3,
-  "generatedAt": "2026-11-13T09:46:20.372Z",
+  "generatedAt": "2026-11-14T09:08:18.772Z",
   "generator": {
     "model": "gpt-5.6-luna",
     "reasoningEffort": "xhigh"
@@ -323,18 +357,24 @@
       "outputTokens": 12865,
       "requests": 3,
       "costUsd": 0.016616
+    },
+    "2026-11-14": {
+      "inputTokens": 7010,
+      "outputTokens": 15295,
+      "requests": 3,
+      "costUsd": 0.019756
     }
   },
   "lastRun": {
-    "inputTokens": 5892,
-    "outputTokens": 12865,
+    "inputTokens": 7010,
+    "outputTokens": 15295,
     "requests": 3,
-    "costUsd": 0.016616
+    "costUsd": 0.019756
   },
   "totalUsage": {
-    "inputTokens": 30967,
-    "outputTokens": 52464,
-    "requests": 21,
-    "costUsd": 0.06915
+    "inputTokens": 37977,
+    "outputTokens": 67759,
+    "requests": 24,
+    "costUsd": 0.088906
   }
 }

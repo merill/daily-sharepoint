@@ -1,0 +1,220 @@
+{
+  "newFiles": [],
+  "modifiedFiles": [
+    {
+      "filename": "SharePoint/SharePointOnline/sync-release-notes.md",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 8,
+      "changes": 38,
+      "patch": "diff --git a/SharePoint/SharePointOnline/sync-release-notes.md b/SharePoint/SharePointOnline/sync-release-notes.md\nindex aa5379b..19c4471 100644\n--- a/SharePoint/SharePointOnline/sync-release-notes.md\n+++ b/SharePoint/SharePointOnline/sync-release-notes.md\n@@ -13,7 +13,7 @@ ms.author: kangan\n manager: gacarini\n ms.service: onedrive\n ms.topic: release-notes\n-ms.date: 2026-10-30T00:00:00.0000000Z\n+ms.date: 2026-11-12T00:00:00.0000000Z\n locale: en-us\n document_id: dfd91433-e4bc-7aa9-a32e-edca3183815c\n document_version_independent_id: 9865c764-d912-b7db-cf91-299ad8e2a71f\n@@ -56,20 +56,31 @@ The OneDrive sync app requires Windows 10 22H2 or Windows 11 to receive updates.\n \r\n | Ring | Released | Rolling Out |\r\n | --- | --- | --- |\r\n-| Production | 26.195.1006.0007 ([amd64](https://go.microsoft.com/fwlink/?linkid=844652) | [arm64](https://go.microsoft.com/fwlink/?linkid=2359340)) | 26.198.1011.0006 ([amd64](https://go.microsoft.com/fwlink/?linkid=860984) | [arm64](https://go.microsoft.com/fwlink/?linkid=2359137)) |\r\n+| Production | 26.198.1011.0006 ([amd64](https://go.microsoft.com/fwlink/?linkid=844652) | [arm64](https://go.microsoft.com/fwlink/?linkid=2359340)) | 26.204.1019.0007 ([amd64](https://go.microsoft.com/fwlink/?linkid=860984) | [arm64](https://go.microsoft.com/fwlink/?linkid=2359137)) |\r\n | Deferred | 26.123.0628.0001 ([amd64](https://go.microsoft.com/fwlink/?linkid=860987) | [arm64](https://go.microsoft.com/fwlink/?linkid=2359341)) | 26.189.0928.0009 ([amd64](https://oneclient.sfx.ms/Win/Installers/26.189.0928.0009/amd64/OneDriveSetup.exe) | [arm64](https://oneclient.sfx.ms/Win/Installers/26.189.0928.0009/arm64/OneDriveSetup.exe)) *Target Date: Nov 12, 2026* |\r\n \r\n **What's New**\r\n \r\n - We resolved product issues to improve the reliability and performance of the OneDrive sync app.\r\n+- **Improved sync behavior during Game Mode:** When Windows Game Mode is on, OneDrive pauses syncing to reduce background activity during gameplay. Syncing resumes automatically when Game Mode ends. (Version 26.189.0928.0007)\r\n - **Copy links from Activity Center:** Users can now copy a link to a file directly from the per-item menu for recently synced files in the OneDrive Activity Center. (Version 26.150.0804.0010)\r\n - **Browse your photos in OneDrive:** OneDrive now brings the photos experience from OneDrive on the web and mobile to your desktop, so you can browse, search, and organize photos from your OneDrive and your PC in one place. Available for personal Microsoft accounts. Select **View photos** in the OneDrive activity center to open it. [Learn more](https://support.microsoft.com/onedrive/windows/browse-your-photos-on-windows) (Version 26.123.0628.0001)\r\n - **Improved max path handling for OneDrive shortcuts:** OneDrive now uses the correct root path when checking Folder Shortcuts against the maximum path length, so fewer files are incorrectly flagged as exceeding the limit. (Version 26.119.0622.0003)\r\n-- **Clearer sync status messages:** OneDrive sync status messages in File Explorer, the Windows notification area, and the OneDrive Activity Center are now clearer and more consistent. We removed outdated status strings and refreshed key states, so \"Your files are synced\" and \"Up to date\" now read \"Backed up and synced.\" (Version 26.074.0420.0001)\r\n-- **Move folders to OneDrive from File Explorer:** Right-click any folder in File Explorer to move it directly to OneDrive, making it easier to back up and sync local folders. (Version 26.045.0308.0003)\r\n \r\n ## Windows Production Ring\r\n \r\n+#### 26.204.1019.0007 (November 12, 2026)\r\n+\r\n+- We resolved product issues to improve the reliability and performance of the OneDrive sync app.\r\n+\r\n+#### 26.204.1019.0006 (November 9, 2026)\r\n+\r\n+- We resolved product issues to improve the reliability and performance of the OneDrive sync app.\r\n+\r\n+#### 26.204.1019.0004 (November 6, 2026)\r\n+\r\n+- We resolved product issues to improve the reliability and performance of the OneDrive sync app.\r\n+\r\n #### 26.198.1011.0006 (October 30, 2026)\r\n \r\n - We resolved product issues to improve the reliability and performance of the OneDrive sync app.\r\n@@ -85,6 +96,8 @@ The OneDrive sync app requires Windows 10 22H2 or Windows 11 to receive updates.\n #### 26.189.0928.0007 (October 16, 2026)\r\n \r\n - We resolved product issues to improve the reliability and performance of the OneDrive sync app.\r\n+- New features gradually rolling out:\r\n+    - **Improved sync behavior during Game Mode:** When Windows Game Mode is on, OneDrive pauses syncing to reduce background activity during gameplay. Syncing resumes automatically when Game Mode ends.\r\n \r\n #### 26.183.0920.0005 (October 9, 2026)\r\n \r\n@@ -512,7 +525,7 @@ The OneDrive sync app requires Windows 10 22H2 or Windows 11 to receive updates.\n \r\n | Ring | Released | Rolling Out |\r\n | --- | --- | --- |\r\n-| Production | 26.195.1006.0007 ([universal](https://go.microsoft.com/fwlink/?linkid=823060)) | 26.198.1011.0006 ([universal](https://go.microsoft.com/fwlink/?linkid=861011)) |\r\n+| Production | 26.198.1011.0006 ([universal](https://go.microsoft.com/fwlink/?linkid=823060)) | 26.204.1019.0007 ([universal](https://go.microsoft.com/fwlink/?linkid=861011)) |\r\n | Deferred | 26.123.0628.0001 ([universal](https://go.microsoft.com/fwlink/?linkid=861009)) | 26.189.0928.0009 ([universal](https://oneclient.sfx.ms/Mac/Installers/26.189.0928.0009/universal/OneDrive.pkg)) *Target Date: Nov 12, 2026* |\r\n \r\n **Download:**[Standalone](https://go.microsoft.com/fwlink/?linkid=823060) | [Mac App Store](https://go.microsoft.com/fwlink/p/?LinkId=248255)\r\n@@ -522,12 +535,21 @@ The OneDrive sync app requires Windows 10 22H2 or Windows 11 to receive updates.\n - We resolved product issues to improve the reliability and performance of the OneDrive sync app.\r\n - **Native Sync Engine:** Files and folders are immediately browsable in Finder without waiting for folder contents to load. Syncing is faster and more reliable while using less CPU, memory, and battery. Files On-Demand remains unchanged: online-only files stay online until opened or marked as Always Keep on This Device. [Learn more](https://techcommunity.microsoft.com/blog/onedriveblog/making-mac-onedrive-faster-and-more-reliable/4516506) (Version 26.189.0928.0007)\r\n - **Search files in OneDrive Activity Center and Spotlight:** Find locally available and online-only OneDrive files by name or keyword. Eligible personal accounts can also find photos by describing what they show. View results as thumbnails and filter by file type. On macOS 26 or later, type OneDrive in Spotlight, press Tab, and enter a search term. (Version 26.189.0928.0007)\r\n-- **Manage login item registration via command line:** Administrators can register or unregister the OneDrive login item using command-line arguments, enabling programmatic control over auto-start behavior on managed devices. [Learn more](deploy-and-configure-on-macos#manage-login-item-registration-via-command-line) (Version 26.032.0217.0003)\r\n-- **Redesigned Activity Center:** The Activity Center has been rebuilt in SwiftUI with a streamlined interface showing sync status, a compact activity feed with thumbnail previews, and one-click access to errors. On macOS 26 and later, it supports Liquid Glass. [Learn more](https://techcommunity.microsoft.com/blog/onedriveblog/onedrive-on-mac-gets-liquid-glass-with-an-all-new-activity-center/4495501) (Version 26.017.0126.0002)\r\n-- **Copilot Actions in Finder and OneDrive Activity Center:** Users with a Microsoft 365 Copilot license, or a Microsoft 365 Personal, Family, or Premium subscription, can now use Copilot in Finder and the OneDrive Activity Center to summarize documents, generate FAQs, compare files, or get answers about their files saved in OneDrive. (Version 26.007.0112.0002)\r\n \r\n ## macOS Production Ring\r\n \r\n+#### 26.204.1019.0007 (November 12, 2026)\r\n+\r\n+- We resolved product issues to improve the reliability and performance of the OneDrive sync app.\r\n+\r\n+#### 26.204.1019.0006 (November 9, 2026)\r\n+\r\n+- We resolved product issues to improve the reliability and performance of the OneDrive sync app.\r\n+\r\n+#### 26.204.1019.0004 (November 6, 2026)\r\n+\r\n+- We resolved product issues to improve the reliability and performance of the OneDrive sync app.\r\n+\r\n #### 26.198.1011.0006 (October 30, 2026)\r\n \r\n - We resolved product issues to improve the reliability and performance of the OneDrive sync app.\r\n",
+      "baseCommitSha": "67265cae3dc4a1e9d94222d5d020f1fde6c56953",
+      "commitSha": "aeaebefbfcf9b8994eda43c8441990c0d4e9bb82",
+      "commitMessage": "Mirror Learn: 1 changed",
+      "commitAuthor": "github-actions[bot]",
+      "commitDate": "2026-11-14 02:43:20 +0000",
+      "githubUrl": "https://github.com/merill/sharepoint-docs-mirror/blob/main/SharePoint/SharePointOnline/sync-release-notes.md",
+      "publicDocsUrl": "https://learn.microsoft.com/en-us/sharepoint/sync-release-notes",
+      "eventId": "sharepoint-docs:aeaebefbfcf9b8994eda43c8441990c0d4e9bb82:modified:SharePoint/SharePointOnline/sync-release-notes.md",
+      "firstSeenAt": "2026-11-14T09:07:55.438Z",
+      "englishSummary": {
+        "category": "New feature",
+        "headline": "OneDrive release notes add Game Mode sync behavior",
+        "summary": "The documentation adds November 2026 OneDrive builds and describes syncing pausing during Windows Game Mode and resuming afterward. It also records reliability and performance fixes for recent Windows and macOS releases.",
+        "adminImpact": "Administrators can use the updated versions for rollout tracking and set user expectations about syncing during gameplay. No required configuration change is stated.",
+        "actionRequired": false,
+        "generatedBy": "openai",
+        "model": "gpt-5.6-luna"
+      }
+    }
+  ],
+  "deletedFiles": [],
+  "messageCenterItems": [
+    {
+      "id": "MC1449182",
+      "source": "mc",
+      "sourceLabel": "Message Center",
+      "date": "2026-11-14",
+      "title": "Microsoft 365 Copilot: Copilot Pages and Notebooks Creation in OneDrive",
+      "summary": "Starting mid-October 2026, newly created Microsoft 365 Copilot Pages and Notebooks will be stored in OneDrive for Business, enabling existing governance, compliance, data protection, retention, and lifecycle management features to apply. Existing files remain unchanged; no user action is required.",
+      "product": {
+        "slug": "sharepoint",
+        "name": "SharePoint Online",
+        "short": "SharePoint",
+        "learn": "https://learn.microsoft.com/en-us/sharepoint/introduction",
+        "icon": "sharepoint.svg"
+      },
+      "topic": {
+        "slug": "ai",
+        "name": "AI and Copilot",
+        "icon": "/assets/topics/ai.svg"
+      },
+      "changeType": "Message",
+      "url": "/message-center/MC1449182/",
+      "originalUrl": "https://mc.merill.net/message/MC1449182",
+      "body": "<p>Updated November 13, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b><b>What and why</b></b></p><p>We're changing where newly created Copilot Pages are stored. Going forward, Copilot Pages created in Copilot Chat, the Microsoft 365 Copilot app, and new Copilot Notebooks will be stored in OneDrive for Business instead of their current location.</p><p>This change enables organizations to manage newly created Copilot Pages using existing OneDrive for Business governance, compliance, data protection, retention, and lifecycle management capabilities.</p><p><b><b>Rollout schedule</b></b></p><ul><li><b>General Availability (Worldwide):</b> Beginning in <b>mid-October 2026</b> (previously mid-August) and expected to complete by<b> late November 2026</b> (previously late September)</li><li><b>General Availability (GCC, GCC High, and DoD):</b> Beginning in <b>mid-November 2026</b> (previously mid-September) and expected to complete by <b>mid-December 2026</b> (previously early December)</li></ul><p><b><b>Impact on your organization</b></b></p><p><i>Who is affected</i></p><p>Users who create Copilot Pages in:</p><ul><li>Copilot Chat</li><li>Microsoft 365 Copilot app</li><li>Copilot Notebooks</li></ul><p>Microsoft 365 administrators responsible for governance, compliance, retention, and content management</p><p><i>Platforms and services</i></p><ul><li>Microsoft 365 Copilot</li><li>Copilot Chat</li><li>Copilot Notebooks</li><li>OneDrive for Business</li><li>Microsoft Purview compliance solutions</li></ul><p><i>What will happen</i></p><p>After rollout:</p><ul><li>Newly created Copilot Pages will be stored in users' OneDrive for Business.</li><li>New Copilot Pages will appear alongside other OneDrive files, such as Word, Excel, and PowerPoint documents.</li><li>New Copilot Notebooks and artifacts created within them will appear alongside other OneDrive files, such as Word, Excel, and PowerPoint documents.</li><li>Existing OneDrive governance, compliance, data protection, retention, lifecycle management, reporting, and investigation capabilities will apply to newly created Copilot Pages.</li></ul><p>In addition to all existing governance and management capabilities, the following additional OneDrive for Business capabilities will apply to newly created Copilot Pages:</p><p>Compliance and legal</p><ul><li>Standard file path-based eDiscovery</li><li>Retention labels with record locking</li><li>Information Barriers</li><li>Compliance Boundaries</li></ul><p>Data protection</p><ul><li>Data Loss Prevention (DLP) policies and mitigation workflows</li><li>Third-party governance solutions that support OneDrive content</li></ul><p>Lifecycle management</p><ul><li>Retention and lifecycle policies</li><li>Existing departed-user workflows for OneDrive content</li></ul><p>Monitoring and oversight</p><ul><li>OneDrive storage reporting</li><li>Administrative investigations of content stored in OneDrive</li></ul><p>Unaffected files</p><ul><li>Existing Copilot Pages will remain in their current location and will not be migrated as part of this change.</li><li>Existing Copilot Notebooks will continue to store all newly created pages in SharePoint Embedded. Only Copilot Notebooks created after this change will store pages in OneDrive.&nbsp;</li><li>Loop workspaces are not affected and will continue to use their current storage location.</li></ul><p>IT Admin controls</p><ul><li>If your organization has set <b>Create and view Copilot Pages and Copilot Notebooks</b> to <b>Disabled</b>, that setting will continue to be honored after this change.</li><li>This admin control is planned for future retirement. Microsoft will provide additional communication and transition guidance before the setting is retired.</li></ul><p><b><b>Action required and recommendations</b></b></p><p>No action is required for the rollout.</p><p>We recommend that administrators:</p><ul><li>Review existing DLP, retention, and compliance policies that apply to OneDrive for Business.</li><li>Verify that any third-party governance or eDiscovery solutions are configured to monitor OneDrive content as appropriate.</li><li>Update internal documentation and governance guidance for AI-generated content.</li><li>Communicate to users that newly created Copilot Pages will be stored in their OneDrive for Business.</li></ul><p><b><b>Compliance considerations</b></b></p><table><tbody><tr><td>Question</td><td>Answer</td></tr><tr><td>Does this change alter where customer data is stored?</td><td>Yes. Newly created Copilot Pages will be stored in OneDrive for Business instead of their previous storage location.</td></tr><tr><td>Does this change affect compliance and governance capabilities?</td><td>Yes. Newly created Copilot Pages will be subject to OneDrive for Business compliance capabilities, including eDiscovery, retention labels with record locking, Information Barriers, and Compliance Boundaries.</td></tr><tr><td>Does this change affect data protection controls?</td><td>Yes. Existing OneDrive for Business data protection controls, including Data Loss Prevention (DLP) policies and supported third-party governance solutions, can be applied to newly created Copilot Pages.</td></tr><tr><td>Does this change affect lifecycle management and retention processes?</td><td>Yes. Existing OneDrive for Business retention policies, lifecycle management capabilities, and departed-user workflows will apply to newly created Copilot Pages.</td></tr><tr><td>Does this change affect how administrators monitor or investigate content?</td><td>Yes. Administrators will be able to use standard OneDrive for Business reporting, monitoring, and investigation capabilities for newly created Copilot Pages.</td></tr></tbody></table>",
+      "category": "planForChange",
+      "services": [
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "tags": [
+        "Updated message",
+        "User impact",
+        "Admin impact"
+      ],
+      "startDate": "2026-08-06T22:53:08Z",
+      "endDate": "2027-01-25T07:00:00Z",
+      "lastModifiedDateTime": "2026-11-14T00:17:07.957Z",
+      "version": "2026-11-14T00:17:07.957Z",
+      "eventId": "message-center:MC1449182:2026-11-14T00:17:07.957Z",
+      "firstSeenAt": "2026-11-14T09:08:18.569Z"
+    },
+    {
+      "id": "MC1506734",
+      "source": "mc",
+      "sourceLabel": "Message Center",
+      "date": "2026-11-14",
+      "title": "Microsoft Teams: Video sharing from OneDrive in Teams events",
+      "summary": "Microsoft Teams will soon allow organizers and producers to share videos directly from OneDrive during large-scale Teams events using \"Manage what attendees see,\" enabling smoother, higher-quality playback without screen sharing or embedding in PowerPoint. Rollout starts mid-November 2026, requiring no action but recommending informing event staff and updating guidance.",
+      "product": {
+        "slug": "sharepoint",
+        "name": "SharePoint Online",
+        "short": "SharePoint",
+        "learn": "https://learn.microsoft.com/en-us/sharepoint/introduction",
+        "icon": "sharepoint.svg"
+      },
+      "topic": {
+        "slug": "governance",
+        "name": "Permissions and governance",
+        "icon": "/assets/topics/governance.svg"
+      },
+      "changeType": "Major update",
+      "url": "/message-center/MC1506734/",
+      "originalUrl": "https://mc.merill.net/message/MC1506734",
+      "body": "<p>Updated November 13, 2026: We have updated the content. If you are a tenant in a GCCH or DoD environment, you can safely ignore this message as you are not impacted. Thank you for your patience.&nbsp;</p><p><b><b>What and why</b></b></p><p>Microsoft Teams will soon support sharing video directly from OneDrive during Teams events that are optimized for scale (previously called town halls). Organizers and producers using <i>Manage what attendees see</i> can load videos from OneDrive and present them on stage without screen sharing a local media player or embedding videos in PowerPoint. This improvement provides smoother, higher-quality video playback for attendees and simplifies event production through built-in video playback controls.</p><p><b><b>Rollout schedule</b></b></p><ul><li><b>Targeted Release (Worldwide):</b> Rollout will begin in mid-November 2026 (previously early November) and end in early December 2026.</li><li><b>General Availability (Worldwide, GCC):</b> Rollout will begin in early December 2026 and is expected to complete by early December 2026.</li></ul><p><b><b>Impact on your organization</b></b></p><p><i>Who is affected</i></p><ul><li>Teams event organizers and producers using events configured with <i>Manage what attendees see</i>.</li></ul><p><i>Platforms and services</i></p><ul><li>Microsoft Teams</li><li>OneDrive</li><li>Teams events</li></ul><p><i>What will happen</i></p><ul><li>Organizers and producers will be able to select and share videos stored in OneDrive directly within Teams events configured with <i>Manage what attendees see and</i> will have access to built-in controls to start and pause video playback during events.</li><li>Videos can be presented on stage without screen sharing a local media player or embedding videos into a PowerPoint presentation.</li><li>Attendees will experience smoother and higher-quality video playback.</li></ul><p><b><b>Action required and recommendations</b></b></p><p>No action is required. We recommend that you:</p><ul><li>Inform Teams event organizers and producers that they can share videos directly from OneDrive in Teams events configured with <i>Manage what attendees see</i>.</li><li>Ensure that organizers and producers store videos in OneDrive with the appropriate permissions before using them in events.</li><li>Review and update internal event production guidance that recommends screen sharing locally played videos or embedding videos in PowerPoint.</li></ul><p><b><b>Learn more</b></b></p><p>We will update this post with new documentation.</p><p><b><b>Compliance considerations</b></b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>",
+      "category": "planForChange",
+      "services": [
+        "Microsoft Teams"
+      ],
+      "tags": [
+        "Updated message",
+        "New feature",
+        "Feature update",
+        "User impact",
+        "Admin impact"
+      ],
+      "startDate": "2026-10-13T22:14:57Z",
+      "endDate": "2027-01-01T08:00:00Z",
+      "lastModifiedDateTime": "2026-11-14T00:13:01.18Z",
+      "version": "2026-11-14T00:13:01.18Z",
+      "eventId": "message-center:MC1506734:2026-11-14T00:13:01.18Z",
+      "firstSeenAt": "2026-11-14T09:08:18.569Z"
+    },
+    {
+      "id": "MC1552397",
+      "source": "mc",
+      "sourceLabel": "Message Center",
+      "date": "2026-11-13",
+      "title": "Microsoft SharePoint: Resources web part and Announcements capabilities expand to all sites",
+      "summary": "The Resources web part and Announcements capabilities are expanding to all SharePoint sites, allowing site owners to share links and updates more flexibly. Rollout starts mid-November 2026 worldwide and mid-December 2026 for GCC/DoD, with no admin action required.",
+      "product": {
+        "slug": "sharepoint",
+        "name": "SharePoint Online",
+        "short": "SharePoint",
+        "learn": "https://learn.microsoft.com/en-us/sharepoint/introduction",
+        "icon": "sharepoint.svg"
+      },
+      "topic": {
+        "slug": "general",
+        "name": "General",
+        "icon": "/assets/topics/general.svg"
+      },
+      "changeType": "Message",
+      "url": "/message-center/MC1552397/",
+      "originalUrl": "https://mc.merill.net/message/MC1552397",
+      "body": "<p><b><b>What and why</b></b></p><p>We are expanding the Resources web part and Announcements capabilities to all SharePoint sites, making it easier for organizations to share important links and updates with employees. Site owners will have more flexibility to curate relevant resources and communicate important information.</p><p><b><b>Rollout schedule</b></b></p><ul><li><b>General Availability (Worldwide):</b> Rollout will begin in mid-November 2026 and is expected to complete by late November 2026.</li><li><b>General Availability (GCC, DoD): </b>Rollout will begin in mid-December 2026 and is expected to complete by late December 2026.</li></ul><p><b><b>Impact on your organization</b></b></p><p><i>Who is affected</i></p><ul><li>SharePoint site owners and users.</li></ul><p><i>Platforms and services</i></p><ul><li>Microsoft SharePoint</li></ul><p><i>What will happen</i></p><ul><li><b>Resources web part:</b> Site owners can curate important links on any SharePoint site and use audience targeting to display relevant resources to specific groups of users.</li></ul><p></p><ul><li><b>Announcements:</b> Site owners can create announcements on any SharePoint site, not just home sites. Announcements created on organizational news sites will trigger notifications.</li></ul><p></p><p><b><b>Action required and recommendations</b></b></p><p>No admin action is required. These capabilities will roll out automatically to all customers.</p><p><b><b>Learn more</b></b></p><ul><li><a href=\"https://support.microsoft.com/sharepoint/sites-pages/resources-web-part\" rel=\"noopener noreferrer\">Resources web part | Microsoft Support</a></li><li><a href=\"https://learn.microsoft.com/SharePoint/homesites/announcements-web-part\" rel=\"noopener noreferrer\">Use the Announcements web part in the SharePoint app in Teams - SharePoint in Microsoft 365 | Microsoft Learn</a></li></ul><p><b><b>Compliance considerations</b></b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>",
+      "category": "stayInformed",
+      "services": [
+        "SharePoint Online"
+      ],
+      "tags": [
+        "Feature update",
+        "User impact"
+      ],
+      "startDate": "2026-11-13T23:49:06Z",
+      "endDate": "2027-01-29T08:00:00Z",
+      "lastModifiedDateTime": "2026-11-13T23:49:22.027Z",
+      "version": "2026-11-13T23:49:22.027Z",
+      "eventId": "message-center:MC1552397:2026-11-13T23:49:22.027Z",
+      "firstSeenAt": "2026-11-14T09:08:18.569Z"
+    },
+    {
+      "id": "MC1486295",
+      "source": "mc",
+      "sourceLabel": "Message Center",
+      "date": "2026-11-13",
+      "title": "Microsoft OneDrive and SharePoint: Generate smart tables of contents for PDFs on the web with Copilot",
+      "summary": "The announcement that Microsoft 365 Copilot users can generate AI-created, hierarchical, clickable tables of contents for PDFs in OneDrive and SharePoint on the web, is now canceled. The feature is user-initiated, respects permissions, supports saving by editors, and may have inaccuracies, especially with scanned PDFs.",
+      "product": {
+        "slug": "sharepoint",
+        "name": "SharePoint Online",
+        "short": "SharePoint",
+        "learn": "https://learn.microsoft.com/en-us/sharepoint/introduction",
+        "icon": "sharepoint.svg"
+      },
+      "topic": {
+        "slug": "ai",
+        "name": "AI and Copilot",
+        "icon": "/assets/topics/ai.svg"
+      },
+      "changeType": "Message",
+      "url": "/message-center/MC1486295/",
+      "originalUrl": "https://mc.merill.net/message/MC1486295",
+      "body": "<p>Updated November 13, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience.&nbsp;</p><p><b><b>What and Why:</b></b></p><p>We are introducing Smart Table of Contents (Smart TOC) in the Microsoft OneDrive and SharePoint PDF viewer on the web for users with a Microsoft 365 Copilot license. When a PDF does not already contain a table of contents, users can ask Copilot to generate a hierarchical, clickable structure that makes it easier to navigate long documents and move between sections. This feature is available only on the web in the initial release and is generated only when a user explicitly requests it.</p><p><b><b>Rollout Schedule:</b></b></p><ul><li>Targeted Release (Worldwide): We have decided not to move forward with this change at this time.</li><li>General Availability (Worldwide, GCC, GCCH, DoD): We have decided not to move forward with this change at this time.</li></ul><p><b><b>Impact on Your Organization:</b></b></p><ul><li><b>Who is affected:</b> Users with a Microsoft 365 Copilot license who access PDF files in OneDrive and SharePoint on the web.</li><li><b>Platforms/Services:</b> OneDrive, SharePoint, Microsoft 365 Copilot, PDF viewer on the web.</li></ul><p><b>What will happen:</b></p><ul><li>The Smart TOC entry point will appear when an eligible user opens a PDF that does not already contain table-of-contents information.</li><li>The feature is available only in the OneDrive and SharePoint PDF viewer on the web during the initial release.</li><li>Mobile and desktop applications are not included at this time.</li><li>Copilot analyzes document structure and generates nested, clickable entries mapped to pages or page ranges.</li><li>Users with edit permissions can save the generated table of contents into the PDF.</li><li>The saved table of contents can be displayed by compatible PDF editors.</li><li>Users with view-only permissions can generate and use Smart TOC for navigation but cannot save the generated table of contents.</li><li>Smart TOC is available only to users with a Microsoft 365 Copilot license.</li><li>AI-generated content may be inaccurate, particularly for scanned or OCR-based PDF files.</li></ul><p><b><b>Action Required/Recommendations:</b></b></p><p>No immediate admin action is required.</p><p>Before rollout, you may want to:</p><ul><li>Review Microsoft 365 Copilot license assignments for users who should have access to this capability.</li><li>Inform eligible users, helpdesk personnel, and support teams about the new PDF navigation experience.</li><li>Update internal documentation to clarify that saving a generated table of contents requires edit permissions on the PDF.</li><li>Encourage users to validate AI-generated table-of-contents entries when accuracy is important.</li></ul><p><b><b>Compliance considerations:</b></b></p><ul><li><b>Does the change alter how existing customer data is processed, stored, or accessed?</b> Yes. Copilot processes PDF content that the licensed user is already authorized to access in order to generate a table of contents for navigation. Existing file permissions are respected, and saving changes requires edit permissions.</li><li><b>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</b> Yes. Copilot analyzes PDF document structure and generates an AI-created hierarchical table of contents. The experience is user-initiated and does not run automatically.</li><li><b>Does the change provide end users any new way of interacting with generative AI?</b> Yes. Eligible users can request Copilot to generate a table of contents for PDF files that do not already contain one.</li><li><b>Does the change allow a user to enable and disable the feature themselves?</b> Yes. The feature is user-initiated and only runs when a licensed user chooses to generate a Smart TOC.</li></ul><p>The experience will clearly indicate that the table of contents was AI generated and may contain inaccuracies.</p>",
+      "category": "stayInformed",
+      "services": [
+        "SharePoint Online",
+        "Microsoft OneDrive"
+      ],
+      "tags": [
+        "Updated message",
+        "New feature",
+        "User impact"
+      ],
+      "startDate": "2026-10-02T22:24:51Z",
+      "endDate": "2026-11-20T08:00:00Z",
+      "lastModifiedDateTime": "2026-11-13T17:19:46.08Z",
+      "version": "2026-11-13T17:19:46.08Z",
+      "eventId": "message-center:MC1486295:2026-11-13T17:19:46.08Z",
+      "firstSeenAt": "2026-11-14T09:08:18.569Z"
+    }
+  ],
+  "summary": {
+    "totalCommits": 1,
+    "totalFiles": 1,
+    "authors": [
+      "github-actions[bot]"
+    ]
+  },
+  "englishSummary": {
+    "overview": "Today's report includes 0 new, 1 updated, and 0 removed SharePoint Online and OneDrive documentation files across 1 documentation area.",
+    "groups": [
+      {
+        "category": "New feature",
+        "title": "SharePoint Online",
+        "summary": "The documentation adds November 2026 OneDrive builds and describes syncing pausing during Windows Game Mode and resuming afterward. It also records reliability and performance fixes for recent Windows and macOS releases.",
+        "sourceFiles": [
+          "SharePoint/SharePointOnline/sync-release-notes.md"
+        ]
+      }
+    ],
+    "highlights": [
+      {
+        "category": "New feature",
+        "headline": "SharePoint Online",
+        "detail": "The documentation adds November 2026 OneDrive builds and describes syncing pausing during Windows Game Mode and resuming afterward. It also records reliability and performance fixes for recent Windows and macOS releases."
+      }
+    ],
+    "generatedBy": "fallback"
+  }
+}
