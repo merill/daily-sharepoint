@@ -207,19 +207,37 @@
       }
     },
     "2026-11-17": {
-      "headline": "Application Restrictions cmdlets roll out as SharePoint clarifies Copilot access scopes",
-      "overview": "The period brought two targeted documentation updates rather than broad product launches: one clarifies how sharing links and Copilot can expose content, while the other flags staged availability for Application Restrictions cmdlets and updates their PowerShell references.",
-      "adminImpact": "Administrators should account for possible tenant-by-tenant cmdlet availability when working with Application Restrictions and use the updated Microsoft.Online.SharePoint.PowerShell links. The revised sharing guidance helps assess internal, guest, and anonymous access scopes, but states no required administrative action.",
+      "headline": "SharePoint agents begin requiring upgrades as OneDrive shifts to cloud.microsoft URLs",
+      "overview": "Two updates carry the most operational weight. The SharePoint and OneDrive agent upgrade experience begins rolling out in mid-November 2026, and existing .agent files used in Teams or Microsoft Copilot will stop responding until upgraded. Separately, OneDrive URLs are transitioning from contoso-my.sharepoint.com to onedrive.cloud.microsoft between September 2026 and September 2027. The other changes are primarily guidance and maintenance: Application Restrictions cmdlet availability is still rolling out, Viva Connections home-site management is directed to the SharePoint admin center, sharing-link guidance is more precise, and OneDrive Sync release notes add two production builds.",
+      "adminImpact": "Inventory affected agents and plan upgrades; Teams chats require all agents to be upgraded together, followed by replacing the old agent and verifying user access to the agent and its knowledge sources. For the OneDrive URL transition, review custom solutions and administrator documentation, but no immediate action is required because both domains will coexist and file access and APIs are unchanged. Use the SharePoint admin center for current home-site management, account for tenant differences in Application Restrictions cmdlet availability, and use the updated PowerShell module links. Sync administrators can use builds 26.204.1019.0009 and 26.212.1029.0006 when tracking deployments.",
       "keyChanges": [
         {
-          "title": "Application Restrictions cmdlets may not yet be available in every tenant",
-          "detail": "The SharePoint guidance now says Application Restrictions cmdlets are rolling out and may not be available in every tenant. It also updates all listed PowerShell links to the Microsoft.Online.SharePoint.PowerShell module path, so administrators should verify availability before relying on the cmdlets and use the revised references.",
+          "title": "Agent upgrades will affect existing Teams and Copilot .agent files",
+          "detail": "The upgrade experience begins rolling out in mid-November 2026. Existing .agent files used in Teams or Microsoft Copilot will stop responding until upgraded. Teams chats require upgrading all agents together, and the SharePoint Agents icon and Main agent setting will be removed.",
+          "product": "Agents and Copilot",
+          "sourceId": "doc-2026-11-17-upgrade-agents-in-sharepoint-and-onedrive-sharepoint-in-microsoft-365-05"
+        },
+        {
+          "title": "OneDrive URLs transition from SharePoint domains to cloud.microsoft",
+          "detail": "The transition from contoso-my.sharepoint.com to onedrive.cloud.microsoft starts in September 2026 and completes by September 2027. Both domains will coexist indefinitely, with no change to file access or APIs. Administrators should review custom solutions and documentation; no immediate action is required.",
+          "product": "OneDrive",
+          "sourceId": "MC1392563"
+        },
+        {
+          "title": "Application Restrictions guidance flags tenant-dependent cmdlet availability",
+          "detail": "The Application Restrictions cmdlets are rolling out and may not yet be available in every tenant. The page also updates all listed PowerShell links to the Microsoft.Online.SharePoint.PowerShell module path.",
           "product": "Agents and Copilot",
           "sourceId": "doc-2026-11-17-restrict-sharepoint-site-access-for-applications-and-agents-with-application-restrictions-sharep-01"
         },
         {
-          "title": "Sharing guidance separates direct access from link-based access",
-          "detail": "The updated article distinguishes direct access from link-based sharing and covers hero links, audience scopes, forwarding, authentication, and access through search or Copilot. This gives administrators more precise guidance for evaluating how sharing choices affect internal, guest, and anonymous access.",
+          "title": "Viva Connections home-site management is directed to SharePoint admin center",
+          "detail": "Current setup guidance sends administrators to SharePoint admin center > Settings > Home sites to add, order, assign audiences to, and remove home sites. The Microsoft 365 admin center remains available as a legacy experience during the transition.",
+          "product": "Sites and intranet",
+          "sourceId": "doc-2026-11-17-set-up-viva-connections-sharepoint-in-microsoft-365-03"
+        },
+        {
+          "title": "Shareable-link guidance separates direct access from link-based sharing",
+          "detail": "The updated guidance distinguishes direct access from link-based sharing and covers hero links, audience scopes, forwarding, authentication, and access through search or Copilot. It gives administrators clearer material for evaluating internal, guest, and anonymous sharing scopes.",
           "product": "Sharing and permissions",
           "sourceId": "doc-2026-11-17-how-shareable-links-work-in-onedrive-and-sharepoint-in-microsoft-365-sharepoint-in-microsoft-365-02"
         }
@@ -227,11 +245,11 @@
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-17T10:52:57.614Z",
+      "generatedAt": "2026-11-17T22:30:21.291Z",
       "usage": {
-        "inputTokens": 1244,
-        "outputTokens": 879,
-        "costUsd": 0.001304
+        "inputTokens": 1853,
+        "outputTokens": 4189,
+        "costUsd": 0.005397
       }
     }
   },
@@ -317,102 +335,102 @@
       }
     },
     "2026-11-16": {
-      "headline": "SharePoint access reviews expand while new Copilot content lands in OneDrive",
-      "overview": "The period brought three substantive operational notices: enhanced SharePoint data access governance reports and site access reviews are scheduled to start in late November 2026; newly created Microsoft 365 Copilot Pages and Notebooks are stored in OneDrive for Business, with existing content unchanged; and SharePoint will stop automatically updating the SiteLogoUrl property on individual search items between December 2026 and March 2027. Two Learn updates add more precise sharing guidance and clarify Application Restrictions cmdlet availability and PowerShell links.",
-      "adminImpact": "No action is required before the governance-report rollout, and no user action is required for Copilot storage. Organizations that use SiteLogoUrl in search results should retrieve logos directly from the site instead. Administrators working with Application Restrictions should expect cmdlet availability to vary during rollout and use the updated Microsoft.Online.SharePoint.PowerShell links. The revised sharing article provides guidance for assessing access scopes, with no specific administrator action stated.",
+      "headline": "SharePoint agent upgrades and OneDrive domain transition reshape admin planning",
+      "overview": "The week’s highest-impact changes affect behavior and administration: existing SharePoint agent files can stop responding until upgraded, OneDrive is transitioning to onedrive.cloud.microsoft, and SiteLogoUrl will no longer update automatically on individual search items. SharePoint is also set to enhance access-governance reports and site reviews in late November. Newly created Copilot Pages and Notebooks are being stored in OneDrive for Business under existing governance and compliance controls. Narrower documentation updates now direct Viva Connections administrators to SharePoint admin center > Settings > Home sites and add two November 13 OneDrive Production builds.",
+      "adminImpact": "Prioritize an inventory and upgrade plan for existing agents; Teams chats require all agents to be upgraded together, and access to their knowledge sources should be verified. Review custom solutions that depend on SiteLogoUrl or OneDrive hostnames, and update related documentation. The access-governance rollout requires preparation but no action before rollout; new Copilot storage requires no user action and uses existing OneDrive controls.",
       "keyChanges": [
         {
-          "title": "SharePoint expands data access governance reports and site access reviews",
-          "detail": "Starting in late November 2026, enhanced reports and reviews will help administrators identify data risks, prioritize sites, direct review requests, and track email delivery. The message says no action is required before rollout.",
+          "title": "Existing SharePoint agents will stop responding until upgraded",
+          "detail": "The upgrade experience begins rolling out in mid-November 2026. Existing .agent files used in Teams or Microsoft Copilot will stop responding until upgraded; Teams chats require all agents in the chat to be upgraded together. The SharePoint Agents icon and Main agent setting will be removed. Inventory affected agents, upgrade them, and verify access to their knowledge sources.",
+          "product": "Agents and Copilot",
+          "sourceId": "doc-2026-11-17-upgrade-agents-in-sharepoint-and-onedrive-sharepoint-in-microsoft-365-05"
+        },
+        {
+          "title": "OneDrive URL transition runs through September 2027",
+          "detail": "OneDrive is transitioning from contoso-my.sharepoint.com to onedrive.cloud.microsoft, starting September 2026 and completing by September 2027. Both domains will coexist indefinitely, while file access and APIs remain unchanged. Review custom solutions and update administrator documentation.",
+          "product": "OneDrive",
+          "sourceId": "MC1392563"
+        },
+        {
+          "title": "Enhanced SharePoint access-governance reports begin in late November",
+          "detail": "The enhanced data access governance reports and site access reviews are intended to help administrators identify data risks, prioritize sites, direct review requests, and track email delivery. Rollout starts in late November 2026; no action is required before rollout, although administrators should prepare.",
           "product": "SharePoint",
           "sourceId": "MC1556106"
         },
         {
-          "title": "New Copilot Pages and Notebooks are stored in OneDrive for Business",
-          "detail": "Starting mid-October 2026, newly created Microsoft 365 Copilot Pages and Notebooks are stored in OneDrive for Business, bringing them under existing governance, compliance, data protection, retention, and lifecycle management. Existing Copilot content remains unchanged.",
-          "product": "SharePoint",
-          "sourceId": "MC1449182"
-        },
-        {
-          "title": "SharePoint search will stop automatically updating SiteLogoUrl metadata",
-          "detail": "From December 2026 through March 2027, SharePoint will stop automatically updating the SiteLogoUrl property on individual search items. Organizations that use the property for search results should retrieve logos directly from the site instead.",
-          "product": "SharePoint",
+          "title": "SiteLogoUrl stops automatic updates in SharePoint search metadata",
+          "detail": "From December 2026 through March 2027, SharePoint will stop automatically updating the SiteLogoUrl property on individual items in search metadata. Solutions that use the property should retrieve logos directly from the site instead.",
+          "product": "SharePoint Search",
           "sourceId": "MC1556092"
         },
         {
-          "title": "Sharing guidance distinguishes direct access from link-based access",
-          "detail": "The revised article explains direct access, hero links, audience scopes, forwarding, authentication, and access through search or Copilot, while also updating its diagrams, links, and metadata.",
-          "product": "Sharing and permissions",
-          "sourceId": "doc-2026-11-17-how-shareable-links-work-in-onedrive-and-sharepoint-in-microsoft-365-sharepoint-in-microsoft-365-02"
-        },
-        {
-          "title": "Application Restrictions guidance flags uneven cmdlet availability",
-          "detail": "The page now notes that Application Restrictions cmdlets are rolling out and may not yet be available in every tenant. Its PowerShell links now point to the Microsoft.Online.SharePoint.PowerShell module path.",
-          "product": "Agents and Copilot",
-          "sourceId": "doc-2026-11-17-restrict-sharepoint-site-access-for-applications-and-agents-with-application-restrictions-sharep-01"
+          "title": "New Copilot Pages and Notebooks inherit OneDrive governance",
+          "detail": "Starting mid-October 2026, newly created Microsoft 365 Copilot Pages and Notebooks are stored in OneDrive for Business, enabling existing governance, compliance, data protection, retention, and lifecycle management. Existing Copilot content remains unchanged, and no user action is required.",
+          "product": "OneDrive and Microsoft 365 Copilot",
+          "sourceId": "MC1449182"
         }
       ],
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-17T10:52:57.614Z",
+      "generatedAt": "2026-11-17T22:30:21.291Z",
       "usage": {
-        "inputTokens": 1424,
-        "outputTokens": 2192,
-        "costUsd": 0.002915
+        "inputTokens": 2024,
+        "outputTokens": 5350,
+        "costUsd": 0.006825
       }
     }
   },
   "months": {
     "2026-11": {
-      "headline": "SharePoint retires temporary authentication URLs as Copilot Search and access reviews expand",
-      "overview": "November’s most consequential change is a hard integration deadline: SharePoint temporary authentication URLs retire on April 1, 2027, breaking dependent Power Apps and Power Automate functionality. SharePoint and OneDrive web are also moving to unified Copilot Search, while SharePoint access-governance reports and site reviews expand from late November. The period adds a SiteLogoUrl behavior change and a documented tenant control for blocking agentic-user external sharing.",
-      "adminImpact": "Inventory Power Apps and Power Automate dependencies on temporary authentication URLs ahead of April 1, 2027. Copilot Search requires minimal organizational action, and users can opt out during preview. Use the enhanced reports and reviews to prioritize data-risk and site-review work once rollout begins. If search results consume SiteLogoUrl, change them to retrieve logos directly from the site. The agentic external-sharing policy is off by default and can be enabled and scoped through SharePoint Online PowerShell. Newly created Copilot Pages and Notebooks are stored in OneDrive for Business and receive its existing governance and compliance treatment.",
+      "headline": "SharePoint authentication URL retirement sets April 1 deadline for dependent Power Apps",
+      "overview": "November’s most consequential changes include the April 1, 2027 retirement of SharePoint temporary authentication URLs, an agent-upgrade rollout that can stop existing .agent files from responding, and staged changes to SharePoint and OneDrive search and hosting. Administrators also need to account for SiteLogoUrl behavior changes and the transition to OneDrive’s cloud.microsoft domain.",
+      "adminImpact": "Inventory Power Apps and Power Automate dependencies on temporary authentication URLs before April 1, 2027. Identify existing agents and plan upgrades, including upgrading all agents together in affected Teams chats. Review custom solutions that use SiteLogoUrl or hard-code OneDrive hostnames, and update related documentation. Copilot Search requires minimal organizational action, with user opt-out available during preview.",
       "keyChanges": [
         {
-          "title": "SharePoint temporary authentication URLs retire April 1, 2027",
-          "detail": "SharePoint temporary authentication URLs will be retired on April 1, 2027. Power Apps and Power Automate functionality that relies on these URLs will break, making dependency discovery and remediation time-sensitive.",
+          "title": "Temporary SharePoint authentication URLs retire April 1, 2027",
+          "detail": "Microsoft will retire SharePoint temporary authentication URLs on April 1, 2027. Power Apps and Power Automate functionality that relies on these URLs will break, making dependency identification and remediation the key administrator deadline.",
           "product": "SharePoint",
           "sourceId": "MC1551122"
         },
         {
-          "title": "Unified Copilot Search reaches SharePoint and OneDrive web",
-          "detail": "The web search experience is moving to unified Copilot Search with natural-language prompts, AI summaries, and filters. Preview rollout began in mid-October 2026, general rollout is scheduled for mid-January 2027, and users can opt out during preview.",
+          "title": "Existing SharePoint agents must be upgraded to keep responding",
+          "detail": "The upgrade experience begins rolling out in mid-November 2026. Existing .agent files used in Teams or Microsoft Copilot will stop responding until upgraded; Teams chats require all agents to be upgraded together. The SharePoint Agents icon and Main agent setting will also be removed.",
+          "product": "Agents and Copilot",
+          "sourceId": "doc-2026-11-17-upgrade-agents-in-sharepoint-and-onedrive-sharepoint-in-microsoft-365-05"
+        },
+        {
+          "title": "Copilot Search unifies SharePoint and OneDrive web search",
+          "detail": "The updated experience adds natural-language prompts, AI summaries, and filters across SharePoint Online and OneDrive on the web. Preview rollout starts in mid-October 2026, general rollout is planned for mid-January 2027, and users can opt out during preview.",
           "product": "SharePoint and OneDrive",
           "sourceId": "MC1540513"
         },
         {
-          "title": "SharePoint access reviews and governance reports gain operational controls",
-          "detail": "Starting in late November 2026, enhanced data access governance reports and site access reviews will help administrators identify data risks, prioritize sites, direct review requests, and track email delivery. No action is required before rollout.",
-          "product": "SharePoint",
-          "sourceId": "MC1556106"
-        },
-        {
-          "title": "SharePoint stops auto-updating SiteLogoUrl in search metadata",
-          "detail": "Between December 2026 and March 2027, SharePoint will stop automatically updating the SiteLogoUrl property on individual search items. Organizations using that property in search results should retrieve logos directly from the site instead.",
+          "title": "SharePoint stops automatically updating SiteLogoUrl in search metadata",
+          "detail": "During the December 2026 to March 2027 rollout, SharePoint will stop automatically updating the SiteLogoUrl property on individual search items. Solutions that use the property for search-result logos should retrieve logos directly from the site instead.",
           "product": "SharePoint",
           "sourceId": "MC1556092"
         },
         {
-          "title": "SharePoint documents tenant policy for blocking agentic external sharing",
-          "detail": "A new article documents a tenant-level policy for SharePoint and OneDrive that blocks agentic users from sharing content with external users. The policy is off by default; administrators can target all agentic users or those associated with selected application blueprints through SharePoint Online PowerShell.",
-          "product": "SharePoint and OneDrive",
-          "sourceId": "doc-2026-11-13-restrict-external-sharing-by-agentic-users-in-sharepoint-and-onedrive-sharepoint-in-microsoft-36-01"
+          "title": "OneDrive transitions to the cloud.microsoft domain through September 2027",
+          "detail": "OneDrive URLs will transition from contoso-my.sharepoint.com to onedrive.cloud.microsoft, starting in September 2026 and completing by September 2027. Both domains will coexist indefinitely, with no changes to file access or APIs; administrators should review custom solutions and update documentation.",
+          "product": "OneDrive",
+          "sourceId": "MC1392563"
         }
       ],
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-17T10:52:57.614Z",
+      "generatedAt": "2026-11-17T22:30:21.291Z",
       "usage": {
-        "inputTokens": 4042,
-        "outputTokens": 4291,
-        "costUsd": 0.005958
+        "inputTokens": 4633,
+        "outputTokens": 2692,
+        "costUsd": 0.004157
       }
     }
   },
   "version": 3,
-  "generatedAt": "2026-11-17T10:52:57.614Z",
+  "generatedAt": "2026-11-17T22:30:21.291Z",
   "generator": {
     "model": "gpt-5.6-luna",
     "reasoningEffort": "xhigh"
@@ -467,22 +485,22 @@
       "costUsd": 0.010304
     },
     "2026-11-17": {
-      "inputTokens": 6710,
-      "outputTokens": 7362,
-      "requests": 3,
-      "costUsd": 0.010176
+      "inputTokens": 15220,
+      "outputTokens": 19593,
+      "requests": 6,
+      "costUsd": 0.026555
     }
   },
   "lastRun": {
-    "inputTokens": 6710,
-    "outputTokens": 7362,
+    "inputTokens": 8510,
+    "outputTokens": 12231,
     "requests": 3,
-    "costUsd": 0.010176
+    "costUsd": 0.016379
   },
   "totalUsage": {
-    "inputTokens": 49940,
-    "outputTokens": 82832,
-    "requests": 30,
-    "costUsd": 0.109386
+    "inputTokens": 58450,
+    "outputTokens": 95063,
+    "requests": 33,
+    "costUsd": 0.125765
   }
 }
