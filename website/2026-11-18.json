@@ -131,6 +131,32 @@
         "generatedBy": "openai",
         "model": "gpt-5.6-luna"
       }
+    },
+    {
+      "filename": "SharePoint/SharePointOnline/agentic-users-governance-restrict-share-to-set-users.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "patch": "diff --git a/SharePoint/SharePointOnline/agentic-users-governance-restrict-share-to-set-users.md b/SharePoint/SharePointOnline/agentic-users-governance-restrict-share-to-set-users.md\nindex 4f5fcd9..127eb1d 100644\n--- a/SharePoint/SharePointOnline/agentic-users-governance-restrict-share-to-set-users.md\n+++ b/SharePoint/SharePointOnline/agentic-users-governance-restrict-share-to-set-users.md\n@@ -109,7 +109,7 @@ Global Administrators can turn on the guardrail as one of the default protection\n \r\n When you set the guardrail to **On**, every agent user associated with the agent template can share site and content only with their manager.\r\n \r\n-[![Screenshot of the Default protection for autopilots Policies tab in Microsoft admin center with Restrict collaboration by agentic users turned On.](media/agentic-users-governance-restrict-share-to-set-users/restrict-agent-collaboration.png)](sharepointonline/media/agentic-users-governance-restrict-share-to-set-users/agent-365-policies-autopilot-protections.png#lightbox)\r\n+[![Screenshot of the Default protection for autopilots Policies tab in Microsoft admin center with Restrict collaboration by agentic users turned On.](sharepointonline/media/agentic-users-governance-restrict-share-to-set-users/restrict-agent-collaboration-pane.png)](sharepointonline/media/agentic-users-governance-restrict-share-to-set-users/restrict-agent-collaboration-pane.png#lightbox)\r\n \r\n ## Agentic user guardrail FAQ\r\n \r\n",
+      "baseCommitSha": "ef61725d3c0960bb81f3ffc1471bf1436dcd984b",
+      "commitSha": "62a065d87217a35b665deb3f6f8c0abbec0b2fb9",
+      "commitMessage": "Mirror Learn: 1 changed",
+      "commitAuthor": "github-actions[bot]",
+      "commitDate": "2026-11-18 13:28:12 +0000",
+      "githubUrl": "https://github.com/merill/sharepoint-docs-mirror/blob/main/SharePoint/SharePointOnline/agentic-users-governance-restrict-share-to-set-users.md",
+      "publicDocsUrl": "https://learn.microsoft.com/en-us/sharepoint/agentic-users-governance-restrict-share-to-set-users",
+      "eventId": "sharepoint-docs:62a065d87217a35b665deb3f6f8c0abbec0b2fb9:modified:SharePoint/SharePointOnline/agentic-users-governance-restrict-share-to-set-users.md",
+      "firstSeenAt": "2026-11-18T22:10:10.450Z",
+      "englishSummary": {
+        "category": "Doc update",
+        "headline": "Updated screenshot reference for agentic-user sharing controls",
+        "summary": "The article now points to an updated screenshot showing the “Restrict collaboration by agentic users” setting enabled in the Default protection for autopilots Policies tab.",
+        "adminImpact": "Administrators can use the updated visual to identify the relevant control in the Microsoft admin center.",
+        "actionRequired": false,
+        "generatedBy": "openai",
+        "model": "gpt-5.6-luna"
+      }
     }
   ],
   "deletedFiles": [],
@@ -215,14 +241,14 @@
     }
   ],
   "summary": {
-    "totalCommits": 1,
-    "totalFiles": 5,
+    "totalCommits": 2,
+    "totalFiles": 6,
     "authors": [
       "github-actions[bot]"
     ]
   },
   "englishSummary": {
-    "overview": "Today's report includes 4 new, 1 updated, and 0 removed SharePoint Online and OneDrive documentation files across 1 documentation area.",
+    "overview": "Today's report includes 4 new, 2 updated, and 0 removed SharePoint Online and OneDrive documentation files across 1 documentation area.",
     "groups": [
       {
         "category": "Public preview",
@@ -233,7 +259,8 @@
           "SharePoint/SharePointOnline/agent-governance-generate-agent-access-report.md",
           "SharePoint/SharePointOnline/agent-governance-overview.md",
           "SharePoint/SharePointOnline/agentic-users-governance-restrict-share-to-set-users.md",
-          "SharePoint/SharePointOnline/upgrade-sharepoint-agents.md"
+          "SharePoint/SharePointOnline/upgrade-sharepoint-agents.md",
+          "SharePoint/SharePointOnline/agentic-users-governance-restrict-share-to-set-users.md"
         ]
       }
     ],

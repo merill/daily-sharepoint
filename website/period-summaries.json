@@ -253,31 +253,37 @@
       }
     },
     "2026-11-18": {
-      "headline": "Preview heatmaps expose agent access to SharePoint and OneDrive content",
-      "overview": "The period’s main development is new guidance for preview agent-governance capabilities in SharePoint: access reports and heatmaps, seven-day activity insights, and a manager-only collaboration restriction for agentic users. An updated article also adopts Microsoft Copilot plugins ecosystem terminology and links administrators to the agent registry.",
-      "adminImpact": "Administrators with the required roles and licensing can investigate agent access and potential oversharing. Heatmap completeness depends on sensitivity labels and business-group configuration. The manager-only collaboration control is off by default, so enabling it is a deliberate tenant governance decision; no action is indicated for the terminology and navigation update.",
+      "headline": "SharePoint guidance details agent access heatmaps and manager-only sharing controls",
+      "overview": "New guidance centers on three preview governance surfaces: the SharePoint admin center’s agent access heatmap and report, the Agent Governance Overview, and an Agent 365 control that limits agentic-user sharing to managers. The pages cover SharePoint, OneDrive, and Teams-connected content, while also documenting licensing, role, sensitivity-label, and business-group prerequisites; an updated upgrade article points administrators to the agent registry.",
+      "adminImpact": "Administrators can inspect agent and Copilot access, including whether agents read, modify, or upload files, and investigate possible sensitive-content exposure. The guidance cites licensing and administrator-permission prerequisites; the overview specifically requires the relevant role plus Microsoft Agent 365 or Microsoft 365 E7. Sensitivity labels and business-group configuration affect view completeness. The manager-only sharing setting is off by default, so activation is optional; no mandatory action is stated.",
       "keyChanges": [
         {
-          "title": "Agent access reports pair with a sensitive-content heatmap",
-          "detail": "The new preview guidance explains how to generate an agent access report in the SharePoint admin center and use its heatmap to investigate agents reaching sensitive content. Licensing, administrator permissions, sensitivity labels, and business groups are prerequisites; site labels and business-group configuration affect how complete the view is.",
+          "title": "Agent access heatmap maps agent reach across SharePoint, OneDrive, and Teams content",
+          "detail": "Preview guidance describes SharePoint admin center views showing which SharePoint sites, OneDrive accounts, and Teams-connected sites agents access, along with content ownership, sensitivity, and whether agents read, modify, or upload files. Full business-group and sensitivity views depend on those configurations.",
+          "product": "Agents and Copilot",
+          "sourceId": "doc-2026-11-18-agent-access-heatmap-overview-preview-sharepoint-in-microsoft-365-01"
+        },
+        {
+          "title": "Report workflow documents prerequisites for investigating sensitive-content exposure",
+          "detail": "A companion preview article explains how to generate the agent access report and use its heatmap to investigate agents reaching sensitive content. It identifies licensing, administrator permissions, sensitivity-label, and business-group requirements, and notes that site labels and business-group configuration affect view completeness.",
           "product": "Agents and Copilot",
           "sourceId": "doc-2026-11-18-generate-a-report-and-explore-the-agent-access-heatmap-preview-sharepoint-in-microsoft-365-02"
         },
         {
-          "title": "Agent Governance Overview documents seven-day activity insights",
-          "detail": "The preview overview shows agent and Copilot access to SharePoint sites, OneDrive accounts, Teams sites, and sensitivity-labeled content. Administrators can generate seven-day insights and use restricted access control and restricted content discovery; the documented requirements include the necessary administrator role and a Microsoft Agent 365 or Microsoft 365 E7 license.",
+          "title": "Preview Agent Governance Overview provides seven-day activity insights",
+          "detail": "The overview surfaces agent and Copilot access to sites, OneDrive accounts, Teams sites, and sensitivity-labeled content. It supports seven-day insights and includes controls such as restricted access control and restricted content discovery; the guidance cites a required administrator role and Microsoft Agent 365 or Microsoft 365 E7 license.",
           "product": "Agents and Copilot",
           "sourceId": "doc-2026-11-18-view-agent-activity-in-the-agent-governance-overview-sharepoint-in-microsoft-365-03"
         },
         {
-          "title": "Agent 365 preview adds manager-only collaboration guidance",
-          "detail": "The new preview setting lets administrators restrict agentic users to sharing SharePoint and OneDrive content only with their managers. It is off by default and can apply to all agent blueprint app IDs or selected IDs, giving tenants an optional control for sensitive-content governance.",
+          "title": "Agent 365 preview can limit agentic-user sharing to managers",
+          "detail": "The tenant-level setting restricts agentic users to sharing SharePoint and OneDrive content only with their managers. It is off by default and can target all or selected agent blueprint app IDs, giving administrators an optional control for sensitive-content oversharing.",
           "product": "Agents and Copilot",
           "sourceId": "doc-2026-11-18-restrict-content-collaboration-by-agentic-users-preview-sharepoint-in-microsoft-365-04"
         },
         {
-          "title": "Agent upgrade guidance points to the registry and revised terminology",
-          "detail": "The updated SharePoint and OneDrive article now refers to the Microsoft Copilot plugins ecosystem and links to the agent registry for viewing SharePoint agents. The change gives administrators updated navigation when reviewing agents; no administrative action is stated.",
+          "title": "Agent upgrade guidance now names the Copilot plugins ecosystem and agent registry",
+          "detail": "An updated SharePoint and OneDrive article uses the Microsoft Copilot plugins ecosystem terminology and links to the agent registry for viewing SharePoint agents. The update changes the terminology and navigation available to administrators; no action is stated.",
           "product": "Agents and Copilot",
           "sourceId": "doc-2026-11-18-upgrade-agents-in-sharepoint-and-onedrive-sharepoint-in-microsoft-365-05"
         }
@@ -285,11 +291,11 @@
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-18T10:24:19.313Z",
+      "generatedAt": "2026-11-18T22:10:16.597Z",
       "usage": {
-        "inputTokens": 1744,
-        "outputTokens": 2148,
-        "costUsd": 0.002926
+        "inputTokens": 1871,
+        "outputTokens": 3837,
+        "costUsd": 0.004979
       }
     }
   },
@@ -375,102 +381,102 @@
       }
     },
     "2026-11-16": {
-      "headline": "SharePoint agent previews bring heatmaps and manager-only sharing controls",
-      "overview": "The period’s clearest administrator signal is a set of SharePoint agent-governance previews: a report-backed heatmap shows where agents reach content, while an opt-in Agent 365 control can limit agentic-user sharing to managers. SharePoint is also enhancing access-governance reviews, legacy agents face an upgrade dependency, and OneDrive will begin excluding new node_modules folders from sync on December 14.",
-      "adminImpact": "Check the licensing, administrator-permission, sensitivity-label, and business-group prerequisites for the heatmap; the manager-only control is off by default. Inventory .agent files and plan upgrades, especially where Teams chats contain multiple agents. For OneDrive, use the policy exception only if users need new node_modules folders synced. Microsoft says the access-review enhancement requires no action before rollout but recommends preparing.",
+      "headline": "Existing .agent files require upgrades as SharePoint governance previews target oversharing",
+      "overview": "An upgrade dependency is the week’s sharpest operational change: existing .agent files used in Teams or Microsoft Copilot will stop responding until upgraded, while SharePoint’s preview governance material covers an agent-access heatmap and a manager-only collaboration control. OneDrive also changes its sync default for new node_modules folders on December 14, 2026, and SharePoint will stop automatically updating SiteLogoUrl on individual search items during a December 2026–March 2027 rollout.",
+      "adminImpact": "Inventory affected .agent files and Teams chats before the mid-November rollout; Teams chats require all agents to be upgraded together, and administrators should verify user access to each agent and its knowledge sources. For the preview controls, confirm the listed licensing, administrator-permission, sensitivity-label, and business-group prerequisites; the manager-only restriction is off by default and optional. On December 14, note the OneDrive policy override for organizations that need node_modules syncing, and update solutions that rely on SiteLogoUrl to retrieve logos directly from the site.",
       "keyChanges": [
         {
-          "title": "Agent access heatmap preview ties reports to sensitive-content exposure",
-          "detail": "The SharePoint admin center can generate an agent access report and use a heatmap to investigate agents reaching sensitive content. The documented prerequisites include licensing and administrator permissions; sensitivity labels and business-group configuration affect how complete the view is.",
-          "product": "Agents and Copilot",
-          "sourceId": "doc-2026-11-18-generate-a-report-and-explore-the-agent-access-heatmap-preview-sharepoint-in-microsoft-365-02"
-        },
-        {
-          "title": "Agent 365 preview limits agentic-user sharing to managers",
-          "detail": "The tenant-level setting is off by default and can apply to all or selected agent blueprint app IDs, restricting SharePoint and OneDrive content sharing to the users’ managers. Administrators need act only if they choose to enable the preview control.",
-          "product": "Agents and Copilot",
-          "sourceId": "doc-2026-11-18-restrict-content-collaboration-by-agentic-users-preview-sharepoint-in-microsoft-365-04"
-        },
-        {
-          "title": "Legacy .agent files will stop responding until upgraded",
-          "detail": "Upgrade guidance says rollout begins in mid-November 2026; existing .agent files used in Teams or Microsoft Copilot stop responding until upgraded. Teams chats require all agents to be upgraded together, and the SharePoint Agents icon and Main agent setting are being removed.",
+          "title": "Existing agents will stop responding until upgraded",
+          "detail": "The upgrade experience begins rolling out in mid-November 2026. Existing .agent files used in Teams or Microsoft Copilot will stop responding until upgraded; Teams chats require all agents to be upgraded together, and the SharePoint Agents icon and Main agent setting will be removed.",
           "product": "Agents and Copilot",
           "sourceId": "doc-2026-11-17-upgrade-agents-in-sharepoint-and-onedrive-sharepoint-in-microsoft-365-05"
         },
         {
-          "title": "SharePoint access reviews add risk prioritization and email tracking",
-          "detail": "Starting in late November 2026, enhanced data access governance reports and site access reviews will help administrators identify data risks, prioritize sites, direct review requests, and track email delivery. No action is required before rollout, but Microsoft says administrators should prepare.",
-          "product": "SharePoint",
-          "sourceId": "MC1556106"
+          "title": "SharePoint documents a preview agent-access heatmap",
+          "detail": "The preview report lets administrators generate an agent access report in the SharePoint admin center and use a heatmap to investigate agents reaching sensitive content. Its documented prerequisites include licensing, administrator permissions, sensitivity labels, and business groups; labels and group configuration affect how complete the view is.",
+          "product": "Agents and Copilot",
+          "sourceId": "doc-2026-11-18-generate-a-report-and-explore-the-agent-access-heatmap-preview-sharepoint-in-microsoft-365-02"
         },
         {
-          "title": "OneDrive will exclude new node_modules folders from sync by default",
-          "detail": "From December 14, 2026, OneDrive for Windows and Mac will skip new folders named node_modules to improve performance. Existing synced folders remain unaffected, users get no prompts, and local folder use continues; administrators can disable the exclusion by policy when sync is needed.",
+          "title": "Agent 365 adds optional manager-only collaboration restriction",
+          "detail": "A tenant-level Agent 365 preview setting can restrict agentic users to sharing SharePoint and OneDrive content only with their managers. It is off by default and can apply to all or selected agent blueprint app IDs.",
+          "product": "Agents and Copilot",
+          "sourceId": "doc-2026-11-18-restrict-content-collaboration-by-agentic-users-preview-sharepoint-in-microsoft-365-04"
+        },
+        {
+          "title": "OneDrive will exclude new node_modules folders from sync",
+          "detail": "Starting December 14, 2026, OneDrive for Windows and Mac will exclude new folders named node_modules from syncing by default to improve performance. Existing synced folders are unaffected; there are no prompts, local folder use continues, and administrators can disable the exclusion through policy.",
           "product": "OneDrive",
           "sourceId": "MC1558030"
+        },
+        {
+          "title": "SharePoint will stop auto-updating SiteLogoUrl search metadata",
+          "detail": "During the December 2026–March 2027 rollout, SharePoint will stop automatically updating the SiteLogoUrl property on individual items in search metadata. Organizations using that property in search results should retrieve logos directly from the site instead.",
+          "product": "SharePoint",
+          "sourceId": "MC1556092"
         }
       ],
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-18T10:24:19.313Z",
+      "generatedAt": "2026-11-18T22:10:16.597Z",
       "usage": {
-        "inputTokens": 3106,
-        "outputTokens": 4648,
-        "costUsd": 0.006199
+        "inputTokens": 3233,
+        "outputTokens": 6253,
+        "costUsd": 0.00815
       }
     }
   },
   "months": {
     "2026-11": {
-      "headline": "SharePoint's temporary authentication URLs retire April 1, 2027 as agent governance previews expand",
-      "overview": "November's most consequential administrator deadline is April 1, 2027, when SharePoint temporary authentication URLs retire and dependent Power Apps and Automate functionality breaks. Meanwhile, SharePoint and OneDrive for the web are moving toward unified Copilot Search, SharePoint is documenting preview controls for agent access and sharing, and OneDrive will change its default treatment of new node_modules folders on December 14.",
-      "adminImpact": "Inventory Power Apps and Automate dependencies on temporary authentication URLs before April 1, 2027. Copilot Search requires minimal organizational action, and users can opt out during preview. For the agent-access heatmap, verify the required licensing, administrator permissions, sensitivity labels, and business groups; those configurations affect the completeness of the view. The manager-only sharing control is off by default and is optional. OneDrive administrators need a policy change only if new node_modules folders must sync; existing synced folders are unaffected.",
+      "headline": "Copilot Search, agent upgrades and April temporary-URL retirement reshape SharePoint administration",
+      "overview": "November’s most consequential changes combine a unified Copilot Search rollout across SharePoint Online and OneDrive on the web, an upgrade dependency for existing .agent files, and the April 1, 2027 retirement of SharePoint temporary authentication URLs used by Power Apps and Automate. SharePoint is also rolling out group-permission governance reporting, while new guidance documents a tenant-level control for restricting agentic-user external sharing.",
+      "adminImpact": "Inventory .agent files and identify Power Apps and Automate functionality dependent on temporary authentication URLs. Teams chats require all agents to be upgraded together, while affected users must retain access to the upgraded agent and its knowledge sources. Copilot Search requires minimal organizational action during preview, and users can opt out. Administrators can use the group-permission report to investigate unintended access and enable the agentic-user sharing restriction through SharePoint Online PowerShell if an internal-only sharing boundary is needed.",
       "keyChanges": [
         {
-          "title": "SharePoint temporary authentication URLs have a fixed retirement deadline",
-          "detail": "Microsoft will retire SharePoint temporary authentication URLs on April 1, 2027. Power Apps and Automate functionality that relies on them will break, making dependency inventory an urgent administrator task before the deadline.",
+          "title": "Unified Copilot Search is coming to SharePoint and OneDrive web",
+          "detail": "SharePoint Online and OneDrive on the web are moving to a unified Copilot Search experience with natural-language prompts, AI summaries, and filters. Preview rollout began in mid-October 2026, with general rollout scheduled for mid-January 2027. Users can opt out during preview, and the notice calls for minimal organizational action.",
+          "product": "SharePoint and OneDrive",
+          "sourceId": "MC1540513"
+        },
+        {
+          "title": "Existing .agent files must be upgraded before they stop responding",
+          "detail": "The updated guidance says the upgrade experience begins rolling out in mid-November 2026. Existing .agent files used in Teams or Microsoft Copilot will stop responding until upgraded; Teams chats require all agents to be upgraded together. The SharePoint Agents icon and Main agent setting will also be removed.",
+          "product": "Agents and Copilot",
+          "sourceId": "doc-2026-11-17-upgrade-agents-in-sharepoint-and-onedrive-sharepoint-in-microsoft-365-05"
+        },
+        {
+          "title": "SharePoint temporary authentication URLs retire April 1, 2027",
+          "detail": "SharePoint temporary authentication URLs will be retired starting April 1, 2027. Power Apps and Automate functionality that relies on those URLs will break, making the date a firm deadline for identifying dependent applications and automations.",
           "product": "SharePoint",
           "sourceId": "MC1551122"
         },
         {
-          "title": "Unified Copilot Search is moving across SharePoint and OneDrive web",
-          "detail": "SharePoint Online and OneDrive for the web are updating to a unified Copilot Search experience with natural-language prompts, AI summaries, and filters. Preview rollout began in mid-October 2026, with general rollout scheduled to begin in mid-January 2027; users can opt out during preview.",
-          "product": "SharePoint Online and OneDrive",
-          "sourceId": "MC1540513"
-        },
-        {
-          "title": "Agent-access heatmap guidance defines a preview exposure workflow",
-          "detail": "A new SharePoint admin-center article explains how to generate an agent access report and use the heatmap to investigate agents reaching sensitive content. It lists licensing, administrator-permission, sensitivity-label, and business-group requirements, with labels and business-group configuration affecting view completeness.",
+          "title": "Agentic-user external sharing can be restricted by application blueprint",
+          "detail": "New SharePoint and OneDrive guidance documents a tenant-level policy that blocks agentic users from sharing content with external users. The control is off by default and can target all agentic users or only users associated with selected application blueprint IDs through SharePoint Online PowerShell.",
           "product": "Agents and Copilot",
-          "sourceId": "doc-2026-11-18-generate-a-report-and-explore-the-agent-access-heatmap-preview-sharepoint-in-microsoft-365-02"
+          "sourceId": "doc-2026-11-13-restrict-external-sharing-by-agentic-users-in-sharepoint-and-onedrive-sharepoint-in-microsoft-36-01"
         },
         {
-          "title": "Agent 365 guidance documents manager-only sharing for agentic users",
-          "detail": "New preview guidance describes a tenant-level setting that restricts agentic users to sharing SharePoint and OneDrive content only with their managers. The setting is off by default and can target all agentic users or selected agent blueprint app IDs.",
-          "product": "Agents and Copilot",
-          "sourceId": "doc-2026-11-18-restrict-content-collaboration-by-agentic-users-preview-sharepoint-in-microsoft-365-04"
-        },
-        {
-          "title": "OneDrive will exclude new node_modules folders from sync by default",
-          "detail": "Starting December 14, 2026, OneDrive for Windows and Mac will exclude new folders named node_modules from syncing to improve performance. Existing synced folders remain unaffected, local use continues without prompts, and administrators can disable the exclusion through policy if needed.",
-          "product": "OneDrive",
-          "sourceId": "MC1558030"
+          "title": "Group-permission governance reporting is rolling out in SharePoint",
+          "detail": "A Data access governance report in the SharePoint admin center is rolling out worldwide from late November to early December 2026. It identifies sites accessible to specific groups and shows access levels, helping administrators find unintended content exposure.",
+          "product": "SharePoint",
+          "sourceId": "MC1540348"
         }
       ],
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-18T10:24:19.313Z",
+      "generatedAt": "2026-11-18T22:10:16.597Z",
       "usage": {
-        "inputTokens": 5676,
-        "outputTokens": 9412,
-        "costUsd": 0.01243
+        "inputTokens": 5851,
+        "outputTokens": 7412,
+        "costUsd": 0.010065
       }
     }
   },
   "version": 3,
-  "generatedAt": "2026-11-18T10:24:19.313Z",
+  "generatedAt": "2026-11-18T22:10:16.597Z",
   "generator": {
     "model": "gpt-5.6-luna",
     "reasoningEffort": "xhigh"
@@ -531,22 +537,22 @@
       "costUsd": 0.026555
     },
     "2026-11-18": {
-      "inputTokens": 10526,
-      "outputTokens": 16208,
-      "requests": 3,
-      "costUsd": 0.021555
+      "inputTokens": 21481,
+      "outputTokens": 33710,
+      "requests": 6,
+      "costUsd": 0.044748
     }
   },
   "lastRun": {
-    "inputTokens": 10526,
-    "outputTokens": 16208,
+    "inputTokens": 10955,
+    "outputTokens": 17502,
     "requests": 3,
-    "costUsd": 0.021555
+    "costUsd": 0.023193
   },
   "totalUsage": {
-    "inputTokens": 68976,
-    "outputTokens": 111271,
-    "requests": 36,
-    "costUsd": 0.14732
+    "inputTokens": 79931,
+    "outputTokens": 128773,
+    "requests": 39,
+    "costUsd": 0.170513
   }
 }
