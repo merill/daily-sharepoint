@@ -291,6 +291,28 @@
         "outputTokens": 4239,
         "costUsd": 0.005514
       }
+    },
+    "2026-11-19": {
+      "headline": "SharePoint storage guidance expands around version trimming, archiving, and capacity",
+      "overview": "Microsoft substantially expanded and retitled the SharePoint storage management guidance. The updated article brings together ways to assess storage usage, trim versions, archive inactive content, review deletion and retention, manage capacity, and control future growth. It also covers admin reports, SharePoint Admin Agent, and Microsoft Graph Data Connect as assessment approaches.",
+      "adminImpact": "Administrators can use the consolidated guidance to compare storage-remediation and capacity-management options, while accounting for recoverability, retention, processing time, pay-as-you-go storage, and possible charges.",
+      "keyChanges": [
+        {
+          "title": "Expanded storage-remediation and capacity guidance",
+          "detail": "The retitled SharePoint storage management article now covers storage assessment, version trimming, inactive-content archiving, deletion and retention review, capacity management, and future-growth controls. It adds approaches using admin reports, SharePoint Admin Agent, and Microsoft Graph Data Connect. The guidance also calls out recoverability, retention, processing time, pay-as-you-go storage, and possible charges when choosing an approach.",
+          "product": "Content and versions",
+          "sourceId": "doc-2026-11-19-sharepoint-storage-management-sharepoint-in-microsoft-365-01"
+        }
+      ],
+      "generatedBy": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "xhigh",
+      "generatedAt": "2026-11-19T22:19:46.945Z",
+      "usage": {
+        "inputTokens": 1076,
+        "outputTokens": 572,
+        "costUsd": 0.000902
+      }
     }
   },
   "weeks": {
@@ -375,85 +397,85 @@
       }
     },
     "2026-11-16": {
-      "headline": "Agent-access heatmap preview examines sensitive content as existing .agent files need upgrades",
-      "overview": "Agent governance is the week’s main story: new SharePoint guidance describes a preview agent-access report and heatmap for investigating agents that reach sensitive content, alongside a preview Agent 365 control that limits agentic-user sharing to managers. The upgrade path is more immediate: existing .agent files used in Teams or Microsoft Copilot will stop responding until upgraded. Separately, SharePoint search metadata and OneDrive sync behavior are changing on defined schedules.",
-      "adminImpact": "Inventory agents used in Teams or Microsoft Copilot and schedule upgrades; Teams chats require all agents to be upgraded together, followed by validation of user access and knowledge sources. Heatmap use depends on the stated licensing, administrator permissions, sensitivity-label, and business-group requirements, while site labels and business-group configuration affect view completeness. The manager-only sharing control is off by default. Administrators whose search solutions use SiteLogoUrl should retrieve logos directly from the site, and OneDrive administrators should account for new node_modules folders being excluded from sync from December 14, 2026; the exclusion can be disabled by policy if needed.",
+      "headline": "Agent upgrades may disrupt Teams and Copilot as OneDrive changes node_modules sync",
+      "overview": "Agent upgrades are the week's sharpest operational risk: the experience starts rolling out in mid-November, and existing .agent files in Teams or Microsoft Copilot stop responding until upgraded. OneDrive will exclude new node_modules folders from sync by default from 14 December, while SharePoint will stop automatically updating SiteLogoUrl on individual search items during December 2026 through March 2027. New guidance also covers preview agent-access reporting and manager-only sharing controls, and enhanced data access governance reports and site access reviews begin rolling out in late November.",
+      "adminImpact": "Inventory .agent files used in Teams and Copilot and plan upgrades; Teams chats require all agents to be upgraded together, followed by verification of access to agents and knowledge sources. For the preview heatmap, check licensing, administrator permissions, sensitivity-label, and business-group prerequisites because labels and group configuration affect completeness. The manager-only sharing control is off by default and needs action only if administrators choose to enable it. If syncing node_modules is required, the OneDrive exclusion can be disabled by policy; existing synced folders are unaffected. Solutions that use SiteLogoUrl in search should retrieve logos directly from the site instead.",
       "keyChanges": [
         {
-          "title": "Agent access heatmap preview adds sensitive-content investigation",
-          "detail": "New SharePoint admin-center guidance covers generating an agent access report and using its heatmap to investigate agents reaching sensitive content. It lists licensing and administrator-permission prerequisites, plus sensitivity-label and business-group requirements; site labels and business-group configuration affect how complete the heatmap view is.",
-          "product": "SharePoint agent governance",
-          "sourceId": "doc-2026-11-18-generate-a-report-and-explore-the-agent-access-heatmap-preview-sharepoint-in-microsoft-365-02"
-        },
-        {
-          "title": "Agentic-user sharing can be restricted to managers",
-          "detail": "A preview Agent 365 setting can limit agentic users to sharing SharePoint and OneDrive content only with their managers. The setting is off by default and can apply to all agent blueprint app IDs or selected IDs.",
-          "product": "Agent 365, SharePoint and OneDrive sharing",
-          "sourceId": "doc-2026-11-18-restrict-content-collaboration-by-agentic-users-preview-sharepoint-in-microsoft-365-04"
-        },
-        {
-          "title": "Existing .agent files require upgrades before they stop responding",
-          "detail": "The upgrade experience begins rolling out in mid-November 2026. Existing .agent files used in Teams or Microsoft Copilot will stop responding until upgraded; Teams chats require upgrading all agents together. The SharePoint Agents icon and Main agent setting will also be removed.",
-          "product": "SharePoint and OneDrive agents",
+          "title": "Legacy agents require upgrades across Teams and Copilot",
+          "detail": "The upgrade experience begins rolling out in mid-November 2026. Existing .agent files used in Teams or Microsoft Copilot will stop responding until upgraded; Teams chats require upgrading all agents together. The SharePoint Agents icon and Main agent setting will also be removed. Administrators should identify affected agents, upgrade them, and verify access to the agents and their knowledge sources.",
+          "product": "Agents and Copilot",
           "sourceId": "doc-2026-11-17-upgrade-agents-in-sharepoint-and-onedrive-sharepoint-in-microsoft-365-05"
         },
         {
-          "title": "SiteLogoUrl stops updating automatically in SharePoint search metadata",
-          "detail": "During the December 2026-to-March 2027 rollout, SharePoint will stop automatically updating the SiteLogoUrl property on individual items in search metadata. Organizations that use the property in search results should retrieve logos directly from the site instead.",
-          "product": "SharePoint search metadata",
-          "sourceId": "MC1556092"
+          "title": "Preview heatmap guidance details agent-access reporting prerequisites",
+          "detail": "A new article explains how to generate an agent access report in the SharePoint admin center and use the preview heatmap to investigate agents reaching sensitive content. It lists licensing, administrator permissions, sensitivity-label, and business-group requirements; site labels and business-group configuration affect how complete the heatmap view is.",
+          "product": "Agents and Copilot",
+          "sourceId": "doc-2026-11-18-generate-a-report-and-explore-the-agent-access-heatmap-preview-sharepoint-in-microsoft-365-02"
         },
         {
-          "title": "OneDrive will exclude new node_modules folders from sync by default",
-          "detail": "Starting December 14, 2026, OneDrive for Windows and Mac will exclude new folders named node_modules from syncing to improve performance. Existing synced folders remain unaffected, local folder use continues, no user prompts appear, and administrators can disable the exclusion through policy.",
-          "product": "OneDrive sync",
+          "title": "Preview control can limit agentic-user sharing to managers",
+          "detail": "New guidance describes an Agent 365 tenant-level setting that is off by default and restricts agentic users to sharing SharePoint and OneDrive content only with their managers. Administrators can apply it to all agent blueprint app IDs or selected IDs if they choose to reduce agentic-user oversharing.",
+          "product": "Agents and Copilot",
+          "sourceId": "doc-2026-11-18-restrict-content-collaboration-by-agentic-users-preview-sharepoint-in-microsoft-365-04"
+        },
+        {
+          "title": "OneDrive excludes new node_modules folders by default",
+          "detail": "Starting 14 December 2026, OneDrive for Windows and Mac will exclude new folders named node_modules from syncing by default to improve performance. Existing synced folders remain unaffected, local use continues, no user prompt appears, and administrators can disable the exclusion through policy.",
+          "product": "OneDrive",
           "sourceId": "MC1558030"
+        },
+        {
+          "title": "SharePoint search metadata stops automatic SiteLogoUrl updates",
+          "detail": "During the December 2026 to March 2027 rollout, SharePoint will stop automatically updating the SiteLogoUrl property on individual items in search metadata. Organizations that use the property in search results should retrieve logos directly from the site instead.",
+          "product": "SharePoint",
+          "sourceId": "MC1556092"
         }
       ],
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-19T10:31:27.405Z",
+      "generatedAt": "2026-11-19T22:19:46.945Z",
       "usage": {
-        "inputTokens": 3487,
-        "outputTokens": 6575,
-        "costUsd": 0.008587
+        "inputTokens": 3662,
+        "outputTokens": 6999,
+        "costUsd": 0.009131
       }
     }
   },
   "months": {
     "2026-11": {
-      "headline": "Temporary authentication URLs retire April 1, 2027, breaking dependent Power Apps and Automate",
-      "overview": "SharePoint’s temporary authentication URLs have a hard April 1, 2027 retirement date, after which dependent Power Apps and Automate functionality will break. November also sets the path for a mid-January general rollout of unified Copilot Search, requires upgrades for existing agent files before they stop responding, and introduces targeted permission reporting and a OneDrive sync-policy change.",
-      "adminImpact": "Treat April 1, 2027, as a dependency deadline for Power Apps and Automate integrations. Inventory .agent files used in Teams or Microsoft Copilot and plan upgrades; Teams chats require all agents to be upgraded together, followed by checks of user access and knowledge sources. Copilot Search requires minimal organizational action, with opt-out available during preview. Use the group-permission report for targeted access reviews, and disable the OneDrive node_modules exclusion only where syncing those folders is required.",
+      "headline": "Power Apps and Automate dependencies face authentication-URL retirement as agent upgrades roll out",
+      "overview": "November’s clearest compatibility deadline is April 1, 2027, when SharePoint temporary authentication URLs retire and dependent Power Apps and Automate functionality breaks. Separately, existing .agent files in Teams or Microsoft Copilot stop responding until upgraded. SharePoint and OneDrive are moving toward unified Copilot Search, while access-governance reporting and OneDrive’s default treatment of node_modules also change.",
+      "adminImpact": "Inventory Power Apps and Automate dependencies on temporary authentication URLs and plan remediation before April 1, 2027. Identify .agent files in Teams and Copilot, upgrade them, and upgrade all agents together for Teams chats; then verify access to agents and knowledge sources. Copilot Search requires minimal organizational action, with user opt-out available during preview. Prepare for the enhanced access-review reports. If workflows require node_modules folders to sync, disable the OneDrive exclusion by policy; existing synced folders need no change.",
       "keyChanges": [
         {
-          "title": "SharePoint temporary authentication URLs face a hard retirement deadline",
-          "detail": "Starting April 1, 2027, SharePoint temporary authentication URLs will be retired. Power Apps and Automate functionality that relies on those URLs will break, making dependency identification a priority for affected integrations.",
+          "title": "Temporary authentication URLs retire April 1, 2027",
+          "detail": "SharePoint temporary authentication URLs will be retired on April 1, 2027. Power Apps and Automate functionality that relies on those URLs will break, making dependency identification and remediation a firm administrative deadline.",
           "product": "SharePoint",
           "sourceId": "MC1551122"
         },
         {
-          "title": "Existing .agent files must be upgraded before they stop responding",
-          "detail": "Microsoft’s upgrade guidance says the experience begins rolling out in mid-November 2026. Existing .agent files used in Teams or Microsoft Copilot will stop responding until upgraded; Teams chats require all agents to be upgraded together. The SharePoint Agents icon and Main agent setting will also be removed.",
+          "title": "Agent upgrades can interrupt existing Teams and Copilot agents",
+          "detail": "The agent-upgrade experience begins rolling out in mid-November 2026. Existing .agent files used in Teams or Microsoft Copilot stop responding until upgraded; Teams chats require all agents to be upgraded together, and the SharePoint Agents icon and Main agent setting are removed.",
           "product": "Agents and Copilot",
           "sourceId": "doc-2026-11-17-upgrade-agents-in-sharepoint-and-onedrive-sharepoint-in-microsoft-365-05"
         },
         {
-          "title": "Unified Copilot Search brings AI summaries and natural-language prompts",
-          "detail": "SharePoint Online and OneDrive for the web are moving to a unified Copilot Search experience with natural-language prompts, AI summaries, and filters. Preview rollout began in mid-October 2026, with general rollout scheduled for mid-January 2027; users can opt out during preview.",
-          "product": "SharePoint",
+          "title": "Unified Copilot Search advances across SharePoint and OneDrive",
+          "detail": "SharePoint Online and OneDrive for the web are moving to one Copilot Search experience with natural-language prompts, AI summaries, and filters. Preview rollout started in mid-October 2026, general rollout is scheduled for mid-January 2027, and users can opt out during preview.",
+          "product": "SharePoint and OneDrive",
           "sourceId": "MC1540513"
         },
         {
-          "title": "Group-permission reporting targets unintended SharePoint access",
-          "detail": "A new Data access governance report in the SharePoint admin center will show which sites are accessible to specific groups and the access levels involved. Worldwide rollout is scheduled from late November through early December 2026, giving administrators a focused way to review permissions and identify potential content exposure.",
+          "title": "Enhanced access-governance reports and site reviews begin rolling out",
+          "detail": "Starting in late November 2026, SharePoint will enhance data access governance reports and site access reviews so administrators can identify data risks, prioritize sites, direct review requests, and track email delivery. No action is required before rollout, although administrators should prepare.",
           "product": "SharePoint",
-          "sourceId": "MC1540348"
+          "sourceId": "MC1556106"
         },
         {
-          "title": "OneDrive will exclude new node_modules folders from sync by default",
-          "detail": "Starting December 14, 2026, OneDrive for Windows and Mac will exclude new folders named node_modules from syncing to improve performance. Existing synced folders are unaffected, users receive no prompts, and administrators can disable the exclusion through policy if required.",
+          "title": "OneDrive excludes new node_modules folders from sync by default",
+          "detail": "Starting December 14, 2026, OneDrive for Windows and Mac will exclude new folders named node_modules from syncing by default to improve performance. Existing synced folders are unaffected, users receive no prompts, local folder use continues, and administrators can disable the exclusion by policy.",
           "product": "OneDrive",
           "sourceId": "MC1558030"
         }
@@ -461,16 +483,16 @@
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-19T10:31:27.405Z",
+      "generatedAt": "2026-11-19T22:19:46.945Z",
       "usage": {
-        "inputTokens": 6113,
-        "outputTokens": 6345,
-        "costUsd": 0.008837
+        "inputTokens": 6296,
+        "outputTokens": 7839,
+        "costUsd": 0.010666
       }
     }
   },
   "version": 3,
-  "generatedAt": "2026-11-19T10:31:27.405Z",
+  "generatedAt": "2026-11-19T22:19:46.945Z",
   "generator": {
     "model": "gpt-5.6-luna",
     "reasoningEffort": "xhigh"
@@ -537,22 +559,22 @@
       "costUsd": 0.044748
     },
     "2026-11-19": {
-      "inputTokens": 11734,
-      "outputTokens": 17159,
-      "requests": 3,
-      "costUsd": 0.022938
+      "inputTokens": 22768,
+      "outputTokens": 32569,
+      "requests": 6,
+      "costUsd": 0.043637
     }
   },
   "lastRun": {
-    "inputTokens": 11734,
-    "outputTokens": 17159,
+    "inputTokens": 11034,
+    "outputTokens": 15410,
     "requests": 3,
-    "costUsd": 0.022938
+    "costUsd": 0.020699
   },
   "totalUsage": {
-    "inputTokens": 91665,
-    "outputTokens": 145932,
-    "requests": 42,
-    "costUsd": 0.193451
+    "inputTokens": 102699,
+    "outputTokens": 161342,
+    "requests": 45,
+    "costUsd": 0.21415
   }
 }
