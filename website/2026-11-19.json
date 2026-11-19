@@ -1,0 +1,95 @@
+{
+  "newFiles": [],
+  "modifiedFiles": [],
+  "deletedFiles": [],
+  "messageCenterItems": [
+    {
+      "id": "MC1559633",
+      "source": "mc",
+      "sourceLabel": "Message Center",
+      "date": "2026-11-18",
+      "title": "Microsoft SharePoint: Agent Chat web part to bring Copilot agents into SharePoint pages",
+      "summary": "The Agent Chat web part lets SharePoint authors embed Microsoft 365 Copilot agents into pages for easier discovery and interaction. Rolling out from November 2026 to March 2027 worldwide, it requires no admin action. Permissions remain separate, and no compliance impact is expected.",
+      "product": {
+        "slug": "sharepoint",
+        "name": "SharePoint Online",
+        "short": "SharePoint",
+        "learn": "https://learn.microsoft.com/en-us/sharepoint/introduction",
+        "icon": "sharepoint.svg"
+      },
+      "topic": {
+        "slug": "ai",
+        "name": "AI and Copilot",
+        "icon": "/assets/topics/ai.svg"
+      },
+      "changeType": "Message",
+      "url": "/message-center/MC1559633/",
+      "originalUrl": "https://mc.merill.net/message/MC1559633",
+      "body": "<p><b><b>What and Why:</b></b></p><p>We're introducing the Agent Chat web part in SharePoint, allowing organizations to embed their existing Microsoft 365 Copilot agents directly into SharePoint pages. This helps organizations make agents easier to discover and use by bringing conversational AI into familiar intranet experiences, alongside relevant information, instructions, and resources.</p><p><b><b>Rollout Schedule:</b></b></p><p>Public Preview (Worldwide): We will begin rolling out in mid-November 2026 and expect to complete by late January 2027.</p><p>General Availability (Worldwide): We will begin rolling out in mid-January 2027 and expect to complete by late March 2027.</p><p>General Availability (GCC): We will begin rolling out in mid-January 2027 and expect to complete by late March 2027.</p><p>General Availability (GCC High): We will begin rolling out in mid-January 2027 and expect to complete by late March 2027.</p><p>General Availability (DoD): We will begin rolling out in mid-January 2027 and expect to complete by late March 2027.</p><p><b><b>Impact on Your Organization:</b></b></p><p><b>Who is affected:</b> SharePoint page authors who want to embed Copilot agents. Users with a Microsoft 365 Copilot license and access to the configured agent.</p><p><b>Platforms/Services:</b> SharePoint Online, Microsoft 365 Copilot, Microsoft Copilot Studio.</p><p><b>What will happen:</b> SharePoint page authors can add the Agent Chat web part to pages using the standard page editing experience. Authors can select published agents already available to them in Microsoft 365 Copilot. Users can interact with agents directly from SharePoint pages and continue conversations in a full-screen chat experience. Organizations can place agents alongside relevant SharePoint content to help users discover and engage with them. Existing SharePoint page permissions and agent access permissions remain independent. Adding an agent to a page does not automatically grant users access to that agent. SharePoint page content is not automatically passed to the agent.</p><p><b><b>Action Required/Recommendations:</b></b></p><p>No admin action is required before rollout. The Agent Chat web part becomes available as part of the rollout.We recommend informing SharePoint page authors and support teams about this capability and reviewing the documentation: <a href=\"https://support.microsoft.com/en-us/sharepoint/pages-in-sharepoint/use-agent-chat-web-part\" rel=\"noopener noreferrer\">Use Agent Chat web part in SharePoint</a>.</p><p><b><b>Compliance considerations:</b></b></p><p>No compliance impact is expected for this change. SharePoint does not store Copilot agent chat data or change how agent data is processed.</p>",
+      "category": "stayInformed",
+      "services": [
+        "SharePoint Online"
+      ],
+      "tags": [
+        "New feature",
+        "User impact"
+      ],
+      "startDate": "2026-11-18T23:34:01Z",
+      "endDate": "2027-05-15T07:00:00Z",
+      "lastModifiedDateTime": "2026-11-18T23:34:27.827Z",
+      "version": "2026-11-18T23:34:27.827Z",
+      "eventId": "message-center:MC1559633:2026-11-18T23:34:27.827Z",
+      "firstSeenAt": "2026-11-19T10:31:27.193Z"
+    },
+    {
+      "id": "MC1387526",
+      "source": "mc",
+      "sourceLabel": "Message Center",
+      "date": "2026-11-18",
+      "title": "Microsoft 365 Backup: Full workload backup for SharePoint, OneDrive, and Exchange",
+      "summary": "Microsoft 365 Backup introduces Full Workload Backup for SharePoint, OneDrive, and Exchange, enabling admins to protect entire workloads with a single policy. Rolling out from July 2026 (preview) to February 2027 (general availability), it automates backup of all artifacts while preserving existing policies and allows exclusions via CSV.",
+      "product": {
+        "slug": "sharepoint",
+        "name": "SharePoint Online",
+        "short": "SharePoint",
+        "learn": "https://learn.microsoft.com/en-us/sharepoint/introduction",
+        "icon": "sharepoint.svg"
+      },
+      "topic": {
+        "slug": "general",
+        "name": "General",
+        "icon": "/assets/topics/general.svg"
+      },
+      "changeType": "Message",
+      "url": "/message-center/MC1387526/",
+      "originalUrl": "https://mc.merill.net/message/MC1387526",
+      "body": "<p>Updated November 18, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b><b>What and Why:</b></b></p><p>We are introducing <b>Full Workload Backup</b> for Microsoft 365 Backup, a new capability that allows admins to quickly protect an entire workload (SharePoint, OneDrive, or Exchange) with a single policy. This feature automatically includes all existing and newly created artifacts that are not already covered by custom policies, helping organizations improve data protection coverage, reduce administrative overhead, and ensure continuous backup for critical business data at scale.</p><p>This enhancement supports enterprise-ready data protection and automation, enabling organizations to safeguard content more efficiently while maintaining control through existing policy configurations.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=464990\" rel=\"noopener noreferrer\">464990</a>.</p><p><b><b>Rollout Schedule:</b></b></p><ul><li>Public Preview (Worldwide): We will begin rolling out in<b> early July 2026</b> and expect to complete by <b>mid-July 2026</b>.</li><li>General Availability: We will begin rolling out in <b>January 2027</b> (previously mid-September 2026) and expect to complete by <b>end of February 2027</b> (previously mid-October 2026).</li></ul><p><b><b>Impact on Your Organization:</b></b></p><p><b>Who is affected:</b></p><ul><li>Admins managing Microsoft 365 Backup policies</li><li>Organizations currently using or planning to use Microsoft 365 Backup</li></ul><p><b>Platforms/Services:</b></p><ul><li>Microsoft 365 Backup</li><li>SharePoint Online</li><li>OneDrive</li><li>Exchange Online</li></ul><p><b>What will happen:</b></p><ul><li>A new option to back up all artifacts within a selected workload will be available.</li><li>Admins can enable Full Workload Backup per workload (SharePoint, OneDrive, Exchange).</li><li>All eligible artifacts not covered by existing custom backup policies will be automatically protected.</li><li>Newly created artifacts will be included in backup coverage automatically on subsequent runs.</li><li>Existing custom backup policies will continue to take precedence and remain unchanged.</li><li>Admins can upload a CSV file to exclude specific artifacts.</li><li>The feature is <b>available by default but requires admin configuration </b>to enable.</li></ul><p><b><b>Action Required/Recommendations:</b></b></p><p>No immediate action is required before rollout.</p><p>After rollout, we recommend that you:</p><ul><li>Review your current Microsoft 365 Backup policies and coverage.</li><li>Evaluate whether Full Workload Backup aligns with your data protection strategy.</li><li>Inform backup administrators about this new capability.</li><li>Update internal documentation if you manage backup procedures.</li></ul><p><b>To enable the feature:</b></p><ol><li>Go to the <a href=\"https://admin.cloud.microsoft/?#/Settings/enhancedRestore\" rel=\"noopener noreferrer\">Microsoft 365 Backup dashboard</a> in the Microsoft 365 admin center.&nbsp;</li><li>Select the workload you want to protect and choose the option to <b>back up all artifacts</b>.&nbsp;</li><li>(Optional) Upload a CSV file on the <b>Exclude sites</b> step to exclude specific sites from the scope of the policy.&nbsp;</li><li>Review the coverage summary and confirm to create the Full Workload Backup policy.&nbsp;</li></ol><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide&amp;tabs=sharepoint\" rel=\"noopener noreferrer\">Create, view, and edit backup policies in Microsoft 365 Backup | Microsoft Learn</a> (will be updated before rollout begins)&nbsp;</li><li><a href=\"https://learn.microsoft.com/microsoft-365/backup/backup-overview?view=o365-worldwide\" rel=\"noopener noreferrer\">Overview of Microsoft 365 Backup | Microsoft Learn</a> (will be updated before rollout begins)</li></ul><p><b><b>Compliance considerations:</b></b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>",
+      "category": "planForChange",
+      "services": [
+        "Microsoft 365 suite"
+      ],
+      "tags": [
+        "Updated message",
+        "New feature",
+        "Admin impact"
+      ],
+      "startDate": "2026-06-11T16:46:49Z",
+      "endDate": "2027-04-30T08:00:00Z",
+      "lastModifiedDateTime": "2026-11-18T22:42:48.957Z",
+      "version": "2026-11-18T22:42:48.957Z",
+      "eventId": "message-center:MC1387526:2026-11-18T22:42:48.957Z",
+      "firstSeenAt": "2026-11-19T10:31:27.193Z"
+    }
+  ],
+  "summary": {
+    "totalCommits": 0,
+    "totalFiles": 0,
+    "authors": []
+  },
+  "englishSummary": {
+    "overview": "No substantive SharePoint Online and OneDrive documentation changes were detected for this report.",
+    "groups": [],
+    "highlights": [],
+    "generatedBy": "fallback"
+  }
+}
