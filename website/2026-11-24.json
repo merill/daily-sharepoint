@@ -1,0 +1,221 @@
+{
+  "newFiles": [],
+  "modifiedFiles": [
+    {
+      "filename": "SharePoint/SharePointOnline/trim-versions.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "patch": "diff --git a/SharePoint/SharePointOnline/trim-versions.md b/SharePoint/SharePointOnline/trim-versions.md\nindex 4810c8b..1917d02 100644\n--- a/SharePoint/SharePointOnline/trim-versions.md\n+++ b/SharePoint/SharePointOnline/trim-versions.md\n@@ -233,7 +233,8 @@ Before committing to a trim, you can estimate the impact of your tenant version\n \r\n     Note\r\n \r\n-    The projected impact includes both **SharePoint sites** and **OneDrive accounts**.\r\n+    - The projected impact includes both **SharePoint sites** and **OneDrive accounts**.\r\n+    - Data collection results are retained for 30 days after the job completes. After that, run a new data collection job to perform the what-if analysis.\r\n \r\n #### 3. Trim existing versions and update document library policies\r\n \r\n",
+      "baseCommitSha": "1d6d3b32de9a76e1cea10b6247985fdcca6f342e",
+      "commitSha": "bec4e4726d4825e2c74c43bd8ac70a69fed6404f",
+      "commitMessage": "Mirror Learn: 1 changed",
+      "commitAuthor": "github-actions[bot]",
+      "commitDate": "2026-11-24 03:04:50 +0000",
+      "githubUrl": "https://github.com/merill/sharepoint-docs-mirror/blob/main/SharePoint/SharePointOnline/trim-versions.md",
+      "publicDocsUrl": "https://learn.microsoft.com/en-us/sharepoint/trim-versions",
+      "eventId": "sharepoint-docs:bec4e4726d4825e2c74c43bd8ac70a69fed6404f:modified:SharePoint/SharePointOnline/trim-versions.md",
+      "firstSeenAt": "2026-11-24T12:42:04.343Z",
+      "englishSummary": {
+        "category": "Doc update",
+        "headline": "What-if analysis results are retained for 30 days",
+        "summary": "The documentation now states that data collection results are retained for 30 days after a job completes. A new data collection job is needed to perform the what-if analysis afterward.",
+        "adminImpact": "Plan to rerun data collection when analysis is needed after the 30-day retention period.",
+        "actionRequired": false,
+        "generatedBy": "openai",
+        "model": "gpt-5.6-luna"
+      }
+    }
+  ],
+  "deletedFiles": [],
+  "messageCenterItems": [
+    {
+      "id": "MC1565964",
+      "source": "mc",
+      "sourceLabel": "Message Center",
+      "date": "2026-11-23",
+      "title": "Microsoft SharePoint Online: Classic publishing restrictions begin March 1, 2027",
+      "summary": "Starting March 1, 2027, SharePoint Online will block creation and activation of classic publishing sites and features, enforcing restrictions on custom scripting. New tenants face additional limits on classic pages. Administrators must update workflows and modernize pages before the rollout completes by October 2028.",
+      "product": {
+        "slug": "sharepoint",
+        "name": "SharePoint Online",
+        "short": "SharePoint",
+        "learn": "https://learn.microsoft.com/en-us/sharepoint/introduction",
+        "icon": "sharepoint.svg"
+      },
+      "topic": {
+        "slug": "governance",
+        "name": "Permissions and governance",
+        "icon": "/assets/topics/governance.svg"
+      },
+      "changeType": "Major update",
+      "url": "/message-center/MC1565964/",
+      "originalUrl": "https://mc.merill.net/message/MC1565964",
+      "body": "<p><b><b>What and why</b></b></p><p>As previously announced in <b>MC1464926</b>, we are introducing restrictions on classic publishing and custom scripting in SharePoint Online to reduce security and governance risks associated with legacy customization. Beginning March 1, 2027, we will block the creation of new classic publishing sites and the activation of publishing features for site collections and subsites across all tenants. Administrators will no longer be able to override these restrictions using the <code>AllowClassicPublishingSiteCreation</code> tenant setting.</p><p>This reminder outlines the changes taking effect on March 1, 2027, and the steps administrators should take to prepare.</p><p><b><b>Rollout schedule</b></b></p><ul><li><b>General Availability (Worldwide, GCC, GCC High, DoD):</b> Rollout will begin in early March 2027 and is expected to complete by early October 2028.</li></ul><p><b><b>Impact on your organization</b></b></p><p><i>Who is affected</i></p><ul><li>All SharePoint Online tenants.</li><li>Administrators managing classic publishing sites, custom scripts, provisioning automation, and migration workflows.</li><li>Tenants created on or after March 1, 2027, which will have additional restrictions.</li></ul><p><i>Platforms and services</i></p><ul><li>SharePoint Online</li></ul><p><i>What will happen</i></p><p><b>All tenants, beginning March 1, 2027:</b></p><ul><li>SharePoint Online will block the creation of classic publishing sites and the activation of publishing features for site collections and subsites.</li><li>SharePoint Online will enforce the <code>AllowClassicPublishingSiteCreation</code> tenant setting as False. Administrators will no longer be able to change this setting.</li></ul><p><b>Additional restrictions for tenants created on or after March 1, 2027:</b></p><ul><li>Users will no longer be able to create or edit classic user-created pages or add or update custom scripts.</li><li>SharePoint Online will enforce the <code>DenyAddAndCustomizePages</code> site setting as <b>True</b>. Administrators will no longer be able to change this setting.</li><li>The <b><i>Allow users to create new modern pages</i></b> setting in <b>SharePoint admin center &gt; <i>Settings</i> &gt; <i>Pages</i></b><i> </i>will be enabled and cannot be disabled.</li><li>This modern-page setting change will not affect existing tenants.</li></ul><p><b>Classic user-created pages in scope:</b></p><ul><li>Affected pages include wiki, Web Part, blog, publishing, and custom ASPX pages.</li><li>List and library views and list form pages are excluded from the page read-only change.</li><li>Custom scripts embedded in these experiences will remain subject to scripting restrictions when the applicable phase takes effect.</li></ul><p><b><b>Action required and recommendations</b></b></p><p><b>Before March 1, 2027:</b></p><ul><li>Identify provisioning automation and migration plans that create classic publishing site collections or subsites or activate publishing features.</li><li>Update affected workflows to use modern alternatives.</li></ul><p><b>To prepare for October 1, 2028</b>, we recommend that existing tenants:</p><ul><li>Review the requirements for the classic pages assessment.</li><li>Inventory classic pages using the <a href=\"https://pnp.github.io/pnpassessment/index.html\" rel=\"noopener noreferrer\">Microsoft 365 Assessment Tool</a> and assign modernization owners.</li><li>Pilot the transformation of classic SharePoint pages to modern pages. Transformation approaches vary by page type, and customized pages may require rebuilding.</li></ul><p><b><b>Learn more</b></b></p><ul><li><a href=\"https://learn.microsoft.com/sharepoint/dev/transform/assessment-tool-classic-pages-requirements\" rel=\"noopener noreferrer\">Requirements for the classic pages assessment | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/sharepoint/dev/transform/modernize-userinterface-site-pages\" rel=\"noopener noreferrer\">Transform classic SharePoint pages to modern pages | Microsoft Learn</a></li></ul>",
+      "category": "planForChange",
+      "services": [
+        "SharePoint Online"
+      ],
+      "tags": [
+        "Feature update",
+        "User impact",
+        "Admin impact",
+        "Retirement"
+      ],
+      "startDate": "2026-11-23T22:43:31Z",
+      "endDate": "2028-10-31T07:00:00Z",
+      "lastModifiedDateTime": "2026-11-23T22:43:52.533Z",
+      "version": "2026-11-23T22:43:52.533Z",
+      "eventId": "message-center:MC1565964:2026-11-23T22:43:52.533Z",
+      "firstSeenAt": "2026-11-24T12:42:10.906Z"
+    },
+    {
+      "id": "MC1472601",
+      "source": "mc",
+      "sourceLabel": "Message Center",
+      "date": "2026-11-23",
+      "title": "Microsoft Purview: Archive SharePoint files under retention policies",
+      "summary": "Microsoft Purview Data Lifecycle Management will enable admins to archive inactive SharePoint files under retention policies starting mid-January 2027. Archived files move to Microsoft 365 Archive, remain compliant and discoverable, and are excluded from Copilot indexing to improve response relevance. Admin configuration is required.",
+      "product": {
+        "slug": "sharepoint",
+        "name": "SharePoint Online",
+        "short": "SharePoint",
+        "learn": "https://learn.microsoft.com/en-us/sharepoint/introduction",
+        "icon": "sharepoint.svg"
+      },
+      "topic": {
+        "slug": "governance",
+        "name": "Permissions and governance",
+        "icon": "/assets/topics/governance.svg"
+      },
+      "changeType": "Message",
+      "url": "/message-center/MC1472601/",
+      "originalUrl": "https://mc.merill.net/message/MC1472601",
+      "body": "<p>Updated November 23, 2026: We have updated the timeline. Thank you for your patience.</p><p><b><b>What and why</b>&nbsp;</b></p><p>Microsoft Purview Data Lifecycle Management now allows admins to archive SharePoint files based on retention policies. This helps organizations reduce storage costs by moving inactive content to Microsoft 365 Archive while maintaining compliance and discoverability. Archived content is excluded from Copilot indexing, which can improve the relevance of Copilot responses by focusing results on current, active data.</p><p><b><b>Rollout schedule</b>&nbsp;</b></p><p><b>General Availability (GCC, GCC High, DoD):</b> Beginning in <b>mid-January 2027</b> (previously early December 2026) and expected to complete by <b>mid-February 2027</b> (previously early January)</p><p><b><b>Impact on your organization</b></b></p><p><i>Who is affected</i></p><ul><li>Admins managing Microsoft Purview Data Lifecycle Management</li><li>Organizations using retention policies in SharePoint Online and OneDrive</li></ul><p><i>Platforms and services</i></p><ul><li>Microsoft Purview (Data Lifecycle Management)</li><li>SharePoint Online</li><li>OneDrive</li><li>Microsoft 365 Archive</li><li>Microsoft Copilot</li></ul><p><i>What will happen</i></p><ul><li>A new Archive option will be available within retention policy settings in Data Lifecycle Management.</li><li>Admins can configure retention policies to move inactive files to Microsoft 365 Archive storage.</li><li>Archived files remain available for compliance scenarios, including eDiscovery.</li><li>Archived content will be excluded from Copilot indexing, helping improve answer relevance.</li><li>This feature is not enabled by default and requires admin configuration.</li><li>Existing retention policies and compliance configurations remain unchanged unless updated by admins.</li></ul><p><b><b>Action required and recommendations</b></b></p><p>No immediate action is required. To prepare for and take advantage of this feature, we recommend that you:</p><ul><li>Review your current retention policies in Microsoft Purview Data Lifecycle Management.</li><li>Evaluate opportunities to reduce storage costs by archiving inactive content.</li><li>Update retention policies to include the new Archive option where appropriate.</li><li>Inform compliance and records management stakeholders about this new capability.</li><li>Review internal documentation and processes related to data lifecycle and storage optimization.</li></ul><p><b>Learn more:</b> <a href=\"https://learn.microsoft.com/purview/retention-settings#archiving-retained-sharepoint-files\" rel=\"noopener noreferrer\">Configure Microsoft 365 retention settings to automatically retain or delete content | Microsoft Learn</a></p><p><b><b>Compliance considerations</b></b></p><table><tbody><tr><td>Question</td><td>Answer</td></tr><tr><td>Does the change store new customer data, and if so where, is it cached or permanently stored?</td><td>Files moved by retention policies are relocated to Microsoft 365 Archive storage, a distinct storage tier, and are stored there until restored or otherwise actioned.</td></tr><tr><td>Does the change alter how existing customer data is processed, stored, or accessed?</td><td>Archived files move out of active storage into Microsoft 365 Archive, changing how those files are stored and accessed going forward.</td></tr><tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Archived content is excluded from Copilot indexing, which changes what data Copilot can access and surface in responses.</td></tr><tr><td>Does the change modify, interrupt, or disable Purview capabilities such as retention policies, holds, or eDiscovery?</td><td>Retention policies gain a new archive action, and archived files remain subject to eDiscovery, extending existing retention and discovery workflows.</td></tr></tbody></table>",
+      "category": "planForChange",
+      "services": [
+        "Microsoft Purview"
+      ],
+      "tags": [
+        "Updated message",
+        "New feature",
+        "User impact",
+        "Admin impact"
+      ],
+      "startDate": "2026-09-15T23:08:32Z",
+      "endDate": "2027-03-29T07:00:00Z",
+      "lastModifiedDateTime": "2026-11-23T22:27:57.953Z",
+      "version": "2026-11-23T22:27:57.953Z",
+      "eventId": "message-center:MC1472601:2026-11-23T22:27:57.953Z",
+      "firstSeenAt": "2026-11-24T12:42:10.906Z"
+    },
+    {
+      "id": "MC1325441",
+      "source": "mc",
+      "sourceLabel": "Message Center",
+      "date": "2026-11-23",
+      "title": "Microsoft Purview | Data Lifecycle Management - Archive SharePoint files under retention",
+      "summary": "Microsoft Purview Data Lifecycle Management will add an Archive option to retention policies, allowing admins to move inactive SharePoint files to Microsoft 365 Archive for cost savings while maintaining compliance and discoverability. Archived content is excluded from Copilot indexing. Rollout begins September 2026; admin configuration is required.",
+      "product": {
+        "slug": "sharepoint",
+        "name": "SharePoint Online",
+        "short": "SharePoint",
+        "learn": "https://learn.microsoft.com/en-us/sharepoint/introduction",
+        "icon": "sharepoint.svg"
+      },
+      "topic": {
+        "slug": "general",
+        "name": "General",
+        "icon": "/assets/topics/general.svg"
+      },
+      "changeType": "Message",
+      "url": "/message-center/MC1325441/",
+      "originalUrl": "https://mc.merill.net/message/MC1325441",
+      "body": "<p>Updated November 23, 2026: We have updated the timeline. Thank you for your patience.</p><p><b><b>What and Why</b></b></p><p>Microsoft Purview Data Lifecycle Management is introducing the ability to archive SharePoint files based on retention policies. This feature helps organizations reduce storage costs by moving inactive content to <b>Microsoft 365 Archive</b> while maintaining compliance and discoverability. By excluding archived content from Copilot indexing, organizations can also improve the relevance and quality of Copilot responses, ensuring users focus on current, active data.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=561208\" rel=\"noopener noreferrer\">561208</a></b>.</p><p><b><b>Rollout Schedule</b></b></p><p><b>Public Preview: </b>We will begin rolling out <b>early September 2026</b> (previously mid-August) and expect to complete by <b>early October 2026</b> (previously early September).</p><p><b>General Availability (Worldwide): </b>Rollout will begin<b> early December 2026</b> (previously<b> </b>mid-November) and is expected to complete by<b> early January 2027 </b>(previously early December 2026).</p><p><b><b>Impact on Your Organization</b></b></p><p><i>Who is affected</i></p><ul><li>Admins managing Microsoft Purview Data Lifecycle Management</li><li>Organizations using retention policies in SharePoint Online and OneDrive</li></ul><p>Platforms/Services<i>Platforms/Services</i></p><ul><li>Microsoft Purview (Data Lifecycle Management)</li><li>SharePoint Online</li><li>Microsoft 365 Archive</li><li>Microsoft Copilot</li></ul><p><i>What will happen</i></p><ul><li>A new Archive option will be available within retention policy settings in<i> Data Lifecycle Management</i>.</li><li>Admins can configure retention policies to move inactive files to Microsoft 365 Archive storage.</li><li>Archived files remain available for compliance scenarios, including eDiscovery.</li><li>Archived content will be excluded from Copilot indexing, helping improve answer relevance.</li><li>This feature is <b>not enabled by default and requires admin configuration</b>.</li><li>Existing retention policies and compliance configurations remain unchanged unless updated by admins.</li></ul><p><b><b>Action Required / Recommendations</b></b></p><p>No immediate action is required.</p><p>To prepare and take advantage of this feature:</p><ul><li>Review your current retention policies in Microsoft Purview Data Lifecycle Management.</li><li>Evaluate opportunities to reduce storage costs by archiving inactive content.</li><li>Update retention policies to include the new Archive option where appropriate.</li><li>Inform compliance and records management stakeholders about this new capability.</li><li>Review internal documentation and processes related to data lifecycle and storage optimization.</li></ul><p><b><b>Compliance Considerations</b></b></p><table><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change store new customer data?</td><td>Yes. Archived files are stored in Microsoft 365 Archive (low-cost storage tier).</td></tr><tr><td>Does the change alter how existing customer data is processed, stored, or accessed?</td><td>Yes. Files meeting retention criteria can be moved from active storage to archive storage while remaining discoverable.</td></tr><tr><td>Does the change introduce or modify AI/ML capabilities interacting with data?</td><td>Yes. Archived content is excluded from Copilot indexing, influencing how Copilot processes and retrieves organizational data.</td></tr><tr><td>Does the change modify Purview retention policies or workflows?</td><td>Yes. Adds a new Archive action within retention policy configuration in Data Lifecycle Management.</td></tr><tr><td>Does the change affect eDiscovery or Content Search?</td><td>Yes. Archived content remains discoverable for compliance workflows such as eDiscovery.</td></tr><tr><td>Does the change include an admin control?</td><td>Yes. Admins configure and enable the feature through retention policy settings in Purview.</td></tr></tbody></table>",
+      "category": "stayInformed",
+      "services": [
+        "Microsoft Purview"
+      ],
+      "tags": [
+        "Updated message",
+        "New feature",
+        "User impact",
+        "Admin impact"
+      ],
+      "startDate": "2026-05-28T22:04:22Z",
+      "endDate": "2027-02-15T07:00:00Z",
+      "lastModifiedDateTime": "2026-11-23T22:25:28.683Z",
+      "version": "2026-11-23T22:25:28.683Z",
+      "eventId": "message-center:MC1325441:2026-11-23T22:25:28.683Z",
+      "firstSeenAt": "2026-11-24T12:42:10.906Z"
+    },
+    {
+      "id": "MC1261587",
+      "source": "mc",
+      "sourceLabel": "Message Center",
+      "date": "2026-11-23",
+      "title": "Microsoft Purview | Data Lifecycle Management - Hard delete OneDrive and SharePoint files with priority cleanup workflow",
+      "summary": "Microsoft Purview introduces a priority cleanup workflow allowing admins to hard delete specific OneDrive and SharePoint content, overriding retention policies with eDiscovery admin approval. Rolling out mid-August 2026 (preview) and early December 2026 (general availability), this feature requires explicit admin setup and supports compliance oversight.",
+      "product": {
+        "slug": "sharepoint",
+        "name": "SharePoint Online",
+        "short": "SharePoint",
+        "learn": "https://learn.microsoft.com/en-us/sharepoint/introduction",
+        "icon": "sharepoint.svg"
+      },
+      "topic": {
+        "slug": "general",
+        "name": "General",
+        "icon": "/assets/topics/general.svg"
+      },
+      "changeType": "Major update",
+      "url": "/message-center/MC1261587/",
+      "originalUrl": "https://mc.merill.net/message/MC1261587",
+      "body": "<p>Updated November 23, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b><b>Introduction</b></b></p><p>We are introducing a new <b>priority cleanup workflow</b> in Microsoft Purview Data Lifecycle Management that allows administrators to <b>permanently delete (hard delete) specific OneDrive and SharePoint content types</b>, even when retention policies or holds are in place. This capability helps reduce data exposure risk from rapidly growing Copilot-related content while maintaining compliance through required eDiscovery admin review and approval.</p><p>This change is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558343\" rel=\"noopener noreferrer\">558343</a>.</p><p><b><b>When this will happen:</b></b></p><p>Public Preview: We will begin rolling out <b>mid-August 2026</b> (previously mid-July) and expect to complete by <b>early December 2026</b> (previously end of November).</p><p>General Availability (Worldwide) Rollout begins<b> early December 2026</b> (previously end of November) and is expected to complete by<b> mid-January 2027 </b>(previously early January).</p><p><b><b>How this affects your organization:</b></b></p><p><b>Who is affected:</b></p><ul><li>Microsoft 365 administrators managing <b>Microsoft Purview Data Lifecycle Management</b></li><li>Organizations using <b>OneDrive for Business</b> and <b>SharePoint Online </b>with retention policies or holds</li></ul><p><b>What will happen:</b></p><ul><li>Admins can create a<b> priority cleanup policy</b> targeting specific content types in OneDrive and SharePoint.</li><li>A new <b>Delete data permanently </b>option enables <b>hard deletion</b> of targeted items.</li><li></li><li>Content deleted through this workflow is fully removed and is no longer discoverable in:<ul><li>SharePoint search</li><li>Copilot experiences</li><li>eDiscovery (after required approval)</li></ul></li><li>For content under hold, <b>eDiscovery admin review and approval</b> is required before deletion.</li><li>This capability is <b>not enabled by default</b> and requires explicit admin configuration.</li><li>There is <b>no change to user workflows</b> unless an admin configures and applies a priority cleanup policy.</li></ul><p><b><b>What you can do to prepare:</b></b></p><ul><li>Review your organization’s data risk and retention strategy, especially for Copilot-generated content such as Teams transcripts.</li><li>In Microsoft Purview, plan and configure a<b> priority cleanup policy</b> if permanent deletion is required for specific content types:<ul><li>Navigate to <b>Microsoft Purview portal</b> &gt;<b> Data Lifecycle Management</b> &gt;<b> Priority cleanup</b>.</li><li>Create a new policy and select <b>Delete data permanently</b> in the policy settings.</li></ul></li><li>Ensure appropriate <b>eDiscovery admin roles and approval processes</b> are in place for content under hold.</li><li>Update internal governance or compliance documentation to reflect this new deletion capability.</li></ul><p><b>Learn more: </b><a href=\"https://learn.microsoft.com/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide#microsoft-365-groups\" rel=\"noopener noreferrer\">Compare types of groups in Microsoft 365 - Microsoft 365 admin | Microsoft Learn</a></p><p><b><b>Compliance considerations:</b></b></p><table><tbody><tr><td><b>Compliance area</b></td><td><b>Explanation</b></td></tr><tr><td>Alteration of existing customer data processing</td><td>This change introduces a priority cleanup workflow that allows permanent deletion of specific OneDrive and SharePoint content types, even when retention policies or holds exist, subject to required approval.</td></tr><tr><td>eDiscovery or Content Search</td><td>Content deleted through the priority cleanup workflow is fully removed and no longer discoverable in eDiscovery or Content Search after eDiscovery admin review and approval for items under hold.</td></tr><tr><td>Retention policies, holds, or deletion workflows</td><td>Adds a new admin-controlled deletion workflow that can override standard retention outcomes through an approved hard-delete process.</td></tr><tr><td>Admin controls and compliance monitoring</td><td>The feature is managed by administrators in Microsoft Purview and includes review and approval steps that support compliance oversight and auditing.</td></tr></tbody></table>",
+      "category": "planForChange",
+      "services": [
+        "Microsoft Purview"
+      ],
+      "tags": [
+        "Updated message",
+        "New feature",
+        "Admin impact"
+      ],
+      "startDate": "2026-03-25T22:52:31Z",
+      "endDate": "2027-02-22T07:00:00Z",
+      "lastModifiedDateTime": "2026-11-23T22:22:22.543Z",
+      "version": "2026-11-23T22:22:22.543Z",
+      "eventId": "message-center:MC1261587:2026-11-23T22:22:22.543Z",
+      "firstSeenAt": "2026-11-24T12:42:10.906Z"
+    }
+  ],
+  "summary": {
+    "totalCommits": 1,
+    "totalFiles": 1,
+    "authors": [
+      "github-actions[bot]"
+    ]
+  },
+  "englishSummary": {
+    "overview": "Today's report includes 0 new, 1 updated, and 0 removed SharePoint Online and OneDrive documentation files across 1 documentation area.",
+    "groups": [
+      {
+        "category": "Doc update",
+        "title": "SharePoint Online",
+        "summary": "The documentation now states that data collection results are retained for 30 days after a job completes. A new data collection job is needed to perform the what-if analysis afterward.",
+        "sourceFiles": [
+          "SharePoint/SharePointOnline/trim-versions.md"
+        ]
+      }
+    ],
+    "highlights": [
+      {
+        "category": "Doc update",
+        "headline": "SharePoint Online",
+        "detail": "The documentation now states that data collection results are retained for 30 days after a job completes. A new data collection job is needed to perform the what-if analysis afterward."
+      }
+    ],
+    "generatedBy": "fallback"
+  }
+}

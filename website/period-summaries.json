@@ -359,6 +359,28 @@
         "outputTokens": 6452,
         "costUsd": 0.008151
       }
+    },
+    "2026-11-24": {
+      "headline": "Trim Versions analysis data expires after 30 days, requiring fresh collection jobs",
+      "overview": "The Trim Versions guidance now specifies that data-collection results are retained for 30 days after a job completes. Administrators need a new data-collection job to perform the what-if analysis after that period.",
+      "adminImpact": "Plan to rerun data collection when analysis is needed more than 30 days after the previous job completed.",
+      "keyChanges": [
+        {
+          "title": "Trim Versions adds a 30-day data-retention limit",
+          "detail": "The documentation states that data-collection results remain available for 30 days after job completion; a new data-collection job is required for subsequent what-if analysis.",
+          "product": "Content and versions",
+          "sourceId": "doc-2026-11-24-trim-versions-01"
+        }
+      ],
+      "generatedBy": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "xhigh",
+      "generatedAt": "2026-11-24T12:42:11.042Z",
+      "usage": {
+        "inputTokens": 1030,
+        "outputTokens": 362,
+        "costUsd": 0.00064
+      }
     }
   },
   "weeks": {
@@ -487,58 +509,98 @@
         "outputTokens": 4697,
         "costUsd": 0.00659
       }
-    }
-  },
-  "months": {
-    "2026-11": {
-      "headline": "April 2027 SharePoint authentication URL retirement breaks dependent Power Apps and Automate workflows",
-      "overview": "The month’s clearest deadline is April 1, 2027, when SharePoint temporary authentication URLs will retire and dependent Power Apps and Power Automate functionality will break. SharePoint and OneDrive are also moving toward unified Copilot Search, while new governance guidance covers agent-access monitoring, agentic-user sharing restrictions, and group-permission reporting limits.",
-      "adminImpact": "Inventory Power Apps and Power Automate dependencies on temporary authentication URLs before the retirement date. Administrators can assess whether Copilot Search preview opt-out, agentic-user sharing controls, or agent-access reporting fit their governance requirements. Validate sensitivity-label and business-group prerequisites for the heatmap, and interpret group reports within their 100-group limit and exclusions.",
+    },
+    "2026-11-23": {
+      "headline": "Purview priority deletion and archive controls expand as classic SharePoint restrictions approach",
+      "overview": "Microsoft 365 notices point to two consequential governance changes: a Purview priority-cleanup workflow is scheduled for general availability in early December 2026, while SharePoint Online will begin blocking creation and activation of classic publishing sites and features on March 1, 2027. Purview also plans retention-based archiving for inactive SharePoint files; the period’s Trim Versions guidance now specifies a 30-day data-collection results window.",
+      "adminImpact": "Administrators should prepare workflow and page modernization ahead of the March 1, 2027 classic-publishing restriction. For Purview, plan explicit setup for priority cleanup, an eDiscovery administrator approval path for hard deletes, and configuration for SharePoint archiving under retention policies. Trim Versions users need a new data-collection job to run what-if analysis after the 30-day results-retention window.",
       "keyChanges": [
         {
-          "title": "Temporary authentication URLs retire April 1, 2027",
-          "detail": "SharePoint temporary authentication URLs will no longer be available from April 1, 2027. Power Apps and Power Automate functionality that relies on them will break, so administrators should identify dependent integrations before the deadline.",
+          "title": "Priority cleanup will hard-delete selected SharePoint and OneDrive content",
+          "detail": "Microsoft Purview Data Lifecycle Management is introducing a priority cleanup workflow that can hard-delete specific OneDrive and SharePoint content while overriding retention policies. The workflow requires explicit administrator setup and eDiscovery administrator approval; the notice places preview rollout in mid-August 2026 and general availability in early December 2026.",
           "product": "SharePoint",
-          "sourceId": "MC1551122"
+          "sourceId": "MC1261587"
         },
         {
-          "title": "Unified Copilot Search moves from preview toward general rollout",
-          "detail": "SharePoint Online and OneDrive for the web are moving to a unified Copilot Search experience with natural-language prompts, AI summaries, and filters. Preview rollout began in mid-October 2026, general rollout is scheduled for mid-January 2027, and organizations can opt out during preview.",
-          "product": "SharePoint and OneDrive",
-          "sourceId": "MC1540513"
+          "title": "Classic publishing creation and activation will be blocked",
+          "detail": "From March 1, 2027, SharePoint Online will block creation and activation of classic publishing sites and features, while enforcing restrictions on custom scripting. New tenants face additional limits on classic pages, and administrators are expected to update workflows and modernize pages before rollout completes by October 2028.",
+          "product": "SharePoint",
+          "sourceId": "MC1565964"
         },
         {
-          "title": "Agent access heatmap enters preview for sensitive-content investigations",
-          "detail": "New guidance documents a SharePoint admin center report and heatmap for investigating agents reaching sensitive content. The preview requires specified licensing and administrator permissions; sensitivity labels and business-group configuration affect how complete the view is.",
-          "product": "Agents and Copilot",
-          "sourceId": "doc-2026-11-18-generate-a-report-and-explore-the-agent-access-heatmap-preview-sharepoint-in-microsoft-365-02"
+          "title": "Retention policies will support archiving inactive SharePoint files",
+          "detail": "Microsoft Purview Data Lifecycle Management will let administrators archive inactive SharePoint files under retention policies starting mid-January 2027. Archived files move to Microsoft 365 Archive, remain compliant and discoverable, and are excluded from Copilot indexing; administrator configuration is required.",
+          "product": "SharePoint",
+          "sourceId": "MC1472601"
         },
         {
-          "title": "Advanced Management guidance adds group-permission reporting boundaries",
-          "detail": "Updated guidance documents site-permission reports for Microsoft 365 groups and Microsoft Entra security groups, with support for up to 100 groups. Reports exclude SharePoint groups, distribution lists, and permissions inherited through nested groups, which administrators must account for when interpreting results.",
-          "product": "Advanced Management",
-          "sourceId": "doc-2026-11-20-data-access-governance-reports-get-site-permissions-for-users-or-groups-sharepoint-in-microsoft--05"
-        },
-        {
-          "title": "Tenant policy can block agentic-user external sharing",
-          "detail": "New guidance describes a tenant-level policy that blocks agentic users from sharing SharePoint and OneDrive content with external users. The policy is off by default, can target all agentic users or selected application blueprints, and is configured through SharePoint Online PowerShell.",
-          "product": "Agents and Copilot",
-          "sourceId": "doc-2026-11-13-restrict-external-sharing-by-agentic-users-in-sharepoint-and-onedrive-sharepoint-in-microsoft-36-01"
+          "title": "Trim Versions guidance defines a 30-day data-collection window",
+          "detail": "The updated guidance says data-collection results are retained for 30 days after a job completes. After that window, a new data-collection job is needed to perform what-if analysis, so collection must be rerun when later analysis is required.",
+          "product": "Content and versions",
+          "sourceId": "doc-2026-11-24-trim-versions-01"
         }
       ],
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-20T21:53:42.455Z",
+      "generatedAt": "2026-11-24T12:42:11.042Z",
       "usage": {
-        "inputTokens": 6971,
-        "outputTokens": 4804,
-        "costUsd": 0.007159
+        "inputTokens": 1341,
+        "outputTokens": 3983,
+        "costUsd": 0.005048
+      }
+    }
+  },
+  "months": {
+    "2026-11": {
+      "headline": "Classic publishing restrictions and Purview hard-delete workflow reshape SharePoint governance",
+      "overview": "November’s most consequential signals are governance deadlines and controls: SharePoint Online will block creation and activation of classic publishing sites and features from March 1, 2027, while Purview’s priority cleanup workflow is targeted for general availability in early December. The month also sets an April 1, 2027 retirement for SharePoint temporary authentication URLs, as Copilot Search and agent-access visibility move through preview and rollout stages.",
+      "adminImpact": "Update classic publishing workflows and modernize affected pages before the March 1 restriction. Identify Power Apps and Power Automate dependencies on SharePoint temporary authentication URLs before April 1, 2027. Purview priority cleanup requires explicit setup and eDiscovery administrator approval. Copilot Search requires minimal organizational action during preview, while the agent heatmap requires the stated licensing and administrator permissions; sensitivity labels and business-group configuration affect the completeness of its results.",
+      "keyChanges": [
+        {
+          "title": "Classic publishing creation and activation will be blocked",
+          "detail": "Starting March 1, 2027, SharePoint Online will block creation and activation of classic publishing sites and features and enforce restrictions on custom scripting. New tenants will face additional classic-page limits, with the broader rollout completing by October 2028. Administrators must update workflows and modernize pages ahead of the change.",
+          "product": "SharePoint",
+          "sourceId": "MC1565964"
+        },
+        {
+          "title": "Purview adds a priority workflow for hard-deleting protected content",
+          "detail": "The Microsoft Purview Data Lifecycle Management priority cleanup workflow is scheduled for general availability in early December 2026. It allows administrators to hard-delete selected OneDrive and SharePoint content even when retention policies apply, but requires explicit setup and eDiscovery administrator approval.",
+          "product": "SharePoint and OneDrive",
+          "sourceId": "MC1261587"
+        },
+        {
+          "title": "SharePoint and OneDrive web move to unified Copilot Search",
+          "detail": "The web experiences are updating to a unified Copilot Search experience with natural-language prompts, AI summaries, and filters. Preview rollout began in mid-October 2026 and general rollout is planned for mid-January 2027; users can opt out during preview and organizations need minimal action.",
+          "product": "SharePoint and OneDrive for the web",
+          "sourceId": "MC1540513"
+        },
+        {
+          "title": "SharePoint temporary authentication URLs retire April 1, 2027",
+          "detail": "SharePoint temporary authentication URLs will no longer be available from April 1, 2027. Power Apps and Power Automate functionality that depends on those URLs will break after the retirement.",
+          "product": "SharePoint integrations",
+          "sourceId": "MC1551122"
+        },
+        {
+          "title": "Preview agent-access heatmap exposes potential sensitive-content reach",
+          "detail": "New SharePoint admin-center guidance documents a preview agent access report and heatmap for investigating agents reaching sensitive content. The capability has licensing, administrator-permission, sensitivity-label, and business-group requirements; site labels and business-group configuration affect how complete the view is.",
+          "product": "Agents and Copilot",
+          "sourceId": "doc-2026-11-18-generate-a-report-and-explore-the-agent-access-heatmap-preview-sharepoint-in-microsoft-365-02"
+        }
+      ],
+      "generatedBy": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "xhigh",
+      "generatedAt": "2026-11-24T12:42:11.042Z",
+      "usage": {
+        "inputTokens": 7117,
+        "outputTokens": 6700,
+        "costUsd": 0.009463
       }
     }
   },
   "version": 3,
-  "generatedAt": "2026-11-20T21:53:42.455Z",
+  "generatedAt": "2026-11-24T12:42:11.042Z",
   "generator": {
     "model": "gpt-5.6-luna",
     "reasoningEffort": "xhigh"
@@ -615,18 +677,24 @@
       "outputTokens": 15953,
       "requests": 3,
       "costUsd": 0.0219
+    },
+    "2026-11-24": {
+      "inputTokens": 9488,
+      "outputTokens": 11045,
+      "requests": 3,
+      "costUsd": 0.015152
     }
   },
   "lastRun": {
-    "inputTokens": 13783,
-    "outputTokens": 15953,
+    "inputTokens": 9488,
+    "outputTokens": 11045,
     "requests": 3,
-    "costUsd": 0.0219
+    "costUsd": 0.015152
   },
   "totalUsage": {
-    "inputTokens": 116482,
-    "outputTokens": 177295,
-    "requests": 48,
-    "costUsd": 0.23605
+    "inputTokens": 125970,
+    "outputTokens": 188340,
+    "requests": 51,
+    "costUsd": 0.251202
   }
 }
