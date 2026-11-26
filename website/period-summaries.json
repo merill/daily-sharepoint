@@ -383,25 +383,31 @@
       }
     },
     "2026-11-25": {
-      "headline": "Retirement-related changes may stop SharePoint thumbnails rendering in Power Apps",
-      "overview": "Microsoft identified a compatibility issue linked to changes made for the retirement of SharePoint temporary authentication URLs. Those changes may prevent thumbnails for SharePoint items from rendering in Power Apps.",
-      "adminImpact": "Administrators supporting Power Apps that display SharePoint item thumbnails should assess whether rendering is affected. The supplied notice does not specify a workaround, remediation, or additional deadline; it points to the earlier retirement communication MC1551122 for context.",
+      "headline": "Temporary authentication URL retirement may disrupt SharePoint thumbnails in Power Apps",
+      "overview": "Two SharePoint notices this period cover a possible Power Apps thumbnail-rendering problem linked to temporary authentication URL retirement and the introduction of site campaigns that bring Viva Amplify campaign management into SharePoint.",
+      "adminImpact": "Power Apps solutions displaying SharePoint item thumbnails may be affected by the authentication URL changes; the supplied notice does not specify remediation. Site campaigns will be available to seeded and licensed Viva Amplify users, with no stated licensing or existing-campaign changes.",
       "keyChanges": [
         {
-          "title": "Power Apps thumbnail rendering may be affected by SharePoint URL retirement",
-          "detail": "Changes related to the retirement of SharePoint temporary authentication URLs, communicated under MC1551122, may prevent thumbnails for SharePoint items from rendering in Power Apps. This is an interoperability issue affecting how SharePoint content appears inside Power Apps.",
-          "product": "SharePoint and Power Apps",
+          "title": "Power Apps thumbnails may fail after temporary authentication URL retirement",
+          "detail": "Microsoft says changes associated with the retirement of SharePoint temporary authentication URLs, previously communicated under MC1551122, may prevent thumbnails for SharePoint items from rendering in Power Apps.",
+          "product": "SharePoint",
           "sourceId": "MC1567320"
+        },
+        {
+          "title": "Site campaigns bring Viva Amplify management into SharePoint",
+          "detail": "SharePoint is introducing site campaigns with unified creation, distribution, and analytics for news posts. The capability is available to both seeded and licensed Viva Amplify users, with rollout beginning in mid-August 2026; existing Amplify campaigns and licensing are unchanged.",
+          "product": "SharePoint",
+          "sourceId": "MC1568699"
         }
       ],
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-25T11:29:37.216Z",
+      "generatedAt": "2026-11-26T11:09:37.184Z",
       "usage": {
-        "inputTokens": 1020,
-        "outputTokens": 716,
-        "costUsd": 0.001063
+        "inputTokens": 1133,
+        "outputTokens": 1055,
+        "costUsd": 0.001493
       }
     }
   },
@@ -533,102 +539,102 @@
       }
     },
     "2026-11-23": {
-      "headline": "Hard-delete controls and classic publishing restrictions reshape SharePoint administration",
-      "overview": "Microsoft’s most consequential changes this week affect data-lifecycle enforcement and the SharePoint modernization path: Purview is adding a priority workflow to hard-delete selected OneDrive and SharePoint content while overriding retention policies, while creation and activation of classic publishing sites and features will be blocked from 1 March 2027. The period also brought longer Microsoft 365 Backup recovery windows, retention-based SharePoint archiving, and a licensing correction that may lower some OneDrive quotas. A Trim Versions documentation update states that data-collection results remain available for 30 days after a job completes; analysis after that point requires a new collection job.",
-      "adminImpact": "Establish governance and eDiscovery approval paths for priority cleanup, and inventory classic publishing, classic pages, custom scripting, and dependent workflows before the March 2027 restriction. Configure retention archiving where required and decide whether SharePoint or OneDrive need longer backup windows. Before January 2027, review OneDrive usage and license assignments for users whose quotas may fall and lead to read-only states. For Trim Versions, plan to rerun data collection when what-if analysis is needed after 30 days.",
+      "headline": "Purview hard-delete workflow and classic publishing deadline reshape SharePoint governance",
+      "overview": "Two governance changes lead the week. Microsoft Purview is moving its priority cleanup workflow toward early December 2026 general availability, allowing approved administrators to hard-delete selected OneDrive and SharePoint content despite retention policies. Separately, SharePoint Online will block creation and activation of classic publishing sites and features from March 1, 2027. The period also extends Microsoft 365 Backup recovery windows, corrects certain OneDrive storage quotas, and adds a 30-day data-retention constraint to Trim Versions analysis results.",
+      "adminImpact": "Establish the approval and setup process for priority cleanup, and inventory classic publishing sites, features, custom scripting, and workflows ahead of the 2027 restriction. Review Microsoft 365 Backup settings only if longer recovery is required. Before the OneDrive quota correction begins in January 2027, review affected users' storage consumption and licenses and prepare for possible read-only states. For Trim Versions, plan to rerun data collection when analysis is needed after 30 days.",
       "keyChanges": [
         {
-          "title": "Purview priority cleanup can hard-delete selected content",
-          "detail": "Microsoft Purview Data Lifecycle Management’s priority cleanup workflow lets administrators hard-delete specific OneDrive and SharePoint content while overriding retention policies, with eDiscovery admin approval. The preview rollout began in mid-August 2026 and general availability is scheduled for early December 2026; explicit administrator setup is required.",
-          "product": "Microsoft Purview Data Lifecycle Management for SharePoint and OneDrive",
+          "title": "Purview priority cleanup adds an approved hard-delete path",
+          "detail": "Microsoft Purview Data Lifecycle Management is introducing a priority cleanup workflow for hard-deleting specific OneDrive and SharePoint content, overriding retention policies with eDiscovery administrator approval. The feature rolled out in preview in mid-August 2026 and is scheduled for general availability in early December 2026; explicit administrator setup is required.",
+          "product": "SharePoint and OneDrive",
           "sourceId": "MC1261587"
         },
         {
-          "title": "Classic publishing creation and activation will be blocked",
-          "detail": "Beginning 1 March 2027, SharePoint Online will block creation and activation of classic publishing sites and features. Restrictions on custom scripting and additional classic-page limits for new tenants are also part of the change, with rollout completion planned by October 2028. Administrators need to update dependent workflows and modernize pages.",
-          "product": "SharePoint Online classic publishing",
+          "title": "Classic publishing site and feature creation will be blocked",
+          "detail": "Starting March 1, 2027, SharePoint Online will block creation and activation of classic publishing sites and features, while enforcing restrictions on custom scripting. New tenants will also face additional limits on classic pages, with the broader rollout completing by October 2028.",
+          "product": "SharePoint Online",
           "sourceId": "MC1565964"
         },
         {
-          "title": "Retention policies gain a SharePoint Archive path",
-          "detail": "Starting in mid-January 2027, Purview Data Lifecycle Management will let administrators archive inactive SharePoint files to Microsoft 365 Archive under retention policies. Archived files remain compliant and discoverable, are excluded from Copilot indexing, and require administrator configuration.",
-          "product": "Microsoft Purview Data Lifecycle Management and Microsoft 365 Archive",
+          "title": "SharePoint retention policies will be able to archive inactive files",
+          "detail": "Microsoft Purview Data Lifecycle Management is scheduled to let administrators archive inactive SharePoint files under retention policies beginning in mid-January 2027. Files will move to Microsoft 365 Archive, remain compliant and discoverable, and be excluded from Copilot indexing; administrator configuration is required.",
+          "product": "SharePoint",
           "sourceId": "MC1472601"
         },
         {
-          "title": "Microsoft 365 Backup extends SharePoint and OneDrive recovery windows",
-          "detail": "Configurable recovery windows now range from 3 months to 10 years, up from the previous 2-year maximum, for SharePoint and OneDrive. Exchange backup windows are unchanged; no action is needed unless an organization wants longer retention.",
-          "product": "Microsoft 365 Backup for SharePoint and OneDrive",
+          "title": "Microsoft 365 Backup expands SharePoint and OneDrive recovery windows",
+          "detail": "Microsoft 365 Backup now supports configurable SharePoint and OneDrive recovery windows from three months to 10 years, up from the previous two-year maximum. Exchange backup windows are unchanged, and no action is required unless a longer recovery period is desired.",
+          "product": "SharePoint and OneDrive",
           "sourceId": "MC1567262"
         },
         {
-          "title": "OneDrive quota correction may reduce some users’ storage",
-          "detail": "Starting in January 2027, a bug fix will align quotas with the actual storage plan for users affected by certain license combinations, correcting incorrect 1 TB allocations. Some users may see lower quotas and possible read-only states, so organizations should review usage and adjust licenses.",
-          "product": "OneDrive for Business storage quotas",
+          "title": "OneDrive quotas will align with actual license limits",
+          "detail": "Beginning in January 2027, OneDrive for Business quotas will be corrected for users with certain license combinations that currently receive an incorrect 1 TB allocation. Some users may see their quotas reduced, potentially resulting in read-only states; Microsoft recommends reviewing usage and adjusting licenses where necessary.",
+          "product": "OneDrive for Business",
           "sourceId": "MC1567261"
         }
       ],
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-25T11:29:37.216Z",
+      "generatedAt": "2026-11-26T11:09:37.184Z",
       "usage": {
-        "inputTokens": 1696,
-        "outputTokens": 4297,
-        "costUsd": 0.005496
+        "inputTokens": 1809,
+        "outputTokens": 4288,
+        "costUsd": 0.005507
       }
     }
   },
   "months": {
     "2026-11": {
-      "headline": "Classic publishing deadline and Purview hard-delete controls reshape SharePoint governance",
-      "overview": "November’s strongest administrator signals are governance deadlines and enforcement changes. SharePoint Online will block creation and activation of classic publishing sites and features from March 1, 2027, while Purview is adding a priority workflow to hard-delete selected SharePoint and OneDrive content despite retention policies, with eDiscovery approval. The period also set April 1, 2027, for retiring SharePoint temporary authentication URLs and warned that a January quota correction may leave some OneDrive users read-only. AI governance guidance added an off-by-default control for restricting agentic-user external sharing.",
-      "adminImpact": "Treat March 1 and April 1 as planning deadlines: modernize classic publishing pages and workflows, plan for custom-scripting restrictions, and identify Power Apps and Automate dependencies on temporary authentication URLs. Purview’s cleanup workflow requires explicit administrator setup and eDiscovery administrator approval. Before January 2027, review OneDrive usage and license assignments for affected quota combinations. The agentic-sharing policy requires no change unless administrators choose to enable it and can be scoped through SharePoint Online PowerShell.",
+      "headline": "Classic publishing deadline, Purview hard-delete, and agent-access preview reshape SharePoint",
+      "overview": "November brought a major SharePoint governance push alongside two important deadlines. SharePoint Online and OneDrive for the web are moving to unified Copilot Search with natural-language prompts, AI summaries, and filters, while a preview agent-access heatmap helps administrators investigate agents reaching sensitive content. Purview’s priority cleanup workflow is scheduled for general availability in early December, enabling approved hard deletion despite retention policies. SharePoint will block creation and activation of classic publishing sites and features from March 1, 2027, and temporary authentication URLs will retire April 1, 2027, breaking dependent Power Apps and Power Automate functionality.",
+      "adminImpact": "Inventory classic publishing sites, features, custom scripting, and dependent workflows before March 1, 2027, and identify Power Apps and Power Automate dependencies on temporary authentication URLs before April 1, 2027. Prepare the required Purview setup and eDiscovery approval process for priority cleanup. For the agent-access heatmap, confirm licensing and administrator permissions and recognize that sensitivity labels and business-group configuration affect coverage. Copilot Search requires minimal organizational action, and users can opt out during preview.",
       "keyChanges": [
         {
-          "title": "Classic publishing creation and activation receive a March 2027 cutoff",
-          "detail": "Starting March 1, 2027, SharePoint Online will block creation and activation of classic publishing sites and features while enforcing restrictions on custom scripting. New tenants face additional limits on classic pages, and the rollout completes by October 2028. Administrators must update dependent workflows and modernize pages.",
+          "title": "Classic publishing restrictions get a March 2027 enforcement date",
+          "detail": "From March 1, 2027, SharePoint Online will block creation and activation of classic publishing sites and features and enforce restrictions on custom scripting. New tenants face additional classic-page limits, with the broader rollout completing by October 2028. Administrators should update affected workflows and modernize pages.",
           "product": "SharePoint",
           "sourceId": "MC1565964"
         },
         {
-          "title": "Purview adds an approved hard-delete path over retention policies",
-          "detail": "Microsoft Purview Data Lifecycle Management is introducing a priority cleanup workflow for hard-deleting specific SharePoint and OneDrive content while overriding retention policies. The capability requires explicit administrator setup and eDiscovery administrator approval, with general availability scheduled for early December 2026 after preview rollout.",
-          "product": "SharePoint and OneDrive",
+          "title": "Purview priority cleanup moves hard deletion toward general availability",
+          "detail": "The priority cleanup workflow is scheduled for general availability in early December 2026. It allows administrators to hard-delete selected OneDrive and SharePoint content while overriding retention policies, but requires explicit setup and eDiscovery administrator approval.",
+          "product": "SharePoint",
           "sourceId": "MC1261587"
         },
         {
-          "title": "Temporary authentication URLs retire April 1, 2027",
-          "detail": "SharePoint temporary authentication URLs will no longer be available starting April 1, 2027. Power Apps and Automate functionality that relies on these URLs will break, making affected integrations a defined remediation deadline.",
-          "product": "SharePoint integrations",
-          "sourceId": "MC1551122"
-        },
-        {
-          "title": "OneDrive quota correction may create read-only states for some users",
-          "detail": "Starting in January 2027, OneDrive for Business will correct incorrect 1 TB quotas for certain license combinations so storage limits match the actual plans. Some users may receive lower quotas, potentially leading to read-only states; Microsoft advises reviewing usage and adjusting licenses where necessary.",
-          "product": "OneDrive",
-          "sourceId": "MC1567261"
-        },
-        {
-          "title": "Agentic-user external sharing can be blocked with an off-by-default policy",
-          "detail": "New guidance specifies a tenant-level control that blocks agentic users from sharing SharePoint and OneDrive content with external users. Administrators can target all agentic users or those associated with selected application blueprints through SharePoint Online PowerShell; the policy is off by default.",
+          "title": "Agent-access heatmap preview maps exposure to sensitive content",
+          "detail": "A preview report in the SharePoint admin center lets administrators investigate agents reaching sensitive content. The documented view requires specified licensing and administrator permissions; sensitivity labels and business-group configuration affect how complete the heatmap is.",
           "product": "Agents and Copilot",
-          "sourceId": "doc-2026-11-13-restrict-external-sharing-by-agentic-users-in-sharepoint-and-onedrive-sharepoint-in-microsoft-36-01"
+          "sourceId": "doc-2026-11-18-generate-a-report-and-explore-the-agent-access-heatmap-preview-sharepoint-in-microsoft-365-02"
+        },
+        {
+          "title": "Copilot Search unifies SharePoint and OneDrive web search",
+          "detail": "SharePoint Online and OneDrive for the web are moving to a unified Copilot Search experience with natural-language prompts, AI-generated summaries, and filters. Preview rollout began in mid-October 2026, with general rollout scheduled for mid-January 2027; users can opt out during preview and organizations need minimal preparation.",
+          "product": "SharePoint and OneDrive",
+          "sourceId": "MC1540513"
+        },
+        {
+          "title": "SharePoint temporary authentication URLs retire April 1, 2027",
+          "detail": "SharePoint temporary authentication URLs will no longer be available from April 1, 2027. Power Apps and Power Automate functionality that relies on these URLs will break, making dependency identification a priority for affected integrations.",
+          "product": "SharePoint",
+          "sourceId": "MC1551122"
         }
       ],
       "generatedBy": "openai",
       "model": "gpt-5.6-luna",
       "reasoningEffort": "xhigh",
-      "generatedAt": "2026-11-25T11:29:37.216Z",
+      "generatedAt": "2026-11-26T11:09:37.184Z",
       "usage": {
-        "inputTokens": 7058,
-        "outputTokens": 11777,
-        "costUsd": 0.015544
+        "inputTokens": 7007,
+        "outputTokens": 4320,
+        "costUsd": 0.006585
       }
     }
   },
   "version": 3,
-  "generatedAt": "2026-11-25T11:29:37.216Z",
+  "generatedAt": "2026-11-26T11:09:37.184Z",
   "generator": {
     "model": "gpt-5.6-luna",
     "reasoningEffort": "xhigh"
@@ -717,18 +723,24 @@
       "outputTokens": 16790,
       "requests": 3,
       "costUsd": 0.022103
+    },
+    "2026-11-26": {
+      "inputTokens": 9949,
+      "outputTokens": 9663,
+      "requests": 3,
+      "costUsd": 0.013585
     }
   },
   "lastRun": {
-    "inputTokens": 9774,
-    "outputTokens": 16790,
+    "inputTokens": 9949,
+    "outputTokens": 9663,
     "requests": 3,
-    "costUsd": 0.022103
+    "costUsd": 0.013585
   },
   "totalUsage": {
-    "inputTokens": 135744,
-    "outputTokens": 205130,
-    "requests": 54,
-    "costUsd": 0.273305
+    "inputTokens": 145693,
+    "outputTokens": 214793,
+    "requests": 57,
+    "costUsd": 0.28689
   }
 }
