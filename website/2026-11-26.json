@@ -1,6 +1,33 @@
 {
   "newFiles": [],
-  "modifiedFiles": [],
+  "modifiedFiles": [
+    {
+      "filename": "SharePoint/SharePointOnline/sharepoint-storage-planning.md",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 3,
+      "changes": 18,
+      "patch": "diff --git a/SharePoint/SharePointOnline/sharepoint-storage-planning.md b/SharePoint/SharePointOnline/sharepoint-storage-planning.md\nindex 11bc2e6..dbd6c2c 100644\n--- a/SharePoint/SharePointOnline/sharepoint-storage-planning.md\n+++ b/SharePoint/SharePointOnline/sharepoint-storage-planning.md\n@@ -17,6 +17,7 @@ f1.keywords: NOCSH\n ms.topic: concept-article\n ms.service: sharepoint-online\n ms.subservice: platform\n+ai-usage: ai-assisted\n ms.localizationpriority: medium\n ms.collection:\n - Strat_OD_admin\n@@ -54,7 +55,7 @@ Manage your organization's SharePoint storage by understanding usage, keeping th\n \r\n Start with storage usage to plan improvements, or use the steps in the following section if you need to free space now.\r\n \r\n-## Need to free storage now? Start here\r\n+## Need to free up storage now? Start here\r\n \r\n 1. **Protect capacity while you clean up.** If you're near or over quota, consider **Microsoft 365 SharePoint Storage (pay-as-you-go)** before starting cleanup work. It bills usage above the tenant quota while you reduce consumption. This solution allows you to address your cleanup effort at your own pace, and ensures you don't have to over-procure with a prepaid storage pack, since you'll only pay for what you use. If pay-as-you-go isn't available or suitable, review other tenant capacity options with your billing administrator. Review charges and prerequisites before enabling a service.\r\n 2. **Start with the biggest cleanup opportunity.**Identify what's using storage, then trim eligible versions or archive inactive content. If inactive content is the main contributor, prioritize archiving rather than trimming first. Delete only content that owners confirm is no longer needed and is eligible for deletion.\r\n@@ -251,8 +252,8 @@ Address near-term capacity pressure before waiting for cleanup to finish. Additi\n \r\n | Option | When to consider it | Before you enable or purchase |\r\n | --- | --- | --- |\r\n-| **Microsoft 365 SharePoint Storage (pay-as-you-go)** | You want usage-based billing for storage above the tenant quota | Review eligibility, preview status, Azure billing prerequisites, and budget alerts. |\r\n-| **Office 365 Extra File Storage** | You want to purchase additional allocated capacity | Review plan eligibility, purchasing channel, price, and required billing permissions. |\r\n+| [**Microsoft 365 SharePoint Storage (pay-as-you-go)**](/en-us/microsoft-365/commerce/add-storage-space?view=o365-worldwide#add-microsoft-365-sharepoint-storage) | You want usage-based billing for storage above the tenant quota | Review eligibility, preview status, Azure billing prerequisites, and budget alerts. |\r\n+| [**Office 365 Extra File Storage**](/en-us/microsoft-365/commerce/add-storage-space?view=o365-worldwide#add-office-365-extra-file-storage) | You want to purchase additional allocated capacity | Review plan eligibility, purchasing channel, price, and required billing permissions. |\r\n | **Eligible additional user licenses** | You also need licenses for users | Confirm the storage contribution for your specific plan; don't assume all licenses add the same capacity. |\r\n \r\n Follow [Add storage capacity](/en-us/microsoft-365/commerce/add-storage-space?view=o365-worldwide) for current availability and setup instructions.\r\n@@ -280,6 +281,17 @@ Note\n \r\n **Pooled-storage exception:** OneDrive storage is separate from SharePoint tenant storage unless your tenant uses a shared storage pool. In pooled-storage tenants, such as Education and trial tenants where OneDrive and SharePoint share capacity, cleaning up OneDrive can free space in that shared pool. Check your tenant's storage model before attributing savings. For Education customers, see [Pooled storage management](/en-us/microsoft-365/education/guide/1-reference/pooled-storage-management).\r\n \r\n+### Recommended setup to manage storage and costs\r\n+\r\n+Combine usage-based capacity with version and content lifecycle policies to support growth without keeping unnecessary content in active storage.\r\n+\r\n+- Enable Microsoft 365 SharePoint Storage (pay-as-you-go), where eligible. Pay for usage above included capacity without prepurchasing storage packs. This provides flexibility while you clean up content and manage changing storage needs.\r\n+- Use Automatic version history limits and trim existing versions. Microsoft recommends **Automatic** to balance recovery needs and storage efficiency without choosing version count or age limits. Apply the policy to existing libraries and trim eligible versions to match, accounting for retention and recovery requirements.\r\n+- Use Microsoft 365 Archive for inactive content you need to keep. Archiving frees active storage quota and offers a lower storage rate for inactive content. There’s no additional Archive storage charge when combined active and archived SharePoint storage remains within licensed capacity.\r\n+- Use content lifecycle policies to sustain the improvements. Configure inactive site and inactive files policies to archive eligible content, and retention policies to delete content after an approved period. Preview storage impact through what-if analysis or policy simulation before taking action.\r\n+\r\n+Together, these settings keep active storage focused on content people use, reduce unnecessary version growth, and align storage costs with usage.\r\n+\r\n ## FAQs\r\n \r\n ### How is the SharePoint storage quota calculated?\r\n",
+      "baseCommitSha": "bec4e4726d4825e2c74c43bd8ac70a69fed6404f",
+      "commitSha": "e2cbc28e660fb358d64d38485c50a71ca493d9b9",
+      "commitMessage": "Mirror Learn: 2 changed",
+      "commitAuthor": "github-actions[bot]",
+      "commitDate": "2026-11-26 14:27:41 +0000",
+      "githubUrl": "https://github.com/merill/sharepoint-docs-mirror/blob/main/SharePoint/SharePointOnline/sharepoint-storage-planning.md",
+      "publicDocsUrl": "https://learn.microsoft.com/en-us/sharepoint/sharepoint-storage-planning",
+      "eventId": "sharepoint-docs:e2cbc28e660fb358d64d38485c50a71ca493d9b9:modified:SharePoint/SharePointOnline/sharepoint-storage-planning.md",
+      "firstSeenAt": "2026-11-26T23:07:32.638Z",
+      "englishSummary": {
+        "category": "Doc update",
+        "headline": "Storage planning guidance adds linked options and management recommendations",
+        "summary": "The page now links directly to Microsoft 365 SharePoint Storage (pay-as-you-go) and Office 365 Extra File Storage, and adds guidance on version limits, Microsoft 365 Archive, lifecycle policies, and storage-impact analysis.",
+        "adminImpact": "Administrators can more easily review storage purchasing options and use the documented approaches to manage active storage and costs. No action is required.",
+        "actionRequired": false,
+        "generatedBy": "openai",
+        "model": "gpt-5.6-luna"
+      }
+    }
+  ],
   "deletedFiles": [],
   "messageCenterItems": [
     {
@@ -43,14 +70,31 @@
     }
   ],
   "summary": {
-    "totalCommits": 0,
-    "totalFiles": 0,
-    "authors": []
+    "totalCommits": 1,
+    "totalFiles": 1,
+    "authors": [
+      "github-actions[bot]"
+    ]
   },
   "englishSummary": {
-    "overview": "No substantive SharePoint Online and OneDrive documentation changes were detected for this report.",
-    "groups": [],
-    "highlights": [],
+    "overview": "Today's report includes 0 new, 1 updated, and 0 removed SharePoint Online and OneDrive documentation files across 1 documentation area.",
+    "groups": [
+      {
+        "category": "Doc update",
+        "title": "SharePoint Online",
+        "summary": "The page now links directly to Microsoft 365 SharePoint Storage (pay-as-you-go) and Office 365 Extra File Storage, and adds guidance on version limits, Microsoft 365 Archive, lifecycle policies, and storage-impact analysis.",
+        "sourceFiles": [
+          "SharePoint/SharePointOnline/sharepoint-storage-planning.md"
+        ]
+      }
+    ],
+    "highlights": [
+      {
+        "category": "Doc update",
+        "headline": "SharePoint Online",
+        "detail": "The page now links directly to Microsoft 365 SharePoint Storage (pay-as-you-go) and Office 365 Extra File Storage, and adds guidance on version limits, Microsoft 365 Archive, lifecycle policies, and storage-impact analysis."
+      }
+    ],
     "generatedBy": "fallback"
   }
 }
